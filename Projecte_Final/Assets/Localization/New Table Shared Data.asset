@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: New Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: New Table
+  m_TableCollectionNameGuidString: 828977fe24396fa4a9eca983215d2628
+  m_Entries:
+  - m_Id: 16964878336
+    m_Key: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20928495616
+    m_Key: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23772233728
+    m_Key: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29770088448
+    m_Key: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33997946880
+    m_Key: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38192250880
+    m_Key: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43405770752
+    m_Key: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46912208896
+    m_Key: "Espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244665253888
+    m_Key: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 248398184448
+    m_Key: German
+    m_Metadata:
+      m_Items: []
+  - m_Id: 251053178880
+    m_Key: French
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252659597312
+    m_Key: Italian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 253930471424
+    m_Key: Catalan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333785825280
+    m_Key: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349262807040
+    m_Key: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 367973597184
+    m_Key: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9302654812160
+    m_Key: Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9308426174464
+    m_Key: Brillo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22701182779392
+    m_Key: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5453084191850496
+    m_Key: REANUDAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5453112549539840
+    m_Key: VICTORY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5453126634012672
+    m_Key: DEFEAT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5769642554392576
+    m_Key: Throttle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5769664058589184
+    m_Key: Shoot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5769740772409344
+    m_Key: Roll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5769785240420352
+    m_Key: Turn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5769801300410368
+    m_Key: Turbo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5797439607898112
+    m_Key: Direction
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7138068069407260792
+  references:
+    version: 2
+    RefIds:
+    - rid: 7138068069407260792
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1680598985282

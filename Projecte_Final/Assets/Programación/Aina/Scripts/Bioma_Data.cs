@@ -1,50 +1,104 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "new Bioma Data", menuName = "Bioma Data")]
-public class Bioma_Data : ScriptableObject
+public class Bioma_Data : MonoBehaviour
 {
-    [SerializeField, Tooltip("")]
-    private string biomaType;    
+    [SerializeField, Tooltip("What the biome produces")]
+    private string biomaType;
     
-    [SerializeField, Tooltip("")]
-    private GameObject biomaPrefab;    
+    [SerializeField, Tooltip("The line / circle that the biome is on")]
+    private int biomaLine;
+
+    [SerializeField, Tooltip("Cloud that hides the non available parcels")]
+    private GameObject prefabLocked;
     
-    [SerializeField, Tooltip("")]
-    private bool isUnlocked;    
+    [SerializeField, Tooltip("Game Object of the biome when it's unlocked")]
+    private GameObject biomaUnlocked;
     
-    [SerializeField, Tooltip("")]
+    [SerializeField, Tooltip("Game Object of the biome when it's built")]
+    private GameObject biomaBuilt;
+    
+    [SerializeField, Tooltip("Highlighted hexagon prefab to show selected biomes")]
+    private GameObject selectedPrefab;
+    
+    [SerializeField, Tooltip("A list of the biomes around to check if you can unlock")]
+    private List<Bioma_Data> nearBiomaList;
+    
+    [SerializeField, Tooltip("Bool to check if any of the biomes around are unlocked to be able to unlock this one")]
+    private bool isAvailable;
+    
+    [SerializeField, Tooltip("Bool to check if the biome is unlocked to be able to build")]
+    private bool isUnlocked;
+    
+    [SerializeField, Tooltip("Bool to check if the biome is built to start producing resources")]
     private bool isBuilt;
 
-    [SerializeField, Tooltip("")]
+    [SerializeField, Tooltip("Maximum number of total resources the parcel can produce")]
     private int resourcesMax;
+    
+    [SerializeField, Tooltip("Number of resources the parcel produces after x time")]
+    private int resourcesRound;
 
-    [SerializeField, Tooltip("")]
+    [SerializeField, Tooltip("Number of time between extracting resources")]
     private float resourcesTime;
     
-    [SerializeField, Tooltip("")]
-    private int costWood;    
+    [SerializeField, Tooltip("Number of wood you need to unlock the parcel")]
+    private int costWoodUnlock;
+
+    [SerializeField, Tooltip("Number of stones you need to unlock the parcel")]
+    private int costStoneUnlock;
     
-    [SerializeField, Tooltip("")]
-    private int costStone;
+    [SerializeField, Tooltip("Number of wood you need to build on the parcel")]
+    private int costWoodBuilt;
+    
+    [SerializeField, Tooltip("Number of stones you need to build on the parcel")]
+    private int costStoneBuilt;
 
     // Getters
     
     public string BiomaType => biomaType;
     
-    public GameObject BiomaPrefab => biomaPrefab;
+    public int BiomaLine => biomaLine;
     
+    public GameObject PrefabLocked => prefabLocked;
+    
+    public GameObject BiomaUnlocked => biomaUnlocked;
+    
+    public GameObject BiomaBuilt => biomaBuilt;
+    
+    public GameObject SelectedPrefab => selectedPrefab;
+    
+    public List<Bioma_Data> NearBiomaList => nearBiomaList;
+
     public bool IsUnlocked => isUnlocked;
+    
+    public bool IsAvailable => isAvailable;
     
     public bool IsBuilt => isBuilt;
     
     public int ResourcesMax => resourcesMax;
     
+    public int ResourcesRound => resourcesRound;
+    
     public float ResourcesTime => resourcesTime;
     
-    public int CostWood => costWood;
+    public int CostWoodUnlock => costWoodUnlock;
 
-    public int CostStone => costStone;
+    public int CostStoneUnlock => costStoneUnlock;
+    
+    public int CostWoodBuilt => costWoodBuilt;
+
+    public int CostStoneBuilt => costStoneBuilt;
+
+    private void Start()
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, 1);
+        foreach (var hitCollider in hitColliders)
+        {
+            nearBiomaList.Add(hitCollider.GetComponent<Bioma_Data>());
+        }
+    }
 }
 

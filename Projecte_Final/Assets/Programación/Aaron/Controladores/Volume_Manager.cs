@@ -1,18 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Volume_Manager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [Header("musica")] 
+    public Slider sliderMusica;
+    public float slidervalueMusica;
+    public Image imgMuteMusica;
+    public AudioSource sourceMusica;
+    [SerializeField] private TMP_Text volumeTextUI;
+
+
     void Start()
     {
-        
+        sliderMusica.value = PlayerPrefs.GetFloat("volmenMusica", 0.5f);
+        sourceMusica.volume = sliderMusica.value;
+        musicaMute();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void slidermusica(float valorMusica)
     {
-        
+        slidervalueMusica = valorMusica;
+        PlayerPrefs.SetFloat("volmenMusica", slidervalueMusica);
+        sourceMusica.volume = sliderMusica.value;
+        volumeTextUI.text = valorMusica.ToString("0.0");
+        musicaMute();
+
+    }
+
+    public void musicaMute()
+    {
+        if (slidervalueMusica == 0)
+        {
+            imgMuteMusica.enabled = true;
+        }
+        else
+        {
+            imgMuteMusica.enabled = false;
+        }
     }
 }

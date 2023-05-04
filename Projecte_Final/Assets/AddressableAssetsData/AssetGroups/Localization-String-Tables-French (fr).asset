@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-French (fr)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-French (fr)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a08c06ff67293054fa138baa93551cb4
+  m_SerializeEntries:
+  - m_GUID: 641d9294c7b038c43b47661ebd5e5a9c
+    m_Address: New Table_fr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 76e15f79e9157b142be3ab7f9b0febac, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8a69cbbf827eacc4f83d5de9643174e9, type: 2}
+    - {fileID: 11400000, guid: 673e316493e83a446bf62ae4fb6077fe, type: 2}

@@ -11,8 +11,8 @@ public class Bioma_Data : MonoBehaviour
     [SerializeField, Tooltip("The line / circle that the biome is on")]
     private int biomaLine;
 
-    [SerializeField, Tooltip("Cloud that hides the non available parcels")]
-    private GameObject prefabLocked;
+    [SerializeField, Tooltip("Starter and current biome")]
+    private GameObject gameObjectBioma;
     
     [SerializeField, Tooltip("Game Object of the biome when it's unlocked")]
     private GameObject biomaUnlocked;
@@ -22,6 +22,9 @@ public class Bioma_Data : MonoBehaviour
     
     [SerializeField, Tooltip("Highlighted hexagon prefab to show selected biomes")]
     private GameObject selectedPrefab;
+    
+    [SerializeField, Tooltip("Game Object of the tower when it's built")]
+    private GameObject towerPrefab;
     
     [SerializeField, Tooltip("A list of the biomes around to check if you can unlock")]
     private List<Bioma_Data> nearBiomaList;
@@ -61,14 +64,14 @@ public class Bioma_Data : MonoBehaviour
     public string BiomaType => biomaType;
     
     public int BiomaLine => biomaLine;
-    
-    public GameObject PrefabLocked => prefabLocked;
-    
+
     public GameObject BiomaUnlocked => biomaUnlocked;
     
     public GameObject BiomaBuilt => biomaBuilt;
     
     public GameObject SelectedPrefab => selectedPrefab;
+    
+    public GameObject TowerPrefab => towerPrefab;
     
     public List<Bioma_Data> NearBiomaList => nearBiomaList;
 
@@ -94,10 +97,29 @@ public class Bioma_Data : MonoBehaviour
 
     private void Start()
     {
+        GetNearBiomes();
+    }
+
+    private void GetNearBiomes()
+    {
         Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, 1);
         foreach (var hitCollider in hitColliders)
         {
-            nearBiomaList.Add(hitCollider.GetComponent<Bioma_Data>());
+            if (hitCollider != GetComponent<Collider>() && hitCollider != null)
+            {
+                nearBiomaList.Add(hitCollider.GetComponent<Bioma_Data>());
+            }
+        }
+    }
+
+    public void EnableUnlockNearBiomes()
+    {
+        foreach (var bioma in nearBiomaList)
+        {
+            if (!bioma.isUnlocked)
+            {
+                bioma.isUnlocked = true;
+            }
         }
     }
 }

@@ -19,5 +19,7 @@ public enum PoolingItemsEnum {
         Pirates,
         Bullet,
         Boat,
+        Selected_able,
+        Selected_unable,
         buyUI
 }

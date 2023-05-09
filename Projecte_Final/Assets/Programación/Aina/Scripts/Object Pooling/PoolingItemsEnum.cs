@@ -18,5 +18,6 @@ public enum PoolingItemsEnum {
         Villagers,
         Pirates,
         Bullet,
-        Boat
+        Boat,
+        buyUI
 }

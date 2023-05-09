@@ -1,30 +1,28 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Bioma_Data : MonoBehaviour
 {
     [SerializeField, Tooltip("What the biome produces")]
     private string biomaType;
-    
-    [SerializeField, Tooltip("The line / circle that the biome is on")]
-    private int biomaLine;
 
     [SerializeField, Tooltip("Starter and current biome")]
-    private GameObject gameObjectBioma;
-    
-    [SerializeField, Tooltip("Game Object of the biome when it's unlocked")]
-    private GameObject biomaUnlocked;
-    
+    private PoolingItemsEnum biomaClouds;
+
     [SerializeField, Tooltip("Game Object of the biome when it's built")]
-    private GameObject biomaBuilt;
+    public PoolingItemsEnum biomaBuilt;
+
+    [SerializeField, Tooltip("Game Object of the tower when it's built")]
+    public PoolingItemsEnum towerPrefab;
+    
+    [SerializeField, Tooltip("Game Object of the tower when it's built")]
+    public PoolingItemsEnum UI;
     
     [SerializeField, Tooltip("Highlighted hexagon prefab to show selected biomes")]
     private GameObject selectedPrefab;
-    
-    [SerializeField, Tooltip("Game Object of the tower when it's built")]
-    private GameObject towerPrefab;
     
     [SerializeField, Tooltip("A list of the biomes around to check if you can unlock")]
     private List<Bioma_Data> nearBiomaList;
@@ -63,16 +61,8 @@ public class Bioma_Data : MonoBehaviour
     
     public string BiomaType => biomaType;
     
-    public int BiomaLine => biomaLine;
-
-    public GameObject BiomaUnlocked => biomaUnlocked;
-    
-    public GameObject BiomaBuilt => biomaBuilt;
-    
     public GameObject SelectedPrefab => selectedPrefab;
-    
-    public GameObject TowerPrefab => towerPrefab;
-    
+
     public List<Bioma_Data> NearBiomaList => nearBiomaList;
 
     public bool IsUnlocked => isUnlocked;
@@ -98,6 +88,7 @@ public class Bioma_Data : MonoBehaviour
     private void Start()
     {
         GetNearBiomes();
+        PoolItems();
     }
 
     private void GetNearBiomes()
@@ -119,6 +110,52 @@ public class Bioma_Data : MonoBehaviour
             if (!bioma.isUnlocked)
             {
                 bioma.isUnlocked = true;
+            }
+        }
+    }
+    
+    void PoolItems()
+    {
+        GameObject clouds = PoolingManager.Instance.GetPooledObject((int)biomaClouds);
+        GameObject resources = PoolingManager.Instance.GetPooledObject((int)biomaBuilt);
+        GameObject tower = PoolingManager.Instance.GetPooledObject((int)towerPrefab);
+        GameObject ui = PoolingManager.Instance.GetPooledObject((int)UI);
+
+        if (clouds != null)
+        {
+            clouds.transform.position = gameObject.transform.position;
+            clouds.transform.parent = gameObject.transform;
+            resources.transform.position = gameObject.transform.position;
+            resources.transform.parent = gameObject.transform;
+            tower.transform.position = gameObject.transform.position;
+            tower.transform.parent = gameObject.transform;
+            ui.transform.position = gameObject.transform.position;
+            ui.transform.parent = gameObject.transform;
+            clouds.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        if (isAvailable)
+        {
+            GameObject ui = gameObject.transform.GetChild(4).GetComponent<GameObject>();
+            
+            if (!isUnlocked)
+            {
+                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costWoodUnlock}";
+                ui.transform.GetChild(2).GetComponent<TMP_Text>().text = $"{costStoneUnlock}";
+                ui.SetActive(true);
+            }
+            else if(isUnlocked && !isBuilt)
+            {
+                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
+                ui.transform.GetChild(2).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
+                ui.SetActive(true);
+            }
+            else if (isBuilt && resourcesMax <= 0)
+            {
+                
             }
         }
     }

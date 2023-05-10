@@ -303,7 +303,7 @@ MonoBehaviour:
     amountToPool: 2
     shouldExpand: 1
   - prefabToPool: {fileID: 2029682402}
-    amountToPool: 1
+    amountToPool: 2
     shouldExpand: 1
 --- !u!1 &280703553
 GameObject:
@@ -603,8 +603,8 @@ MonoBehaviour:
   resourcesTime: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 0
-  costStoneBuilt: 0
+  costWoodBuilt: 20
+  costStoneBuilt: 20
 --- !u!64 &455103494
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -639,7 +639,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 91232a1dd1898fe4393f4ca14c0feb90, type: 2}
+  - {fileID: 2100000, guid: cf051fba995609b459f0eb4baf4bb478, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -732,8 +732,8 @@ MonoBehaviour:
   resourcesTime: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 0
-  costStoneBuilt: 0
+  costWoodBuilt: 20
+  costStoneBuilt: 20
 --- !u!64 &459389574
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -861,8 +861,8 @@ MonoBehaviour:
   resourcesTime: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 0
-  costStoneBuilt: 0
+  costWoodBuilt: 20
+  costStoneBuilt: 20
 --- !u!64 &468111470
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -990,8 +990,8 @@ MonoBehaviour:
   resourcesTime: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 0
-  costStoneBuilt: 0
+  costWoodBuilt: 20
+  costStoneBuilt: 20
 --- !u!64 &648637915
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1119,8 +1119,8 @@ MonoBehaviour:
   resourcesTime: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 0
-  costStoneBuilt: 0
+  costWoodBuilt: 20
+  costStoneBuilt: 20
 --- !u!64 &1142648691
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1248,8 +1248,8 @@ MonoBehaviour:
   resourcesTime: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 0
-  costStoneBuilt: 0
+  costWoodBuilt: 20
+  costStoneBuilt: 20
 --- !u!64 &1146811103
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1831,8 +1831,8 @@ MonoBehaviour:
   resourcesTime: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 0
-  costStoneBuilt: 0
+  costWoodBuilt: 20
+  costStoneBuilt: 20
 --- !u!64 &1830307773
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1867,7 +1867,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 88b58552955deb949a1e09037c070105, type: 2}
+  - {fileID: 2100000, guid: cf051fba995609b459f0eb4baf4bb478, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2004,8 +2004,8 @@ MonoBehaviour:
   resourcesTime: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 0
-  costStoneBuilt: 0
+  costWoodBuilt: 20
+  costStoneBuilt: 20
 --- !u!64 &1902719137
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2133,8 +2133,8 @@ MonoBehaviour:
   resourcesTime: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 0
-  costStoneBuilt: 0
+  costWoodBuilt: 20
+  costStoneBuilt: 20
 --- !u!64 &2010135794
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2372,7 +2372,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0384010b16b716e45b98a85af59ad300, type: 2}
+  - {fileID: 2100000, guid: cf051fba995609b459f0eb4baf4bb478, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2444,5 +2444,5 @@ MonoBehaviour:
   resourcesTime: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 0
-  costStoneBuilt: 0
+  costWoodBuilt: 20
+  costStoneBuilt: 20

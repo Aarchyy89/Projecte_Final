@@ -1,31 +1,33 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bioma_Data : MonoBehaviour
 {
     [SerializeField, Tooltip("What the biome produces")]
     private string biomaType;
-    
-    [SerializeField, Tooltip("The line / circle that the biome is on")]
-    private int biomaLine;
 
     [SerializeField, Tooltip("Starter and current biome")]
-    private GameObject gameObjectBioma;
-    
-    [SerializeField, Tooltip("Game Object of the biome when it's unlocked")]
-    private GameObject biomaUnlocked;
-    
+    private PoolingItemsEnum biomaClouds;
+
     [SerializeField, Tooltip("Game Object of the biome when it's built")]
-    private GameObject biomaBuilt;
-    
-    [SerializeField, Tooltip("Highlighted hexagon prefab to show selected biomes")]
-    private GameObject selectedPrefab;
+    public PoolingItemsEnum biomaBuilt;
+
+    [SerializeField, Tooltip("Game Object of the tower when it's built")]
+    public PoolingItemsEnum towerPrefab;
     
     [SerializeField, Tooltip("Game Object of the tower when it's built")]
-    private GameObject towerPrefab;
+    public PoolingItemsEnum selectedAble;
     
+    [SerializeField, Tooltip("Game Object of the tower when it's built")]
+    public PoolingItemsEnum selectedUnable;
+    
+    [SerializeField, Tooltip("Game Object of the tower when it's built")]
+    public PoolingItemsEnum UI;
+
     [SerializeField, Tooltip("A list of the biomes around to check if you can unlock")]
     private List<Bioma_Data> nearBiomaList;
     
@@ -63,16 +65,6 @@ public class Bioma_Data : MonoBehaviour
     
     public string BiomaType => biomaType;
     
-    public int BiomaLine => biomaLine;
-
-    public GameObject BiomaUnlocked => biomaUnlocked;
-    
-    public GameObject BiomaBuilt => biomaBuilt;
-    
-    public GameObject SelectedPrefab => selectedPrefab;
-    
-    public GameObject TowerPrefab => towerPrefab;
-    
     public List<Bioma_Data> NearBiomaList => nearBiomaList;
 
     public bool IsUnlocked => isUnlocked;
@@ -98,28 +90,86 @@ public class Bioma_Data : MonoBehaviour
     private void Start()
     {
         GetNearBiomes();
+        PoolItems();
     }
 
     private void GetNearBiomes()
     {
         Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, 1);
+        
         foreach (var hitCollider in hitColliders)
         {
-            if (hitCollider != GetComponent<Collider>() && hitCollider != null)
+            if (hitCollider != GetComponent<Collider>() && hitCollider.GetComponent<Bioma_Data>() != null)
             {
                 nearBiomaList.Add(hitCollider.GetComponent<Bioma_Data>());
             }
         }
     }
 
-    public void EnableUnlockNearBiomes()
+    private void MakeAvailableNearBiomes()
     {
         foreach (var bioma in nearBiomaList)
         {
-            if (!bioma.isUnlocked)
+            if (!bioma.isAvailable)
             {
-                bioma.isUnlocked = true;
+                bioma.isAvailable = true;
+                bioma.transform.GetChild(0).gameObject.SetActive(false);
             }
+        }
+    }
+    
+    void PoolItems()
+    {
+        if (!isAvailable)
+        {
+            GameObject clouds = PoolingManager.Instance.GetPooledObject((int)biomaClouds);
+            clouds.transform.position = transform.position;
+            clouds.transform.parent = transform;
+            clouds.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("here");
+        if (isAvailable)
+        {
+            GameObject ui = PoolingManager.Instance.GetPooledObject((int)UI);
+            Debug.Log(ui);
+            ui.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+            
+            Debug.Log(GameManager.instance.WoodPlayer);
+            Debug.Log(GameManager.instance.StonePlayer);
+            
+            if (!isUnlocked)
+            {
+                ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodUnlock}";
+                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneUnlock}";
+                ui.gameObject.SetActive(true);
+                
+                ui.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
+            }
+            else if(isUnlocked && !isBuilt)
+            {
+                ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
+                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
+            }
+            else if (isBuilt && resourcesMax <= 0)
+            {
+                
+            }
+        }
+    }
+
+    private void UnlockHexagon()
+    {
+        if (GameManager.instance.WoodPlayer >= costWoodUnlock && GameManager.instance.WoodPlayer >= costStoneUnlock)
+        {
+            GameManager.instance.WoodPlayer -= costWoodUnlock;
+            GameManager.instance.StonePlayer -= costStoneUnlock;
+            MakeAvailableNearBiomes();
+            Debug.Log(GameManager.instance.WoodPlayer);
+            Debug.Log(GameManager.instance.StonePlayer);
         }
     }
 }

@@ -189,7 +189,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148735701
 GameObject:
@@ -221,7 +221,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &148735703
 MonoBehaviour:
@@ -303,7 +303,7 @@ MonoBehaviour:
     amountToPool: 2
     shouldExpand: 1
   - prefabToPool: {fileID: 2029682402}
-    amountToPool: 2
+    amountToPool: 1
     shouldExpand: 1
 --- !u!1 &280703553
 GameObject:
@@ -580,8 +580,8 @@ MonoBehaviour:
   resourcesMax: 0
   resourcesRound: 0
   resourcesTime: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
+  costWoodUnlock: 10
+  costStoneUnlock: 10
   costWoodBuilt: 0
   costStoneBuilt: 0
 --- !u!64 &455103494
@@ -661,7 +661,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &459389572
 GameObject:
@@ -709,8 +709,8 @@ MonoBehaviour:
   resourcesMax: 0
   resourcesRound: 0
   resourcesTime: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
+  costWoodUnlock: 10
+  costStoneUnlock: 10
   costWoodBuilt: 0
   costStoneBuilt: 0
 --- !u!64 &459389574
@@ -790,7 +790,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &468111468
 GameObject:
@@ -838,8 +838,8 @@ MonoBehaviour:
   resourcesMax: 0
   resourcesRound: 0
   resourcesTime: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
+  costWoodUnlock: 10
+  costStoneUnlock: 10
   costWoodBuilt: 0
   costStoneBuilt: 0
 --- !u!64 &468111470
@@ -919,7 +919,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &648637913
 GameObject:
@@ -967,8 +967,8 @@ MonoBehaviour:
   resourcesMax: 0
   resourcesRound: 0
   resourcesTime: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
+  costWoodUnlock: 10
+  costStoneUnlock: 10
   costWoodBuilt: 0
   costStoneBuilt: 0
 --- !u!64 &648637915
@@ -1048,7 +1048,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1142648689
 GameObject:
@@ -1096,8 +1096,8 @@ MonoBehaviour:
   resourcesMax: 0
   resourcesRound: 0
   resourcesTime: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
+  costWoodUnlock: 10
+  costStoneUnlock: 10
   costWoodBuilt: 0
   costStoneBuilt: 0
 --- !u!64 &1142648691
@@ -1177,7 +1177,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1146811101
 GameObject:
@@ -1225,8 +1225,8 @@ MonoBehaviour:
   resourcesMax: 0
   resourcesRound: 0
   resourcesTime: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
+  costWoodUnlock: 10
+  costStoneUnlock: 10
   costWoodBuilt: 0
   costStoneBuilt: 0
 --- !u!64 &1146811103
@@ -1306,7 +1306,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1402306359
 GameObject:
@@ -1577,7 +1577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71982be591066184d958695cbf3d4875, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71982be591066184d958695cbf3d4875, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1697,14 +1697,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613559397}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 2.75, z: -3}
+  m_LocalRotation: {x: 0.3376327, y: -0, z: -0, w: 0.9412779}
+  m_LocalPosition: {x: 0, y: 2.19, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 39.465, y: 0, z: 0}
 --- !u!1001 &1748781807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1718,7 +1718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3473d0131f929c8498dd62c83ef0056e, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3473d0131f929c8498dd62c83ef0056e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1808,8 +1808,8 @@ MonoBehaviour:
   resourcesMax: 0
   resourcesRound: 0
   resourcesTime: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
+  costWoodUnlock: 10
+  costStoneUnlock: 10
   costWoodBuilt: 0
   costStoneBuilt: 0
 --- !u!64 &1830307773
@@ -1889,8 +1889,52 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1859115666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1859115667}
+  - component: {fileID: 1859115668}
+  m_Layer: 0
+  m_Name: ----- GameManager -----
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1859115667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859115666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1859115668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859115666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac6bb837de4b6049b6cb1905cac1d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1902719135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,8 +1981,8 @@ MonoBehaviour:
   resourcesMax: 0
   resourcesRound: 0
   resourcesTime: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
+  costWoodUnlock: 10
+  costStoneUnlock: 10
   costWoodBuilt: 0
   costStoneBuilt: 0
 --- !u!64 &1902719137
@@ -2018,7 +2062,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2010135792
 GameObject:
@@ -2066,8 +2110,8 @@ MonoBehaviour:
   resourcesMax: 0
   resourcesRound: 0
   resourcesTime: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
+  costWoodUnlock: 10
+  costStoneUnlock: 10
   costWoodBuilt: 0
   costStoneBuilt: 0
 --- !u!64 &2010135794
@@ -2147,7 +2191,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2029682402
 GameObject:
@@ -2245,7 +2289,7 @@ RectTransform:
   - {fileID: 1406035306}
   - {fileID: 1402306360}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2285,7 +2329,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23393011338244166
 MeshRenderer:
@@ -2371,13 +2415,13 @@ MonoBehaviour:
   selectedUnable: 21
   UI: 22
   nearBiomaList: []
-  isAvailable: 0
+  isAvailable: 1
   isUnlocked: 0
   isBuilt: 0
   resourcesMax: 0
   resourcesRound: 0
   resourcesTime: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
+  costWoodUnlock: 10
+  costStoneUnlock: 10
   costWoodBuilt: 0
   costStoneBuilt: 0

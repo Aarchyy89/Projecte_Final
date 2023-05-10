@@ -120,21 +120,13 @@ public class Bioma_Data : MonoBehaviour
     
     void PoolItems()
     {
-        GameObject clouds = PoolingManager.Instance.GetPooledObject((int)biomaClouds);
-        GameObject resources = PoolingManager.Instance.GetPooledObject((int)biomaBuilt);
-        GameObject tower = PoolingManager.Instance.GetPooledObject((int)towerPrefab);
-        GameObject ui = PoolingManager.Instance.GetPooledObject((int)UI);
-
-
-        clouds.transform.position = gameObject.transform.position;
-        clouds.transform.parent = gameObject.transform;
-        resources.transform.position = gameObject.transform.position;
-        resources.transform.parent = gameObject.transform;
-        tower.transform.position = gameObject.transform.position;
-        tower.transform.parent = gameObject.transform;
-        ui.transform.position = gameObject.transform.position;
-        ui.transform.parent = gameObject.transform;
-        clouds.gameObject.SetActive(true);
+        if (!isAvailable)
+        {
+            GameObject clouds = PoolingManager.Instance.GetPooledObject((int)biomaClouds);
+            clouds.transform.position = transform.position;
+            clouds.transform.parent = transform;
+            clouds.gameObject.SetActive(true);
+        }
     }
 
     private void OnMouseDown()
@@ -142,21 +134,25 @@ public class Bioma_Data : MonoBehaviour
         Debug.Log("here");
         if (isAvailable)
         {
-            Canvas ui = gameObject.transform.GetChild(3).GetComponent<Canvas>();
-            ui.transform.position = new Vector3(0, 1, 0);
+            GameObject ui = PoolingManager.Instance.GetPooledObject((int)UI);
+            Debug.Log(ui);
+            ui.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+            
+            Debug.Log(GameManager.instance.WoodPlayer);
+            Debug.Log(GameManager.instance.StonePlayer);
             
             if (!isUnlocked)
             {
-                ui.gameObject.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodUnlock}";
-                ui.gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneUnlock}";
-                ui.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
+                ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodUnlock}";
+                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneUnlock}";
                 ui.gameObject.SetActive(true);
+                
+                ui.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
             }
             else if(isUnlocked && !isBuilt)
             {
-                ui.gameObject.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
-                ui.gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
-                ui.gameObject.SetActive(true);
+                ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
+                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
             }
             else if (isBuilt && resourcesMax <= 0)
             {
@@ -167,9 +163,14 @@ public class Bioma_Data : MonoBehaviour
 
     private void UnlockHexagon()
     {
-        // check if current wood is same or more cost wood
-        // if true take price and unlock the hexagon
-        MakeAvailableNearBiomes();
+        if (GameManager.instance.WoodPlayer >= costWoodUnlock && GameManager.instance.WoodPlayer >= costStoneUnlock)
+        {
+            GameManager.instance.WoodPlayer -= costWoodUnlock;
+            GameManager.instance.StonePlayer -= costStoneUnlock;
+            MakeAvailableNearBiomes();
+            Debug.Log(GameManager.instance.WoodPlayer);
+            Debug.Log(GameManager.instance.StonePlayer);
+        }
     }
 }
 

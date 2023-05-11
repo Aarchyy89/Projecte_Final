@@ -11,7 +11,6 @@ public class Volume_Manager : MonoBehaviour
     public float slidervalueMusica;
     public Image imgMuteMusica;
     public AudioSource sourceMusica;
-    [SerializeField] private TMP_Text volumeTextUI;
 
 
     void Start()
@@ -26,7 +25,6 @@ public class Volume_Manager : MonoBehaviour
         slidervalueMusica = valorMusica;
         PlayerPrefs.SetFloat("volmenMusica", slidervalueMusica);
         sourceMusica.volume = sliderMusica.value;
-        volumeTextUI.text = valorMusica.ToString("0.0");
         musicaMute();
 
     }

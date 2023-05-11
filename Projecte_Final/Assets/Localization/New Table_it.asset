@@ -126,6 +126,10 @@ MonoBehaviour:
     m_Localized: Direzione
     m_Metadata:
       m_Items: []
+  - m_Id: 244665253888
+    m_Localized: Inglese
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

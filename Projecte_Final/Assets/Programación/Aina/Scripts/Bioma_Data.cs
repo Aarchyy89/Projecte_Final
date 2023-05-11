@@ -28,6 +28,8 @@ public class Bioma_Data : MonoBehaviour
     [SerializeField, Tooltip("Game Object of the tower when it's built")]
     public PoolingItemsEnum UI;
 
+    private GameObject uiBackup;
+
     [SerializeField, Tooltip("A list of the biomes around to check if you can unlock")]
     private List<Bioma_Data> nearBiomaList;
     
@@ -59,7 +61,13 @@ public class Bioma_Data : MonoBehaviour
     private int costWoodBuilt;
     
     [SerializeField, Tooltip("Number of stones you need to build on the parcel")]
-    private int costStoneBuilt;
+    private int costStoneBuilt;    
+    
+    [SerializeField, Tooltip("Number of wood you need to build a tower")]
+    private int costWoodTower;
+    
+    [SerializeField, Tooltip("Number of stones you need to build a tower")]
+    private int costStoneTower;
 
     // Getters
     
@@ -120,56 +128,104 @@ public class Bioma_Data : MonoBehaviour
     
     void PoolItems()
     {
-        GameObject clouds = PoolingManager.Instance.GetPooledObject((int)biomaClouds);
-        GameObject resources = PoolingManager.Instance.GetPooledObject((int)biomaBuilt);
-        GameObject tower = PoolingManager.Instance.GetPooledObject((int)towerPrefab);
-        GameObject ui = PoolingManager.Instance.GetPooledObject((int)UI);
-
-
-        clouds.transform.position = gameObject.transform.position;
-        clouds.transform.parent = gameObject.transform;
-        resources.transform.position = gameObject.transform.position;
-        resources.transform.parent = gameObject.transform;
-        tower.transform.position = gameObject.transform.position;
-        tower.transform.parent = gameObject.transform;
-        ui.transform.position = gameObject.transform.position;
-        ui.transform.parent = gameObject.transform;
-        clouds.gameObject.SetActive(true);
+        if (!isAvailable)
+        {
+            GameObject clouds = PoolingManager.Instance.GetPooledObject((int)biomaClouds);
+            clouds.transform.position = transform.position;
+            clouds.transform.parent = transform;
+            clouds.gameObject.SetActive(true);
+        }
     }
 
     private void OnMouseDown()
     {
-        Debug.Log("here");
         if (isAvailable)
         {
-            Canvas ui = gameObject.transform.GetChild(3).GetComponent<Canvas>();
-            ui.transform.position = new Vector3(0, 1, 0);
-            
+            GameObject ui = PoolingManager.Instance.GetPooledObject((int)UI);
+            ui.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+            uiBackup = ui;
+
             if (!isUnlocked)
             {
-                ui.gameObject.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodUnlock}";
-                ui.gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneUnlock}";
-                ui.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
+                ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodUnlock}";
+                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneUnlock}";
                 ui.gameObject.SetActive(true);
+                
+                if (GameManager.instance.WoodPlayer >= costWoodUnlock && GameManager.instance.StonePlayer >= costStoneUnlock)
+                {
+                    ui.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
+                   
+                    GameObject able = PoolingManager.Instance.GetPooledObject((int)selectedAble);
+                    able.transform.position = transform.position;
+                    able.SetActive(true);
+                }
+                else
+                {
+                    GameObject unable = PoolingManager.Instance.GetPooledObject((int)selectedUnable);
+                    unable.transform.position = transform.position;
+                    unable.SetActive(true);
+                }
+
             }
             else if(isUnlocked && !isBuilt)
             {
-                ui.gameObject.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
-                ui.gameObject.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
+                ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
+                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
                 ui.gameObject.SetActive(true);
+
+                if (GameManager.instance.WoodPlayer >= costWoodBuilt && GameManager.instance.StonePlayer >= costStoneBuilt)
+                {
+                    ui.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(BuildHexagon);
+                   
+                    GameObject able = PoolingManager.Instance.GetPooledObject((int)selectedAble);
+                    able.transform.position = transform.position;
+                    able.SetActive(true);
+                }
+                else
+                {
+                    GameObject unable = PoolingManager.Instance.GetPooledObject((int)selectedUnable);
+                    unable.transform.position = transform.position;
+                    unable.SetActive(true);
+                }
             }
             else if (isBuilt && resourcesMax <= 0)
             {
-                
+                ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
+                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
+                ui.gameObject.SetActive(true);
+
+                if (GameManager.instance.WoodPlayer >= costWoodBuilt && GameManager.instance.StonePlayer >= costStoneBuilt)
+                {
+                    ui.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(BuildHexagon);
+                   
+                    GameObject able = PoolingManager.Instance.GetPooledObject((int)selectedAble);
+                    able.transform.position = transform.position;
+                    able.SetActive(true);
+                }
+                else
+                {
+                    GameObject unable = PoolingManager.Instance.GetPooledObject((int)selectedUnable);
+                    unable.transform.position = transform.position;
+                    unable.SetActive(true);
+                }
             }
         }
     }
 
     private void UnlockHexagon()
     {
-        // check if current wood is same or more cost wood
-        // if true take price and unlock the hexagon
+        GameManager.instance.WoodPlayer -= costWoodUnlock;
+        GameManager.instance.StonePlayer -= costStoneUnlock;
+        uiBackup.SetActive(false);
         MakeAvailableNearBiomes();
+    }
+    
+    private void BuildHexagon()
+    {
+        GameManager.instance.WoodPlayer -= costWoodBuilt;
+        GameManager.instance.StonePlayer -= costStoneBuilt; 
+        
+        // Call resources Coroutine
     }
 }
 

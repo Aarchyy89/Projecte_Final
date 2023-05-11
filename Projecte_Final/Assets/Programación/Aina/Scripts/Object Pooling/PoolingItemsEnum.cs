@@ -21,5 +21,6 @@ public enum PoolingItemsEnum {
         Boat,
         Selected_able,
         Selected_unable,
-        buyUI
+        BuyUI,
+        ResourceUI
 }

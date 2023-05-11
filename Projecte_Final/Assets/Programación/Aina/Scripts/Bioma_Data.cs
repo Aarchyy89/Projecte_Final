@@ -14,6 +14,9 @@ public class Bioma_Data : MonoBehaviour
     private PoolingItemsEnum biomaClouds;
 
     [SerializeField, Tooltip("Game Object of the biome when it's built")]
+    public PoolingItemsEnum biomaUnlocked;
+        
+    [SerializeField, Tooltip("Game Object of the biome when it's built")]
     public PoolingItemsEnum biomaBuilt;
 
     [SerializeField, Tooltip("Game Object of the tower when it's built")]
@@ -27,9 +30,7 @@ public class Bioma_Data : MonoBehaviour
     
     [SerializeField, Tooltip("Game Object of the tower when it's built")]
     public PoolingItemsEnum UI;
-
-    private GameObject uiBackup;
-
+    
     [SerializeField, Tooltip("A list of the biomes around to check if you can unlock")]
     private List<Bioma_Data> nearBiomaList;
     
@@ -41,6 +42,9 @@ public class Bioma_Data : MonoBehaviour
     
     [SerializeField, Tooltip("Bool to check if the biome is built to start producing resources")]
     private bool isBuilt;
+    
+    [SerializeField, Tooltip("Bool to check if the biome is built to start producing resources")]
+    private bool canBuild;
 
     [SerializeField, Tooltip("Maximum number of total resources the parcel can produce")]
     private int resourcesMax;
@@ -69,6 +73,13 @@ public class Bioma_Data : MonoBehaviour
     [SerializeField, Tooltip("Number of stones you need to build a tower")]
     private int costStoneTower;
 
+    private GameObject ui_local;
+    private GameObject able_local;
+    private GameObject unable_local;
+    private GameObject unlocked_local;
+    private GameObject build_local;
+    private GameObject tower_local;
+
     // Getters
     
     public string BiomaType => biomaType;
@@ -80,6 +91,8 @@ public class Bioma_Data : MonoBehaviour
     public bool IsAvailable => isAvailable;
     
     public bool IsBuilt => isBuilt;
+    
+    public bool CanBuild => canBuild;
     
     public int ResourcesMax => resourcesMax;
     
@@ -136,77 +149,117 @@ public class Bioma_Data : MonoBehaviour
             clouds.gameObject.SetActive(true);
         }
     }
+    
+    private void ActivateUI(int costWood, int costStone)
+    {
+        ui_local = PoolingManager.Instance.GetPooledObject((int)UI);
+        ui_local.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+        
+        ui_local.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWood}";
+        ui_local.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStone}";
+        ui_local.gameObject.SetActive(true);
+    }
+    
+    private void DeactivateUI()
+    {
+        Bioma_Data[] biomes = GameObject.FindObjectsOfType<Bioma_Data>();
+        
+        foreach (var bioma in biomes)
+        {
+            if (bioma.ui_local != null)
+            {
+                bioma.ui_local.SetActive(false);
+            } 
+        }
+    }
+
+    private void Instantiate_Able()
+    {
+        able_local = PoolingManager.Instance.GetPooledObject((int)selectedAble);
+        able_local.transform.position = transform.position;
+        able_local.SetActive(true);
+    }
+    
+    private void Instantiate_Unable()
+    {
+        unable_local = PoolingManager.Instance.GetPooledObject((int)selectedUnable);
+        unable_local.transform.position = transform.position;
+        unable_local.SetActive(true);
+    }
+    
+    private void Instantiate_Build(GameObject parent, PoolingItemsEnum itemsEnum)
+    {
+        parent = PoolingManager.Instance.GetPooledObject((int)itemsEnum);
+        parent.transform.position = transform.position;
+        parent.SetActive(true);
+    }
+    
 
     private void OnMouseDown()
     {
+        //DeactivateUI();
+        
         if (isAvailable)
         {
-            GameObject ui = PoolingManager.Instance.GetPooledObject((int)UI);
-            ui.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
-            uiBackup = ui;
-
             if (!isUnlocked)
             {
-                ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodUnlock}";
-                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneUnlock}";
-                ui.gameObject.SetActive(true);
+                ActivateUI(costWoodUnlock,costStoneUnlock);
                 
                 if (GameManager.instance.WoodPlayer >= costWoodUnlock && GameManager.instance.StonePlayer >= costStoneUnlock)
                 {
-                    ui.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
+                    ui_local.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
                    
-                    GameObject able = PoolingManager.Instance.GetPooledObject((int)selectedAble);
-                    able.transform.position = transform.position;
-                    able.SetActive(true);
+                    Instantiate_Able();
                 }
                 else
                 {
-                    GameObject unable = PoolingManager.Instance.GetPooledObject((int)selectedUnable);
-                    unable.transform.position = transform.position;
-                    unable.SetActive(true);
+                    Instantiate_Unable();
                 }
 
             }
-            else if(isUnlocked && !isBuilt)
+            else if(isUnlocked && !isBuilt && canBuild)
             {
-                ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
-                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
-                ui.gameObject.SetActive(true);
+                ActivateUI(costWoodBuilt,costStoneBuilt);
 
                 if (GameManager.instance.WoodPlayer >= costWoodBuilt && GameManager.instance.StonePlayer >= costStoneBuilt)
                 {
-                    ui.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(BuildHexagon);
+                    ui_local.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(BuildHexagon);
                    
-                    GameObject able = PoolingManager.Instance.GetPooledObject((int)selectedAble);
-                    able.transform.position = transform.position;
-                    able.SetActive(true);
+                    Instantiate_Able();
                 }
                 else
                 {
-                    GameObject unable = PoolingManager.Instance.GetPooledObject((int)selectedUnable);
-                    unable.transform.position = transform.position;
-                    unable.SetActive(true);
+                    Instantiate_Unable();
+                }
+            }
+            else if(isUnlocked && !isBuilt && !canBuild)
+            {
+                ActivateUI(costWoodTower,costStoneTower);
+
+                if (GameManager.instance.WoodPlayer >= costWoodTower && GameManager.instance.StonePlayer >= costStoneTower)
+                {
+                    ui_local.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(BuildTower);
+                   
+                    Instantiate_Able();
+                }
+                else
+                {
+                    Instantiate_Unable();
                 }
             }
             else if (isBuilt && resourcesMax <= 0)
             {
-                ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
-                ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
-                ui.gameObject.SetActive(true);
+                ActivateUI(costWoodTower,costStoneTower);
 
-                if (GameManager.instance.WoodPlayer >= costWoodBuilt && GameManager.instance.StonePlayer >= costStoneBuilt)
+                if (GameManager.instance.WoodPlayer >= costWoodTower && GameManager.instance.StonePlayer >= costStoneTower)
                 {
-                    ui.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(BuildHexagon);
+                    ui_local.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(BuildTower);
                    
-                    GameObject able = PoolingManager.Instance.GetPooledObject((int)selectedAble);
-                    able.transform.position = transform.position;
-                    able.SetActive(true);
+                    Instantiate_Able();
                 }
                 else
                 {
-                    GameObject unable = PoolingManager.Instance.GetPooledObject((int)selectedUnable);
-                    unable.transform.position = transform.position;
-                    unable.SetActive(true);
+                    Instantiate_Unable();
                 }
             }
         }
@@ -216,16 +269,35 @@ public class Bioma_Data : MonoBehaviour
     {
         GameManager.instance.WoodPlayer -= costWoodUnlock;
         GameManager.instance.StonePlayer -= costStoneUnlock;
-        uiBackup.SetActive(false);
+        
+        ui_local.SetActive(false);
+        able_local.SetActive(false);
+
+        Instantiate_Build(unlocked_local, biomaUnlocked);
         MakeAvailableNearBiomes();
     }
     
     private void BuildHexagon()
     {
         GameManager.instance.WoodPlayer -= costWoodBuilt;
-        GameManager.instance.StonePlayer -= costStoneBuilt; 
+        GameManager.instance.StonePlayer -= costStoneBuilt;
         
-        // Call resources Coroutine
+        ui_local.SetActive(false);
+        able_local.SetActive(false);
+
+        Instantiate_Build(build_local, biomaBuilt);
+        //Resources_Controller.instance.
+    }
+    
+    private void BuildTower()
+    {
+        GameManager.instance.WoodPlayer -= costWoodTower;
+        GameManager.instance.StonePlayer -= costStoneTower;
+        
+        ui_local.SetActive(false);
+        able_local.SetActive(false);
+
+        Instantiate_Build(tower_local, towerPrefab);
     }
 }
 

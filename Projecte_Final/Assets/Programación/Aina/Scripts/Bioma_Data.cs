@@ -41,6 +41,12 @@ public class Bioma_Data : MonoBehaviour
     
     [SerializeField, Tooltip("Bool to check if the biome is built to start producing resources")]
     private bool isBuilt;
+    
+    [SerializeField, Tooltip("Bool to check if the biome can produce resources")]
+    private bool canProduce;
+    
+    [SerializeField, Tooltip("Bool to check if the biome can produce resources")]
+    private bool isProducing;
 
     [SerializeField, Tooltip("Maximum number of total resources the parcel can produce")]
     private int resourcesMax;
@@ -80,6 +86,14 @@ public class Bioma_Data : MonoBehaviour
     public bool IsAvailable => isAvailable;
     
     public bool IsBuilt => isBuilt;
+    
+    public bool CanProduce => canProduce;
+
+    public bool IsProducing
+    {
+        get {return isProducing; }
+        set {isProducing = value; }
+    }
     
     public int ResourcesMax => resourcesMax;
     
@@ -131,7 +145,7 @@ public class Bioma_Data : MonoBehaviour
         if (!isAvailable)
         {
             GameObject clouds = PoolingManager.Instance.GetPooledObject((int)biomaClouds);
-            clouds.transform.position = transform.position;
+            clouds.transform.position = new Vector3(transform.position.x, 0.2f, transform.position.z);
             clouds.transform.parent = transform;
             clouds.gameObject.SetActive(true);
         }
@@ -165,9 +179,8 @@ public class Bioma_Data : MonoBehaviour
                     unable.transform.position = transform.position;
                     unable.SetActive(true);
                 }
-
             }
-            else if(isUnlocked && !isBuilt)
+            else if(isUnlocked && canProduce && !isBuilt)
             {
                 ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
                 ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
@@ -188,7 +201,11 @@ public class Bioma_Data : MonoBehaviour
                     unable.SetActive(true);
                 }
             }
-            else if (isBuilt && resourcesMax <= 0)
+            else if (isUnlocked && !canProduce && !isBuilt)
+            {
+                    
+            }
+            else if (!isProducing && isBuilt && resourcesMax <= 0)
             {
                 ui.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWoodBuilt}";
                 ui.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStoneBuilt}";
@@ -224,6 +241,10 @@ public class Bioma_Data : MonoBehaviour
     {
         GameManager.instance.WoodPlayer -= costWoodBuilt;
         GameManager.instance.StonePlayer -= costStoneBuilt; 
+        
+        GameObject build = PoolingManager.Instance.GetPooledObject((int)biomaBuilt);
+        build.transform.position = transform.position;
+        build.SetActive(true);
         
         // Call resources Coroutine
     }

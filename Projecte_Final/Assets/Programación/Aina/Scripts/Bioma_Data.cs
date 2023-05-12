@@ -45,6 +45,9 @@ public class Bioma_Data : MonoBehaviour
     
     [SerializeField, Tooltip("Bool to check if the biome is built to start producing resources")]
     private bool canBuild;
+    
+    [SerializeField, Tooltip("Bool to check if the biome has a tower")]
+    private bool isTower;
 
     [SerializeField, Tooltip("Maximum number of total resources the parcel can produce")]
     private int resourcesMax;
@@ -162,17 +165,9 @@ public class Bioma_Data : MonoBehaviour
     
     private void DeactivateUI()
     {
-        Bioma_Data[] biomes = GameObject.FindObjectsOfType<Bioma_Data>();
-        
-        foreach (var bioma in biomes)
-        {
-            if (bioma.ui_local != null)
-            {
-                bioma.ui_local.SetActive(false);
-                bioma.able_local.SetActive(false);
-                bioma.unable_local.SetActive(false);
-            } 
-        }
+        PoolingManager.Instance.DesactivatePooledObject((int)UI);
+        PoolingManager.Instance.DesactivatePooledObject((int)selectedAble);
+        PoolingManager.Instance.DesactivatePooledObject((int)selectedUnable);
     }
 
     private void Instantiate_Able()
@@ -199,7 +194,7 @@ public class Bioma_Data : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //DeactivateUI();
+        DeactivateUI();
         
         if (isAvailable)
         {
@@ -234,22 +229,7 @@ public class Bioma_Data : MonoBehaviour
                     Instantiate_Unable();
                 }
             }
-            else if(isUnlocked && !isBuilt && !canBuild)
-            {
-                ActivateUI(costWoodTower,costStoneTower);
-
-                if (GameManager.instance.WoodPlayer >= costWoodTower && GameManager.instance.StonePlayer >= costStoneTower)
-                {
-                    ui_local.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(BuildTower);
-                   
-                    Instantiate_Able();
-                }
-                else
-                {
-                    Instantiate_Unable();
-                }
-            }
-            else if (isBuilt && resourcesMax <= 0)
+            else if(isUnlocked && !isBuilt && !canBuild && !isTower || isBuilt && resourcesMax <= 0 && !isTower)
             {
                 ActivateUI(costWoodTower,costStoneTower);
 
@@ -300,10 +280,10 @@ public class Bioma_Data : MonoBehaviour
         GameManager.instance.WoodPlayer -= costWoodTower;
         GameManager.instance.StonePlayer -= costStoneTower;
         
+        isTower = true;
+
         ui_local.SetActive(false);
         able_local.SetActive(false);
-        
-        Debug.Log("here");
 
         Instantiate_Build(tower_local, towerPrefab);
     }

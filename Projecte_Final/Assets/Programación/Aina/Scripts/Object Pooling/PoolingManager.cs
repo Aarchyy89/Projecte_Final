@@ -109,4 +109,12 @@ public class PoolingManager : MonoBehaviour
  		positions.Add(0);
  
  	}
+    
+    public void DesactivatePooledObject(int index)
+    {
+	    foreach (var go in pooledObjectsList[index])
+	    {
+		    go.SetActive(false);
+	    }
+    }
 }

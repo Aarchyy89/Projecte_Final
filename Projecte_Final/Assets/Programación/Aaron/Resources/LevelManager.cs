@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        Resources_Controller.instance.IncreaseMadera();
+        //Resources_Controller.instance.IncreaseMadera();
     }
 
 

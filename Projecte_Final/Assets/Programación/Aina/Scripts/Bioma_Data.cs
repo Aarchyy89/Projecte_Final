@@ -169,6 +169,8 @@ public class Bioma_Data : MonoBehaviour
             if (bioma.ui_local != null)
             {
                 bioma.ui_local.SetActive(false);
+                bioma.able_local.SetActive(false);
+                bioma.unable_local.SetActive(false);
             } 
         }
     }
@@ -269,6 +271,8 @@ public class Bioma_Data : MonoBehaviour
     {
         GameManager.instance.WoodPlayer -= costWoodUnlock;
         GameManager.instance.StonePlayer -= costStoneUnlock;
+
+        isUnlocked = true;
         
         ui_local.SetActive(false);
         able_local.SetActive(false);
@@ -281,6 +285,8 @@ public class Bioma_Data : MonoBehaviour
     {
         GameManager.instance.WoodPlayer -= costWoodBuilt;
         GameManager.instance.StonePlayer -= costStoneBuilt;
+
+        isBuilt = true;
         
         ui_local.SetActive(false);
         able_local.SetActive(false);
@@ -296,6 +302,8 @@ public class Bioma_Data : MonoBehaviour
         
         ui_local.SetActive(false);
         able_local.SetActive(false);
+        
+        Debug.Log("here");
 
         Instantiate_Build(tower_local, towerPrefab);
     }

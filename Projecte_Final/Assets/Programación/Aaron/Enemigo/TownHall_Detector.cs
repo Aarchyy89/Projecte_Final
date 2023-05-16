@@ -13,6 +13,4 @@ public class TownHall_Detector : MonoBehaviour
             Enemy_Ship_AI.instance.Atacar_Ayuntamiento();
         }
     }
-
-
 }

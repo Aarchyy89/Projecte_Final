@@ -8,6 +8,8 @@ public class TownHall_Detector : MonoBehaviour
     {
         if(other.CompareTag("Ship"))
         {
+            Debug.Log("He entrado");
+            Enemy_Ship_AI.instance.inside = true;
             Enemy_Ship_AI.instance.Atacar_Ayuntamiento();
         }
     }

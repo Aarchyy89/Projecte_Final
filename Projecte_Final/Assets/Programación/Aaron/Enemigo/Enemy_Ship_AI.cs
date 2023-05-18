@@ -8,7 +8,7 @@ public class Enemy_Ship_AI : MonoBehaviour
 {
     [Header("---Parameters---")]
     public NavMeshAgent navMeshAgent;
-    public Transform player;
+    public Transform Parcela;
 
     [Header("---Fillable GO---")]
     public GameObject Invoked_Pirates;
@@ -40,7 +40,7 @@ public class Enemy_Ship_AI : MonoBehaviour
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindGameObjectWithTag("TH").transform;
+        Parcela = GameObject.FindGameObjectWithTag("Parcela").transform;
         inside = false;
         stopped_ship = false;
     }
@@ -48,17 +48,17 @@ public class Enemy_Ship_AI : MonoBehaviour
     void Update()
     {
 
-        ChasePlayer();
+        Go_to_cells();
         Checkear_Posicion_barco();
 
     }
 
-    public void ChasePlayer()
+    public void Go_to_cells()
     {
         if (navMeshAgent.speed >= 0.1f)
         {
             //anim.SetBool("Walk", true);
-            navMeshAgent.SetDestination(player.position);
+            navMeshAgent.SetDestination(Parcela.position);
         }
     }
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TownHall_Detector : MonoBehaviour
+public class Cell_Detector : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {

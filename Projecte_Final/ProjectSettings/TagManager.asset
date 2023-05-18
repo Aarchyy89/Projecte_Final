@@ -9,6 +9,7 @@ TagManager:
   - TH
   - FxTemporaire
   - Pirate
+  - Parcela
   layers:
   - Default
   - TransparentFX

@@ -90,7 +90,6 @@ public class Enemy_Ship_AI : MonoBehaviour
 
         if (pirate_spawn_timer >= time_to_spawn)
         {
-
             Llegan_los_piratas();
             stopped_ship = false;
             pirate_spawn_timer = 0;

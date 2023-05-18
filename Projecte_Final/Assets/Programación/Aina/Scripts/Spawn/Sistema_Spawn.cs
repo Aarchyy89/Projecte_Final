@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +10,7 @@ public class Sistema_Spawn : MonoBehaviour
     public static Sistema_Spawn Instance;
     
     [Header("----- Spawn Variables -----")]
-    public PoolingItemsEnum enemyType;
+    public PoolingItemsEnum enemyBoat;
 
     public WaveData current_wave;
     
@@ -34,7 +33,6 @@ public class Sistema_Spawn : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 
     public void StartSpawner()
     {
@@ -63,18 +61,12 @@ public class Sistema_Spawn : MonoBehaviour
     {
         Sistema_Oleadas sistemaOleadas = Sistema_Oleadas.Instance;
 
-        if (sistemaOleadas.CheckEndRound())
-        {
-            return;
-        }
-        
-        GameObject enemy = PoolingManager.Instance.GetPooledObject((int)enemyType);
+        GameObject enemy = PoolingManager.Instance.GetPooledObject((int)enemyBoat);
 
         if (enemy != null)
         {
-            --sistemaOleadas.TotalEnemies;
+            --sistemaOleadas.totalBoats;
             
-            // Get random spawn point from the list
             int spawnPoint_index = Random.Range(0, spawnPoints.Count);
             enemy.transform.position = spawnPoints[spawnPoint_index].position;
             enemy.gameObject.SetActive(true);
@@ -82,12 +74,11 @@ public class Sistema_Spawn : MonoBehaviour
             spawnTimer = Random.Range(current_wave.SpawnTimer_min, current_wave.SpawnTimer_max);
         }
 
-        if (sistemaOleadas.waveNumber == 14 && Sistema_Oleadas.Instance.TotalEnemies >= 50)
-        {
-            // Spawn Boss
-        }
-
         timer = 0f;
-        sistemaOleadas.Checker();
+        
+        if (sistemaOleadas.totalBoats <= 0)
+        {
+            active_wave = false;
+        }
     }
 }

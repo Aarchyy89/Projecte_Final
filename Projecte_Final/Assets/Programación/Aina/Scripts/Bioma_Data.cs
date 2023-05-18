@@ -168,6 +168,7 @@ public class Bioma_Data : MonoBehaviour
         PoolingManager.Instance.DesactivatePooledObject((int)UI);
         PoolingManager.Instance.DesactivatePooledObject((int)selectedAble);
         PoolingManager.Instance.DesactivatePooledObject((int)selectedUnable);
+        PoolingManager.Instance.RemoveListener((int)UI);
     }
 
     private void Instantiate_Able()
@@ -195,7 +196,7 @@ public class Bioma_Data : MonoBehaviour
     private void OnMouseDown()
     {
         DeactivateUI();
-        
+
         if (isAvailable)
         {
             if (!isUnlocked)
@@ -265,6 +266,7 @@ public class Bioma_Data : MonoBehaviour
     {
         GameManager.instance.WoodPlayer -= costWoodBuilt;
         GameManager.instance.StonePlayer -= costStoneBuilt;
+        GameManager.instance.TotalConstructions += 1;
 
         isBuilt = true;
         
@@ -279,6 +281,7 @@ public class Bioma_Data : MonoBehaviour
     {
         GameManager.instance.WoodPlayer -= costWoodTower;
         GameManager.instance.StonePlayer -= costStoneTower;
+        GameManager.instance.TotalTowers += 1;
         
         isTower = true;
 

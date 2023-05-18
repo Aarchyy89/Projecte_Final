@@ -16,9 +16,13 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private float movementSpeed = 0.4f;
     [SerializeField] private float rotationSpeed = 0.01f;
 
+    [SerializeField] private Camera CameraZoom;
+    [SerializeField] private float sensitivity;
+
     private void Awake()
     {
         _xRotation = transform.rotation.eulerAngles.x;
+        CameraZoom = Camera.main;
     }
 
     public void OnLook (InputAction.CallbackContext context)
@@ -49,6 +53,19 @@ public class CameraManager : MonoBehaviour
         {
             transform.Rotate(new Vector3(_xRotation, -_delta.x * rotationSpeed, 0.0f));
             transform.rotation = Quaternion.Euler(_xRotation, transform.rotation.eulerAngles.y, 0.0f);
+        }
+
+        if (CameraZoom.orthographicSize > 1 && CameraZoom.orthographicSize < 7)
+        {
+            CameraZoom.orthographicSize -= Input.GetAxis("Mouse ScrollWheel") * sensitivity;
+        }
+        else if (CameraZoom.orthographicSize > 1)
+        {
+            CameraZoom.orthographicSize = 6.99f;
+        }      
+        else if (CameraZoom.orthographicSize < 7)
+        {
+            CameraZoom.orthographicSize = 1.01f;
         }
     }
 }

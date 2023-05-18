@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PoolingManager : MonoBehaviour
 {
@@ -115,6 +116,14 @@ public class PoolingManager : MonoBehaviour
 	    foreach (var go in pooledObjectsList[index])
 	    {
 		    go.SetActive(false);
+	    }
+    }    
+    
+    public void RemoveListener(int index)
+    {
+	    foreach (var go in pooledObjectsList[index])
+	    {
+		    go.transform.GetChild(2).GetComponent<Button>().onClick.RemoveAllListeners();
 	    }
     }
 }

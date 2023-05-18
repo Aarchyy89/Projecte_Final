@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
     private int woodPlayer;
     private int stonePlayer;
     
+    private int totalConstructions;
+    private int totalTowers;
+    private int lvlTownHall;
+   
     public int WoodPlayer
     {
         get { return woodPlayer; }
@@ -21,6 +25,24 @@ public class GameManager : MonoBehaviour
     {
         get { return stonePlayer; }
         set { stonePlayer = value; }
+    }
+    
+    public int TotalConstructions
+    {
+        get { return totalConstructions; }
+        set { totalConstructions = value; }
+    }    
+    
+    public int TotalTowers
+    {
+        get { return totalTowers; }
+        set { totalTowers = value; }
+    }
+    
+    public int LvlTownHall
+    {
+        get { return lvlTownHall; }
+        set { lvlTownHall = value; }
     }
 
     private void Awake()

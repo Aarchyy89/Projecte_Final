@@ -189,7 +189,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &28769849
 GameObject:
@@ -207,7 +207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &28769850
 Transform:
   m_ObjectHideFlags: 0
@@ -216,7 +216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28769849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2838335, y: -2.3530262, z: -1.9398451}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -335,17 +335,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 2
+  biomaUnlocked: 2
+  biomaBuilt: 16
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
   resourcesMax: 0
   resourcesRound: 0
@@ -433,8 +433,142 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &97481689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 97481690}
+  - component: {fileID: 97481693}
+  - component: {fileID: 97481692}
+  - component: {fileID: 97481691}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &97481690
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97481689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1294110158}
+  m_Father: {fileID: 212028681}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &97481691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97481689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 97481692}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 191538447}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: TouchTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &97481692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97481689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &97481693
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97481689}
+  m_CullTransparentMesh: 1
 --- !u!1 &121444180
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,12 +603,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 9
   biomaBuilt: 2
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -567,7 +701,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148735701
 GameObject:
@@ -662,16 +796,19 @@ MonoBehaviour:
   - prefabToPool: {fileID: 919132149155446097, guid: 754cc4f3c5d084542a6e992d35957b05, type: 3}
     amountToPool: 2
     shouldExpand: 1
-  - prefabToPool: {fileID: 1994693040836722, guid: cc0b6d4b15530d942bffb81f838c93fc, type: 3}
+  - prefabToPool: {fileID: 1874994982106528, guid: 1f74b5d061c875b47ac60c1cc76c4c4b, type: 3}
+    amountToPool: 2
+    shouldExpand: 1
+  - prefabToPool: {fileID: 1874994982106528, guid: 1f74b5d061c875b47ac60c1cc76c4c4b, type: 3}
+    amountToPool: 2
+    shouldExpand: 0
+  - prefabToPool: {fileID: 7436688572290955340, guid: abe6c79bb9a745f44936b18cfd95899b, type: 3}
     amountToPool: 2
     shouldExpand: 1
   - prefabToPool: {fileID: 1763809724018642, guid: 779906fa38069b447b328c7912776cb9, type: 3}
     amountToPool: 2
     shouldExpand: 1
-  - prefabToPool: {fileID: 1763809724018642, guid: 779906fa38069b447b328c7912776cb9, type: 3}
-    amountToPool: 2
-    shouldExpand: 1
-  - prefabToPool: {fileID: 1763809724018642, guid: 779906fa38069b447b328c7912776cb9, type: 3}
+  - prefabToPool: {fileID: 8102418667458308404, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
     amountToPool: 2
     shouldExpand: 1
   - prefabToPool: {fileID: 1020711218635436, guid: dd5543970ad8a7742b587b37412bdeea, type: 3}
@@ -683,6 +820,191 @@ MonoBehaviour:
   - prefabToPool: {fileID: 2076867430301726559, guid: 7a34ef68a49945f41a4b8fa217bc903d, type: 3}
     amountToPool: 2
     shouldExpand: 0
+--- !u!1 &191538447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 191538448}
+  - component: {fileID: 191538449}
+  m_Layer: 0
+  m_Name: ----- Sistema Oleadas -----
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &191538448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191538447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &191538449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191538447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eaa18d502df8243b5d61b6e48a270a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveData_list:
+  - {fileID: 11400000, guid: 6fd3351705e777a4fa23de8db32f2c6d, type: 2}
+  - {fileID: 11400000, guid: 23febead32b3936418ba88a35f074eb7, type: 2}
+  enemyDifficultyData_list:
+  - {fileID: 11400000, guid: 0046b255199aac347bf33f628d5df029, type: 2}
+  - {fileID: 11400000, guid: a1530183e84bec9429ef5b09d3047974, type: 2}
+  waveNumber: 0
+  totalBoats: 0
+  waveActive: 0
+--- !u!1 &212028677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212028681}
+  - component: {fileID: 212028680}
+  - component: {fileID: 212028679}
+  - component: {fileID: 212028678}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &212028678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212028677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &212028679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212028677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &212028680
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212028677}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &212028681
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212028677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 97481690}
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &337861943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 337861944}
+  m_Layer: 0
+  m_Name: SpawnPoint_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &337861944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337861943}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.505}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1647958517}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &411391707
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,17 +1133,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 11
   biomaBuilt: 2
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
   resourcesMax: 0
   resourcesRound: 0
@@ -909,7 +1231,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &459389572
 GameObject:
@@ -945,12 +1267,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 7
   biomaBuilt: 2
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -1043,7 +1365,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &468111468
 GameObject:
@@ -1079,12 +1401,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 7
   biomaBuilt: 2
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -1177,7 +1499,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &648637913
 GameObject:
@@ -1213,17 +1535,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 3
   biomaBuilt: 16
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
   resourcesMax: 0
   resourcesRound: 0
@@ -1311,7 +1633,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &940024529
 GameObject:
@@ -1347,12 +1669,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 12
   biomaBuilt: 2
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -1445,7 +1767,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1032420321
 GameObject:
@@ -1525,17 +1847,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 2
+  biomaUnlocked: 2
+  biomaBuilt: 16
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
   resourcesMax: 0
   resourcesRound: 0
@@ -1623,7 +1945,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1146811101
 GameObject:
@@ -1659,17 +1981,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 2
+  biomaUnlocked: 6
+  biomaBuilt: 17
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
   resourcesMax: 0
   resourcesRound: 0
@@ -1757,7 +2079,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1179381762
 GameObject:
@@ -1793,12 +2115,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 12
   biomaBuilt: 2
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -1891,7 +2213,173 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1294110157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1294110158}
+  - component: {fileID: 1294110160}
+  - component: {fileID: 1294110159}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1294110158
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294110157}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 97481690}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1294110159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294110157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Button
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1294110160
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294110157}
+  m_CullTransparentMesh: 1
+--- !u!1 &1335675328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335675329}
+  m_Layer: 0
+  m_Name: SpawnPoint_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1335675329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335675328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.976, y: 0, z: -2.505}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1647958517}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1613559397
 GameObject:
@@ -1992,6 +2480,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 1
   rotationSpeed: 0.01
+  CameraZoom: {fileID: 0}
+  sensitivity: 1
+--- !u!1 &1647958516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1647958517}
+  - component: {fileID: 1647958518}
+  m_Layer: 0
+  m_Name: ----- Sistema Spawn -----
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1647958517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647958516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 337861944}
+  - {fileID: 1335675329}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1647958518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647958516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db3f9726a9c9a549908ec2623655f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyBoat: 20
+  current_wave: {fileID: 0}
+  spawnPoints:
+  - {fileID: 337861944}
+  - {fileID: 1335675329}
+  active_wave: 0
 --- !u!1 &1787200284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2104,7 +2646,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1790275671
 GameObject:
@@ -2140,12 +2682,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 9
   biomaBuilt: 2
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -2238,7 +2780,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830307771
 GameObject:
@@ -2274,17 +2816,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 2
+  biomaUnlocked: 4
+  biomaBuilt: 17
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
   resourcesMax: 0
   resourcesRound: 0
@@ -2372,7 +2914,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1902719135
 GameObject:
@@ -2408,17 +2950,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 2
+  biomaUnlocked: 6
+  biomaBuilt: 17
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
   resourcesMax: 0
   resourcesRound: 0
@@ -2506,7 +3048,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914422093
 GameObject:
@@ -2527,7 +3069,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1914422094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2578,7 +3120,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c5ddca5b1a37d4b4a94b4dff5226da63, type: 2}
+  - {fileID: 2100000, guid: cf051fba995609b459f0eb4baf4bb478, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2621,7 +3163,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1977544451
 GameObject:
@@ -2657,17 +3199,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 2
+  biomaUnlocked: 3
+  biomaBuilt: 16
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
   resourcesMax: 0
   resourcesRound: 0
@@ -2755,7 +3297,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2010135792
 GameObject:
@@ -2791,17 +3333,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   biomaType: 
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 2
+  biomaUnlocked: 3
+  biomaBuilt: 16
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
   resourcesMax: 0
   resourcesRound: 0
@@ -2889,7 +3431,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1887014037065970
 GameObject:
@@ -2924,7 +3466,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23393011338244166
 MeshRenderer:
@@ -3007,14 +3549,14 @@ MonoBehaviour:
   biomaUnlocked: 2
   biomaBuilt: 16
   towerPrefab: 13
-  selectedAble: 20
-  selectedUnable: 21
-  UI: 22
+  selectedAble: 21
+  selectedUnable: 22
+  UI: 23
   nearBiomaList: []
   isAvailable: 1
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
   resourcesMax: 0
   resourcesRound: 0

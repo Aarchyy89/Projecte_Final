@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,44 +8,25 @@ public class Sistema_Oleadas : MonoBehaviour
     // Singleton
     public static Sistema_Oleadas Instance;
     
-    [Header("----- Variables -----")] 
-    public List<WaveData> waveData_list;
+    [Header("----- Wave Variables -----")] 
+    [SerializeField] private List<WaveData> waveData_list;
+    [SerializeField] private List<EnemyDifficultyData> enemyDifficultyData_list;
 
     [Tooltip("Current Wave")]
     public int waveNumber = 0;
     
     [Tooltip("Total number of enemies in the wave")]
-    public int totalEnemies;
-    
-    [Tooltip("Number of enemies the player has eliminated")]
-    private int defeatedEnemies;
-    
+    public int totalBoats;
+    private int totalEnemies;
+
     [Tooltip("Waiting time between one round and another")]
     private float timeBetweenRounds = 30;
-    
-    
-    
-    public bool CheckEndRound()
-    {
-        if (totalEnemies <= 0)
-        {
-            return true;
-        }
-        
-        return false;
-    }
-    
-    public int TotalEnemies
-    {
-        get {return totalEnemies; }
-        set {totalEnemies = value; }
-    }
-    
-    public int DefeatedEnemies
-    {
-        get {return defeatedEnemies; }
-        set {defeatedEnemies = value; }
-    }
+
+    [Header("----- Wave Trigger -----")]
+    private IEnumerator currentCoroutine;
+
+    private bool timerActive;
+    public bool waveActive;
 
     private void Awake()
     {
@@ -58,13 +39,9 @@ public class Sistema_Oleadas : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 
-    private void Start()
-    {
-        StartRound();
-    }
-
-    public void StartRound()
+    private void StartRound()
     {
         StartWave();
         
@@ -76,18 +53,60 @@ public class Sistema_Oleadas : MonoBehaviour
     {
         if (waveData_list != null && waveData_list.Count > 0)
         {
+            totalBoats = waveData_list[waveNumber].TotalEnemyBoats;
             totalEnemies = waveData_list[waveNumber].TotalEnemies;
             Sistema_Spawn.Instance.current_wave = waveData_list[waveNumber];
         }
     }
     
+    private bool CheckNextRound()
+    {
+        if (enemyDifficultyData_list[waveNumber].TotalConstructions >= GameManager.instance.TotalConstructions 
+            && enemyDifficultyData_list[waveNumber].TotalTowers >= GameManager.instance.TotalTowers
+            && enemyDifficultyData_list[waveNumber].LvlTownHall >= GameManager.instance.LvlTownHall)
+        {
+            return true;
+        }
+        
+        return false;
+    }
+    
     public void Checker()
     {
-        if (CheckEndRound() && waveNumber != waveData_list.Count)
+        if (CheckNextRound() && waveNumber != waveData_list.Count)
         {
-            ++waveNumber; //Increment by 1. Same as:  waveNumber = waveNumber + 1;
-            // Void activate menu upgrade
-            StartRound();
+            ++waveNumber;
+        }
+        
+        StartRound();
+    }
+    
+    public void TouchTrigger()
+    {
+        if (!waveActive)
+        {
+            StopCoroutine(TimerTriggerEnemy());
+            
+            currentCoroutine = TimerTriggerEnemy();
+            StartCoroutine(currentCoroutine);
+        }
+    }
+
+    IEnumerator TimerTriggerEnemy()
+    {
+        float timer = 0;
+        
+        while (timerActive)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= timeBetweenRounds)
+            {
+                Checker();
+                timerActive = false;
+            }
+            
+            yield return null;
         }
     }
 }

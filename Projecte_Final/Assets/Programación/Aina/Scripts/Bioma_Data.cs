@@ -126,7 +126,7 @@ public class Bioma_Data : Resources_Controller
         PoolingManager.Instance.DesactivatePooledObject((int)UI);
         PoolingManager.Instance.DesactivatePooledObject((int)selectedAble);
         PoolingManager.Instance.DesactivatePooledObject((int)selectedUnable);
-        PoolingManager.Instance.RemoveListener((int)UI);
+        PoolingManager.Instance.RemoveListener((int)UI, 3);
     }
 
     private void Instantiate_Able()
@@ -143,11 +143,23 @@ public class Bioma_Data : Resources_Controller
         unable_local.SetActive(true);
     }
     
-    private void Instantiate_Build(GameObject parent, PoolingItemsEnum itemsEnum)
+    private void Instantiate_Unlock()
     {
-        parent = PoolingManager.Instance.GetPooledObject((int)itemsEnum);
-        parent.transform.position = transform.position;
-        parent.SetActive(true);
+        unlocked_local = PoolingManager.Instance.GetPooledObject((int)biomaUnlocked);
+        unlocked_local.transform.position = transform.position;
+        unlocked_local.SetActive(true);
+    }
+    private void Instantiate_Build()
+    {
+        build_local = PoolingManager.Instance.GetPooledObject((int)biomaBuilt);
+        build_local.transform.position = transform.position;
+        build_local.SetActive(true);
+    }
+    private void Instantiate_Tower()
+    {
+        tower_local = PoolingManager.Instance.GetPooledObject((int)towerPrefab);
+        tower_local.transform.position = transform.position;
+        tower_local.SetActive(true);
     }
     
 
@@ -188,7 +200,7 @@ public class Bioma_Data : Resources_Controller
                     Instantiate_Unable();
                 }
             }
-            else if(isUnlocked && !isBuilt && !canBuild && !isTower || isBuilt && resourcesMax <= 0 && !isTower)
+            else if(isUnlocked && !isBuilt && !canBuild && !isTower || isUnlocked && isBuilt && resourcesMax == 0 && !isTower)
             {
                 ActivateUI(costWoodTower,costStoneTower);
 
@@ -216,8 +228,9 @@ public class Bioma_Data : Resources_Controller
         ui_local.SetActive(false);
         able_local.SetActive(false);
 
-        Instantiate_Build(unlocked_local, biomaUnlocked);
+        Instantiate_Unlock();
         MakeAvailableNearBiomes();
+        GameManager.instance.RefreshUITxt();
     }
     
     private void BuildHexagon()
@@ -231,9 +244,10 @@ public class Bioma_Data : Resources_Controller
         ui_local.SetActive(false);
         able_local.SetActive(false);
 
-        Instantiate_Build(build_local, biomaBuilt);
+        Instantiate_Build();
         
         IncreaseResource();
+        GameManager.instance.RefreshUITxt();
     }
     
     private void BuildTower()
@@ -246,8 +260,12 @@ public class Bioma_Data : Resources_Controller
 
         ui_local.SetActive(false);
         able_local.SetActive(false);
+        unlocked_local.SetActive(false);
+        
+        if (build_local != null) build_local.SetActive(false);
 
-        Instantiate_Build(tower_local, towerPrefab);
+        Instantiate_Tower();
+        GameManager.instance.RefreshUITxt();
     }
 }
 

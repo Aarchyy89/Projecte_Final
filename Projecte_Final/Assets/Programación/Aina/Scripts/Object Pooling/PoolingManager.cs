@@ -119,11 +119,11 @@ public class PoolingManager : MonoBehaviour
 	    }
     }    
     
-    public void RemoveListener(int index)
+    public void RemoveListener(int index, int child)
     {
 	    foreach (var go in pooledObjectsList[index])
 	    {
-		    go.transform.GetChild(3).GetComponent<Button>().onClick.RemoveAllListeners();
+		    go.transform.GetChild(child).GetComponent<Button>().onClick.RemoveAllListeners();
 	    }
     }
 }

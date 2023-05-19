@@ -63,5 +63,12 @@ public class GameManager : MonoBehaviour
 
         woodPlayer = 100;
         stonePlayer = 100;
+        RefreshUITxt();
+    }
+
+    public void RefreshUITxt()
+    {
+        woodText.text = $"{woodPlayer}";
+        stoneText.text = $"{stonePlayer}";
     }
 }

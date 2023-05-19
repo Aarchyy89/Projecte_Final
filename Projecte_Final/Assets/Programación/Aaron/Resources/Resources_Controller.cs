@@ -66,10 +66,11 @@ public class Resources_Controller : MonoBehaviour
         
         if (resourcesMax > 0) 
         {
+            currentCoroutine = Coroutine_IncreaseResource();
             StartCoroutine(currentCoroutine);
         }
         
-        localUI.gameObject.SetActive(true);
-        PoolingManager.Instance.RemoveListener((int)UI_Resource);
+        localUI.gameObject.SetActive(false);
+        PoolingManager.Instance.RemoveListener((int)UI_Resource, 1);
     }
 }

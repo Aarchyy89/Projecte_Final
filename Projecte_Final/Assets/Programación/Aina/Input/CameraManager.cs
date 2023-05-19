@@ -41,9 +41,20 @@ public class CameraManager : MonoBehaviour
     {
         if (_isMoving)
         {
+            Vector3 local = gameObject.transform.position;
+
             var position = transform.right * (_delta.x * -movementSpeed);
             position += transform.up * (_delta.y * -movementSpeed);
             transform.position += position * Time.deltaTime;
+
+            if (gameObject.transform.position.x >= 10 || gameObject.transform.position.x <= -10)
+            {
+                gameObject.transform.position = local;
+            }
+            if (gameObject.transform.position.y >= 5 || gameObject.transform.position.y <= -5)
+            {
+                gameObject.transform.position = local;
+            }
         }
 
         if (_isRotating)

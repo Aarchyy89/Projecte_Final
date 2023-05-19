@@ -1,35 +1,54 @@
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class Resources_Controller : MonoBehaviour
 {
     public static Resources_Controller instance;
+    
+    private IEnumerator currentCoroutine;
+    
+    public int resourcesMax;
+    
+    public int resourcesRound;
 
-    private void Awake()
+    public float resourcesTime;
+
+    public int biomaType;
+    
+    public PoolingItemsEnum UI_Resource;
+
+    public void IncreaseResource()
     {
-        instance = this;    
+        //hacer animacion
+        currentCoroutine = Coroutine_IncreaseResource();
+        StartCoroutine(currentCoroutine);
     }
-
-    public IEnumerator SubirMadera()
+    
+    private IEnumerator Coroutine_IncreaseResource()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(resourcesTime);
 
-        LevelManager.instance.current_wood += 15;
-        LevelManager.instance.text_wood.text = LevelManager.instance.current_wood + "";
-    }
-
-    public void IncreaseMadera()
-    {
-        if(Input.GetKeyDown(KeyCode.P))
-            
+        switch (biomaType)
         {
-            //hacer animacion
-            StartCoroutine(SubirMadera());
+            case 1:
+            {
+                GameManager.instance.WoodPlayer += resourcesRound;
+                GameManager.instance.woodText.text = $"{GameManager.instance.WoodPlayer}";
+                break;
+            }
+            case 2:
+            {
+                GameManager.instance.StonePlayer += resourcesRound;
+                GameManager.instance.stoneText.text = $"{GameManager.instance.StonePlayer}";
+                break;
+            }
+        }
 
+        resourcesMax -= resourcesRound;
+
+        if (resourcesMax > 0) 
+        {
+            StartCoroutine(currentCoroutine);
         }
     }
-
-
 }

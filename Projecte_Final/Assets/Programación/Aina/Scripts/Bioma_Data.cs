@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Bioma_Data : MonoBehaviour
+public class Bioma_Data : Resources_Controller
 {
     [SerializeField, Tooltip("What the biome produces")]
     private string biomaType;
@@ -80,35 +80,7 @@ public class Bioma_Data : MonoBehaviour
     private GameObject unlocked_local;
     private GameObject build_local;
     private GameObject tower_local;
-
-    // Getters
     
-    public string BiomaType => biomaType;
-    
-    public List<Bioma_Data> NearBiomaList => nearBiomaList;
-
-    public bool IsUnlocked => isUnlocked;
-    
-    public bool IsAvailable => isAvailable;
-    
-    public bool IsBuilt => isBuilt;
-    
-    public bool CanBuild => canBuild;
-    
-    public int ResourcesMax => resourcesMax;
-    
-    public int ResourcesRound => resourcesRound;
-    
-    public float ResourcesTime => resourcesTime;
-    
-    public int CostWoodUnlock => costWoodUnlock;
-
-    public int CostStoneUnlock => costStoneUnlock;
-    
-    public int CostWoodBuilt => costWoodBuilt;
-
-    public int CostStoneBuilt => costStoneBuilt;
-
     private void Start()
     {
         GetNearBiomes();
@@ -272,7 +244,15 @@ public class Bioma_Data : MonoBehaviour
         able_local.SetActive(false);
 
         Instantiate_Build(build_local, biomaBuilt);
-        //Resources_Controller.instance.
+        
+        if (biomaType == "wood")
+        {
+            IncreaseResource();
+        }
+        else if (biomaType == "stone")
+        {
+            IncreaseResource();
+        }
     }
     
     private void BuildTower()

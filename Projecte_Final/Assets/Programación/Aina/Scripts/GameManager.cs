@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -14,7 +15,11 @@ public class GameManager : MonoBehaviour
     private int totalConstructions;
     private int totalTowers;
     private int lvlTownHall;
-   
+
+    [Header("----- UI Variables -----")] 
+    public TMP_Text woodText;
+    public TMP_Text stoneText;
+        
     public int WoodPlayer
     {
         get { return woodPlayer; }

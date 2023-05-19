@@ -20,7 +20,7 @@ public class Sistema_Oleadas : MonoBehaviour
     private int totalEnemies;
 
     [Tooltip("Waiting time between one round and another")]
-    private float timeBetweenRounds = 30;
+    [SerializeField] private float timeBetweenRounds = 30;
 
     [Header("----- Wave Trigger -----")]
     private IEnumerator currentCoroutine;
@@ -39,7 +39,11 @@ public class Sistema_Oleadas : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
+    private void Start()
+    {
+        Checker();
+    }
 
     private void StartRound()
     {
@@ -71,7 +75,7 @@ public class Sistema_Oleadas : MonoBehaviour
         return false;
     }
     
-    public void Checker()
+    private void Checker()
     {
         if (CheckNextRound() && waveNumber != waveData_list.Count)
         {
@@ -79,6 +83,17 @@ public class Sistema_Oleadas : MonoBehaviour
         }
         
         StartRound();
+    }
+    
+    public void BuildTrigger()
+    {
+        if (!waveActive)
+        {
+            StopCoroutine(TimerTriggerEnemy());
+
+            Checker();
+            waveActive = true;
+        }
     }
     
     public void TouchTrigger()
@@ -89,6 +104,7 @@ public class Sistema_Oleadas : MonoBehaviour
             
             currentCoroutine = TimerTriggerEnemy();
             StartCoroutine(currentCoroutine);
+            waveActive = true;
         }
     }
 

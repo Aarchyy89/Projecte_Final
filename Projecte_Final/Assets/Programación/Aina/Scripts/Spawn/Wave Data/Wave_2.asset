@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a84e0f97e4519649a181c333a71002e, type: 3}
   m_Name: Wave_2
   m_EditorClassIdentifier: 
-  spawnTimer_min: 1
-  spawnTimer_max: 2
-  totalEnemyBoats: 1
-  totalEnemies: 5
-  enemyAttackStats: 5
-  enemySpeedStats: 2
+  spawnTimer_min: 2
+  spawnTimer_max: 3
+  totalEnemyBoats: 2
+  totalEnemies: 6
+  enemyAttackStats: 6
+  enemySpeedStats: 3

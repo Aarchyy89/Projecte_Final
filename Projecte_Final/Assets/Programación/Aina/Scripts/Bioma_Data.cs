@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -158,8 +156,8 @@ public class Bioma_Data : MonoBehaviour
         ui_local = PoolingManager.Instance.GetPooledObject((int)UI);
         ui_local.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
         
-        ui_local.transform.GetChild(0).GetComponent<TMP_Text>().text = $"{costWood}";
-        ui_local.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costStone}";
+        ui_local.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costWood}";
+        ui_local.transform.GetChild(2).GetComponent<TMP_Text>().text = $"{costStone}";
         ui_local.gameObject.SetActive(true);
     }
     
@@ -205,7 +203,7 @@ public class Bioma_Data : MonoBehaviour
                 
                 if (GameManager.instance.WoodPlayer >= costWoodUnlock && GameManager.instance.StonePlayer >= costStoneUnlock)
                 {
-                    ui_local.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
+                    ui_local.gameObject.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
                    
                     Instantiate_Able();
                 }
@@ -221,7 +219,7 @@ public class Bioma_Data : MonoBehaviour
 
                 if (GameManager.instance.WoodPlayer >= costWoodBuilt && GameManager.instance.StonePlayer >= costStoneBuilt)
                 {
-                    ui_local.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(BuildHexagon);
+                    ui_local.gameObject.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(BuildHexagon);
                    
                     Instantiate_Able();
                 }
@@ -236,7 +234,7 @@ public class Bioma_Data : MonoBehaviour
 
                 if (GameManager.instance.WoodPlayer >= costWoodTower && GameManager.instance.StonePlayer >= costStoneTower)
                 {
-                    ui_local.gameObject.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(BuildTower);
+                    ui_local.gameObject.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(BuildTower);
                    
                     Instantiate_Able();
                 }

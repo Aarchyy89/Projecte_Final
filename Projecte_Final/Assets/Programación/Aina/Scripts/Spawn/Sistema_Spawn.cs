@@ -79,6 +79,8 @@ public class Sistema_Spawn : MonoBehaviour
         if (sistemaOleadas.totalBoats <= 0)
         {
             active_wave = false;
+            sistemaOleadas.waveActive = false;
+
         }
     }
 }

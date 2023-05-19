@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,8 +10,8 @@ public class CameraManager : MonoBehaviour
 
     private float _xRotation;
 
-    [SerializeField] private float movementSpeed = 0.4f;
-    [SerializeField] private float rotationSpeed = 0.01f;
+    [SerializeField] private float movementSpeed;
+    [SerializeField] private float rotationSpeed;
 
     [SerializeField] private Camera CameraZoom;
     [SerializeField] private float sensitivity;

@@ -1,5 +1,7 @@
 using System.Collections;
+using System.Reflection.Emit;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Resources_Controller : MonoBehaviour
 {
@@ -17,6 +19,8 @@ public class Resources_Controller : MonoBehaviour
     
     public PoolingItemsEnum UI_Resource;
 
+    private GameObject localUI;
+
     public void IncreaseResource()
     {
         //hacer animacion
@@ -28,6 +32,20 @@ public class Resources_Controller : MonoBehaviour
     {
         yield return new WaitForSeconds(resourcesTime);
 
+        ActivateUI();
+    }
+    
+    private void ActivateUI()
+    {
+        localUI = PoolingManager.Instance.GetPooledObject((int)UI_Resource);
+        localUI.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+        
+        localUI.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(Harvest);
+        localUI.gameObject.SetActive(true);
+    }
+
+    private void Harvest()
+    {
         switch (biomaType)
         {
             case 1:
@@ -45,10 +63,13 @@ public class Resources_Controller : MonoBehaviour
         }
 
         resourcesMax -= resourcesRound;
-
+        
         if (resourcesMax > 0) 
         {
             StartCoroutine(currentCoroutine);
         }
+        
+        localUI.gameObject.SetActive(true);
+        PoolingManager.Instance.RemoveListener((int)UI_Resource);
     }
 }

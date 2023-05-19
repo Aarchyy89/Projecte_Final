@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class Bioma_Data : Resources_Controller
 {
-    [SerializeField, Tooltip("What the biome produces")]
-    private string biomaType;
-
     [SerializeField, Tooltip("Starter and current biome")]
     private PoolingItemsEnum biomaClouds;
 
@@ -47,15 +44,6 @@ public class Bioma_Data : Resources_Controller
     [SerializeField, Tooltip("Bool to check if the biome has a tower")]
     private bool isTower;
 
-    [SerializeField, Tooltip("Maximum number of total resources the parcel can produce")]
-    private int resourcesMax;
-    
-    [SerializeField, Tooltip("Number of resources the parcel produces after x time")]
-    private int resourcesRound;
-
-    [SerializeField, Tooltip("Number of time between extracting resources")]
-    private float resourcesTime;
-    
     [SerializeField, Tooltip("Number of wood you need to unlock the parcel")]
     private int costWoodUnlock;
 
@@ -245,14 +233,7 @@ public class Bioma_Data : Resources_Controller
 
         Instantiate_Build(build_local, biomaBuilt);
         
-        if (biomaType == "wood")
-        {
-            IncreaseResource();
-        }
-        else if (biomaType == "stone")
-        {
-            IncreaseResource();
-        }
+        IncreaseResource();
     }
     
     private void BuildTower()

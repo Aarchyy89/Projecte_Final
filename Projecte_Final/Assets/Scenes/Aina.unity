@@ -333,7 +333,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 2
   biomaBuilt: 16
@@ -347,9 +351,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -601,7 +602,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 9
   biomaBuilt: 2
@@ -615,9 +620,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -818,6 +820,9 @@ MonoBehaviour:
     amountToPool: 2
     shouldExpand: 1
   - prefabToPool: {fileID: 2076867430301726559, guid: 7a34ef68a49945f41a4b8fa217bc903d, type: 3}
+    amountToPool: 2
+    shouldExpand: 0
+  - prefabToPool: {fileID: 2076867430301726559, guid: cd5ba720f7713fc4bb33618962bd5087, type: 3}
     amountToPool: 2
     shouldExpand: 0
 --- !u!1 &191538447
@@ -1132,7 +1137,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 11
   biomaBuilt: 2
@@ -1146,9 +1155,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -1266,7 +1272,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 7
   biomaBuilt: 2
@@ -1280,9 +1290,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -1400,7 +1407,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 7
   biomaBuilt: 2
@@ -1414,9 +1425,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -1534,7 +1542,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 3
   biomaBuilt: 16
@@ -1548,9 +1560,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -1668,7 +1677,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 12
   biomaBuilt: 2
@@ -1682,9 +1695,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -1799,6 +1809,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac6bb837de4b6049b6cb1905cac1d24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  woodText: {fileID: 0}
+  stoneText: {fileID: 0}
 --- !u!4 &1032420323
 Transform:
   m_ObjectHideFlags: 0
@@ -1846,7 +1858,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 2
   biomaBuilt: 16
@@ -1860,9 +1876,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -1980,7 +1993,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 6
   biomaBuilt: 17
@@ -1994,9 +2011,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -2114,7 +2128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 12
   biomaBuilt: 2
@@ -2128,9 +2146,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -2681,7 +2696,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 9
   biomaBuilt: 2
@@ -2695,9 +2714,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -2815,7 +2831,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 4
   biomaBuilt: 17
@@ -2829,9 +2849,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -2949,7 +2966,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 6
   biomaBuilt: 17
@@ -2963,9 +2984,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -3198,7 +3216,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 3
   biomaBuilt: 16
@@ -3212,9 +3234,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -3332,7 +3351,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 0
+  resourcesRound: 0
+  resourcesTime: 0
+  biomaType: 0
+  UI_Resource: 0
   biomaClouds: 0
   biomaUnlocked: 3
   biomaBuilt: 16
@@ -3346,9 +3369,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 0
   costStoneUnlock: 0
   costWoodBuilt: 0
@@ -3545,7 +3565,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biomaType: 
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 1
+  biomaType: 1
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 2
   biomaBuilt: 16
@@ -3559,9 +3583,6 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
   costWoodUnlock: 55
   costStoneUnlock: 5
   costWoodBuilt: 2

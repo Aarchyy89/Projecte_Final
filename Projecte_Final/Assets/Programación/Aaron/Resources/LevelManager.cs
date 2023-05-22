@@ -12,9 +12,10 @@ public class LevelManager : MonoBehaviour
     public GameObject punto_instantiate_edif;
 
     private int current_edif;
-    private int current_Hp_edif;
+    public int current_Hp_edif;
     public int edif_mejora_1;
 
+    public bool Puedo_Mejorar;
 
     public static LevelManager instance;
 
@@ -40,13 +41,14 @@ public class LevelManager : MonoBehaviour
         }
 
         Recuento_Edif();
-
-        if(current_edif >= edif_mejora_1)
+        //Mejora_1();
+       
+        if(Puedo_Mejorar)
         {
-            Debug.Log("Estoy mejorandome");
-            current_Hp_edif = current_Hp_edif + 10;
+            Town_Hall_.instance.Mejora();
+            Puedo_Mejorar = false;
+            Debug.Log("false");
         }
-
 
 
     }
@@ -54,6 +56,15 @@ public class LevelManager : MonoBehaviour
     public void Recuento_Edif()
     {
         current_edif = edificios.Count; 
+    }
+
+    public void Mejora_1()
+    {
+        if (current_edif >= edif_mejora_1)
+        {
+            Puedo_Mejorar = true;
+            Debug.Log("true");
+        }
     }
 
 

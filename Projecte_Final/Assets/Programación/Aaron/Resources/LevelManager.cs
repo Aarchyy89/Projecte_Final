@@ -11,6 +11,11 @@ public class LevelManager : MonoBehaviour
     public GameObject edif;
     public GameObject punto_instantiate_edif;
 
+    [Header("---TH MESHES----")]
+    [SerializeField] private GameObject th_1;
+    [SerializeField] public GameObject th_2;
+    [SerializeField] public GameObject th_3;
+
     private int current_edif;
     public int current_Hp_edif;
     public int edif_mejora_1;
@@ -41,7 +46,7 @@ public class LevelManager : MonoBehaviour
         }
 
         Recuento_Edif();
-        //Mejora_1();
+        Town_Hall_.instance.Cambio_de_Mesh();
        
         if(Puedo_Mejorar)
         {
@@ -58,6 +63,7 @@ public class LevelManager : MonoBehaviour
         current_edif = edificios.Count; 
     }
 
+    //FUNCION QUE COMPRUEBA CADA VEZ QUE CONSTRUYES SI SE CUMPLE EL REQUISITO PARA MEJORAR A FASE 1
     public void Mejora_1()
     {
         if (current_edif >= edif_mejora_1)

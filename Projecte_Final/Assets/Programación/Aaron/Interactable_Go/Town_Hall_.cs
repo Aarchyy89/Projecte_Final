@@ -14,16 +14,21 @@ public class Town_Hall_ : MonoBehaviour
     //STATS SISTEMA DE MEJORA
     //SE UPGRADEA CADA X EDIFICIOS CONSTRUIDOS -> SUBIDA DE STATS 
 
-    //[Header("---fillable---")]
+    [Header("---fillable---")]
     //[SerializeField] private Slider health_bar;
+    [SerializeField] private GameObject VFX_mEJORA;
+
+    [Header("---Cambio Mesh Timer---")]
+    [SerializeField] private float time_to_swapmesh = 3f;
+    [SerializeField] private float TH_Mesh_timer = 0f;
+
+    public bool jejeje;
 
     public static Town_Hall_ instance;
 
     //----LOGICAS----
 
     //TAKE_DAMAGE
-
-    //LOGICA MEJORA
 
     //LOGICA MUERTE
 
@@ -43,11 +48,34 @@ public class Town_Hall_ : MonoBehaviour
 
     public void Mejora()
     {
+        //mejoro vida
         TH_HP = TH_HP + hp_amount;
-        //---LLAMAR POR EVENTO---
-        //llamar vfx
-        //cambiar gameobject
+
+        //llamo vfx
+        VFX_mEJORA.SetActive(true);
+        
+        //Destruyo el gameObjt
+        Destroy(VFX_mEJORA, 3f);
+        Destroy(gameObject, 2.2f);
+        jejeje = true;
     }
+
+    public void Cambio_de_Mesh()
+    {
+        if (jejeje == true)
+        {
+            TH_Mesh_timer += Time.deltaTime;
+        }
+
+        if (TH_Mesh_timer >= time_to_swapmesh)
+        {
+            LevelManager.instance.th_2.SetActive(true);
+            jejeje = false;
+            TH_Mesh_timer = 0;
+        }
+    }
+
+
 
 
 

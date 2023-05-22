@@ -36,8 +36,7 @@ public class Bala_Escopeta : MonoBehaviour
 
     public void HitTarget()
     {
-        //LevelManager.INSTANCE.FinishedGAME();
-        //Debug.Log("Hit");
+        Pirate.instance.TAKE_damage();
         Destroy(gameObject);
     }
 }

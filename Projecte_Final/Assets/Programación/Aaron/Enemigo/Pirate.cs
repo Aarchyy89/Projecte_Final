@@ -77,7 +77,7 @@ public class Pirate : MonoBehaviour
 
     }
 
-    private void TAKE_damage()
+    public void TAKE_damage()
     {
         HP -= damage_amount;
         //Health_bar.value = HP;

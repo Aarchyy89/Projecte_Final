@@ -5,13 +5,16 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public TMP_Text text_stone;
-    public TMP_Text text_wood;
+    public List<GameObject> edificios;
 
-    public int max_wood;
-    public int max_stone;
-    public float current_wood;
-    public int current_stone;
+    [Header("Fillable")]
+    public GameObject edif;
+    public GameObject punto_instantiate_edif;
+
+    private int current_edif;
+    private int current_Hp_edif;
+    public int edif_mejora_1;
+
 
     public static LevelManager instance;
 
@@ -20,9 +23,37 @@ public class LevelManager : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        edificios = new List<GameObject>();
+    }
+
     private void Update()
     {
         //Resources_Controller.instance.IncreaseMadera();
+        current_Hp_edif = Town_Hall_.instance.TH_HP;
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            Instantiate(edif, punto_instantiate_edif.transform.position, punto_instantiate_edif.transform.rotation);
+            edificios.Add(edif);
+        }
+
+        Recuento_Edif();
+
+        if(current_edif >= edif_mejora_1)
+        {
+            Debug.Log("Estoy mejorandome");
+            current_Hp_edif = current_Hp_edif + 10;
+        }
+
+
+
+    }
+
+    public void Recuento_Edif()
+    {
+        current_edif = edificios.Count; 
     }
 
 

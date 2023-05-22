@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Resources_Controller : MonoBehaviour
 {
-    public static Resources_Controller instance;
-    
     private IEnumerator currentCoroutine;
+
+    public bool Producing;
     
     public int resourcesMax;
     
@@ -26,6 +26,7 @@ public class Resources_Controller : MonoBehaviour
         //hacer animacion
         currentCoroutine = Coroutine_IncreaseResource();
         StartCoroutine(currentCoroutine);
+        Producing = true;
     }
     
     private IEnumerator Coroutine_IncreaseResource()
@@ -68,9 +69,11 @@ public class Resources_Controller : MonoBehaviour
         {
             currentCoroutine = Coroutine_IncreaseResource();
             StartCoroutine(currentCoroutine);
+            Producing = true;
         }
         
         localUI.gameObject.SetActive(false);
         PoolingManager.Instance.RemoveListener((int)UI_Resource, 1);
+        Producing = false;
     }
 }

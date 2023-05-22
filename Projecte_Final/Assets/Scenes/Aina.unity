@@ -189,7 +189,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &28769849
 GameObject:
@@ -215,13 +215,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28769849}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &28769851
 MonoBehaviour:
@@ -333,11 +333,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 2
   biomaBuilt: 16
@@ -345,6 +346,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -434,7 +436,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &97481689
 GameObject:
@@ -602,11 +604,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 9
   biomaBuilt: 2
@@ -614,6 +617,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -703,7 +707,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148735701
 GameObject:
@@ -729,13 +733,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148735701}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &148735703
 MonoBehaviour:
@@ -825,6 +829,24 @@ MonoBehaviour:
   - prefabToPool: {fileID: 2076867430301726559, guid: cd5ba720f7713fc4bb33618962bd5087, type: 3}
     amountToPool: 2
     shouldExpand: 0
+  - prefabToPool: {fileID: 7513460416401817273, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+    amountToPool: 2
+    shouldExpand: 0
+  - prefabToPool: {fileID: 5500779921306309024, guid: 002bc30fa46531c4d80ce972182d13b1, type: 3}
+    amountToPool: 5
+    shouldExpand: 1
+  - prefabToPool: {fileID: 6282705502977330897, guid: 0edaafff1163d554c950e18c1836628b, type: 3}
+    amountToPool: 5
+    shouldExpand: 1
+  - prefabToPool: {fileID: 4856200070859888022, guid: 7ce8a899d1c9fc04aab0c8caab7d8e00, type: 3}
+    amountToPool: 5
+    shouldExpand: 1
+  - prefabToPool: {fileID: 2712591032114247415, guid: cd374a0d5c0337d4480712bd277c91d5, type: 3}
+    amountToPool: 2
+    shouldExpand: 0
+  - prefabToPool: {fileID: 374518205036779870, guid: 8af0ac54d0186604ba65dd5e44c5f6e1, type: 3}
+    amountToPool: 5
+    shouldExpand: 1
 --- !u!1 &191538447
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,13 +871,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191538447}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &191538449
 MonoBehaviour:
@@ -975,7 +997,7 @@ RectTransform:
   - {fileID: 2121108158}
   - {fileID: 272396526}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1240,7 +1262,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &455103492
 GameObject:
@@ -1274,11 +1296,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 11
   biomaBuilt: 2
@@ -1286,6 +1309,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -1375,7 +1399,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &459389572
 GameObject:
@@ -1409,11 +1433,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 7
   biomaBuilt: 2
@@ -1421,6 +1446,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -1510,7 +1536,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &468111468
 GameObject:
@@ -1544,11 +1570,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 7
   biomaBuilt: 2
@@ -1556,6 +1583,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -1645,7 +1673,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &648637913
 GameObject:
@@ -1679,11 +1707,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
-  biomaType: 0
-  UI_Resource: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
+  biomaType: 1
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 3
   biomaBuilt: 16
@@ -1691,6 +1720,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -1780,7 +1810,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &940024529
 GameObject:
@@ -1814,11 +1844,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 12
   biomaBuilt: 2
@@ -1826,6 +1857,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -1915,7 +1947,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1032420321
 GameObject:
@@ -1955,13 +1987,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032420321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1142648689
 GameObject:
@@ -1995,11 +2027,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 2
   biomaBuilt: 16
@@ -2007,6 +2040,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -2096,7 +2130,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1146811101
 GameObject:
@@ -2130,11 +2164,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 6
   biomaBuilt: 17
@@ -2142,6 +2177,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -2231,7 +2267,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1179381762
 GameObject:
@@ -2265,11 +2301,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 12
   biomaBuilt: 2
@@ -2277,6 +2314,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -2366,7 +2404,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1294110157
 GameObject:
@@ -2534,6 +2572,67 @@ Transform:
   m_Father: {fileID: 1647958517}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1420578530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1083525817, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 455c45149ecc280479309c19446f04e6, type: 2}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9436452
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0005000305
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8346523
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444253758241388261, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7783519738430778463, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
+      propertyPath: m_Name
+      value: Aldenado
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ad61bd18236ac445a632c9720464bd7, type: 3}
 --- !u!1 &1613559397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +2758,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647958516}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2667,7 +2766,7 @@ Transform:
   - {fileID: 337861944}
   - {fileID: 1335675329}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1647958518
 MonoBehaviour:
@@ -2799,7 +2898,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1790275671
 GameObject:
@@ -2833,11 +2932,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 9
   biomaBuilt: 2
@@ -2845,6 +2945,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -2934,7 +3035,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830307771
 GameObject:
@@ -2968,11 +3069,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 4
   biomaBuilt: 17
@@ -2980,6 +3082,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -3069,7 +3172,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1902719135
 GameObject:
@@ -3103,11 +3206,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 6
   biomaBuilt: 17
@@ -3115,6 +3219,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -3204,7 +3309,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914422093
 GameObject:
@@ -3319,7 +3424,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1977544451
 GameObject:
@@ -3353,11 +3458,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 3
   biomaBuilt: 16
@@ -3365,6 +3471,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -3454,7 +3561,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2010135792
 GameObject:
@@ -3488,11 +3595,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  Producing: 0
+  resourcesMax: 4
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 24
   biomaClouds: 0
   biomaUnlocked: 3
   biomaBuilt: 16
@@ -3500,6 +3608,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
@@ -3589,7 +3698,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2121108157
 GameObject:
@@ -3759,7 +3868,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23393011338244166
 MeshRenderer:
@@ -3837,9 +3946,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Producing: 0
   resourcesMax: 4
   resourcesRound: 2
-  resourcesTime: 1
+  resourcesTime: 4
   biomaType: 1
   UI_Resource: 24
   biomaClouds: 0
@@ -3849,6 +3959,7 @@ MonoBehaviour:
   selectedAble: 21
   selectedUnable: 22
   UI: 23
+  VFX_Build: 0
   nearBiomaList: []
   isAvailable: 1
   isUnlocked: 0

@@ -26,6 +26,9 @@ public class Bioma_Data : Resources_Controller
     [SerializeField, Tooltip("Game Object of the tower when it's built")]
     public PoolingItemsEnum UI;
     
+    [SerializeField, Tooltip("VFX of building process")]
+    public PoolingItemsEnum VFX_Build;
+    
     [SerializeField, Tooltip("A list of the biomes around to check if you can unlock")]
     private List<Bioma_Data> nearBiomaList;
     
@@ -167,7 +170,7 @@ public class Bioma_Data : Resources_Controller
     {
         DeactivateUI();
 
-        if (isAvailable)
+        if (isAvailable && !Producing)
         {
             if (!isUnlocked)
             {
@@ -267,5 +270,6 @@ public class Bioma_Data : Resources_Controller
         Instantiate_Tower();
         GameManager.instance.RefreshUITxt();
     }
+    
 }
 

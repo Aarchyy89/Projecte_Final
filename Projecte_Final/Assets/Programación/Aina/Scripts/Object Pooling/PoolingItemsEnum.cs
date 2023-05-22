@@ -1,11 +1,10 @@
+
 public enum PoolingItemsEnum 
 {
         Clouds,
-        Village,
         Trees_1,
         Trees_2,
         Rocks_1,
-        Rocks_2,
         Mountain,
         Flowers,
         HarvestFields,
@@ -24,5 +23,11 @@ public enum PoolingItemsEnum
         Selected_able,
         Selected_unable,
         BuyUI,
-        ResourceUI
+        ResourceUI,
+        VFX_Build,
+        VFX_ResourceVillager,
+        VFX_AttackPirate,
+        VFX_AttackVillager,
+        VFX_Fireworks,
+        VFX_PirateDeath,
 }

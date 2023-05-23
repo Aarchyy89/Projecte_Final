@@ -8,6 +8,7 @@ public enum PoolingItemsEnum
         Mountain,
         Flowers,
         HarvestFields,
+        Lake,
         Cactus,
         Pyramid,
         West,

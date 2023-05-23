@@ -49,7 +49,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.13f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\a.nees\Documents\Github.projects\Projecte_Final\Projecte_Final -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\a.nees\Documents\Github.projects\Projecte_Final\Projecte_Final" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -103,6 +103,8 @@
       <workItem from="1684500700864" duration="2781000" />
       <workItem from="1684507233865" duration="3962000" />
       <workItem from="1684772719583" duration="2038000" />
+      <workItem from="1684831052355" duration="1694000" />
+      <workItem from="1684834043867" duration="597000" />
     </task>
     <servers />
   </component>

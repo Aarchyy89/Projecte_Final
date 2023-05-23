@@ -71,7 +71,8 @@ public class Bioma_Data : Resources_Controller
     private GameObject unlocked_local;
     private GameObject build_local;
     private GameObject tower_local;
-    
+    private GameObject VFXbuild_local;
+
     private void Start()
     {
         GetNearBiomes();
@@ -165,6 +166,17 @@ public class Bioma_Data : Resources_Controller
         tower_local.SetActive(true);
     }
     
+    private void Instantiate_VFXBuild()
+    {
+        VFXbuild_local = PoolingManager.Instance.GetPooledObject((int)VFX_Build);
+        VFXbuild_local.transform.position = transform.position;
+        VFXbuild_local.SetActive(true);
+    }
+    
+    private void Deactivate_VFXBuild()
+    {
+        VFXbuild_local.SetActive(false);
+    }
 
     private void OnMouseDown()
     {
@@ -247,9 +259,11 @@ public class Bioma_Data : Resources_Controller
         ui_local.SetActive(false);
         able_local.SetActive(false);
 
-        Instantiate_Build();
+        Instantiate_VFXBuild();
         
-        IncreaseResource();
+        Invoke("Instantiate_Build", 1);
+        Invoke("IncreaseResource", 1.5f);
+        
         GameManager.instance.RefreshUITxt();
     }
     

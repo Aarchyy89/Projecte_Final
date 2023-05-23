@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 022e71752654d3f4fa0cbe71b312ad20, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.66456497, g: 0.6124625, b: 0.6203083, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -385,7 +385,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &28485619
 GameObject:
@@ -485,6 +485,11 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &33611672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4425129568585013132, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+  m_PrefabInstance: {fileID: 640800566}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &78707863
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,31 +602,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
-  biomaType: 0
-  UI_Resource: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
+  biomaType: 1
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &132315790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1599,7 +1604,7 @@ RectTransform:
   - {fileID: 930259354}
   - {fileID: 686879762}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1945,31 +1950,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 5
   biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &296044124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,31 +2087,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
-  biomaType: 0
-  UI_Resource: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
+  biomaType: 2
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  biomaUnlocked: 3
+  biomaBuilt: 16
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &335409798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,7 +2498,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &446884596
 GameObject:
@@ -2607,31 +2612,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 6
   biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &454523036
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,7 +2689,7 @@ Transform:
   - {fileID: 647391890}
   - {fileID: 2005287800}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &468712166
 GameObject:
@@ -3213,6 +3218,67 @@ Transform:
   m_Father: {fileID: 1521282209}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &640800566
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.502206
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8655258
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568584715180, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568585013132, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_Name
+      value: Cloud
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425129568585013132, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be0fe4ab7d3506442b402007604b8fc3, type: 3}
 --- !u!1 &645587016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4416,31 +4482,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 5
   biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &803969760
 GameObject:
   m_ObjectHideFlags: 0
@@ -4553,31 +4619,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
-  biomaType: 0
-  UI_Resource: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
+  biomaType: 2
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  biomaUnlocked: 3
+  biomaBuilt: 16
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &804050524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5113,31 +5179,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 5
   biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &864027841
 GameObject:
   m_ObjectHideFlags: 0
@@ -5501,31 +5567,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
-  biomaType: 0
-  UI_Resource: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
+  biomaType: 2
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  biomaUnlocked: 3
+  biomaBuilt: 16
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &967840633
 GameObject:
   m_ObjectHideFlags: 0
@@ -5638,31 +5704,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 7
   biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &974713802
 GameObject:
   m_ObjectHideFlags: 0
@@ -6744,7 +6810,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1238842971
 GameObject:
@@ -7544,31 +7610,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
-  biomaType: 0
-  UI_Resource: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
+  biomaType: 1
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &1521282208
 GameObject:
   m_ObjectHideFlags: 0
@@ -7604,7 +7670,7 @@ Transform:
   - {fileID: 885500134}
   - {fileID: 2103611940}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1533001134
 GameObject:
@@ -8012,31 +8078,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
   biomaType: 0
-  UI_Resource: 0
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
+  biomaUnlocked: 6
   biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
   canBuild: 0
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &1573520993
 GameObject:
   m_ObjectHideFlags: 0
@@ -8081,7 +8147,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1694623133
 GameObject:
@@ -8289,7 +8355,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1738293687
 GameObject:
@@ -9417,31 +9483,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 0
-  resourcesRound: 0
-  resourcesTime: 0
-  biomaType: 0
-  UI_Resource: 0
+  resourcesMax: 6
+  resourcesRound: 2
+  resourcesTime: 5
+  biomaType: 1
+  UI_Resource: 23
   biomaClouds: 0
-  biomaUnlocked: 0
-  biomaBuilt: 0
-  towerPrefab: 0
-  selectedAble: 0
-  selectedUnable: 0
-  UI: 0
-  VFX_Build: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
-  costWoodUnlock: 0
-  costStoneUnlock: 0
-  costWoodBuilt: 0
-  costStoneBuilt: 0
-  costWoodTower: 0
-  costStoneTower: 0
+  costWoodUnlock: 8
+  costStoneUnlock: 8
+  costWoodBuilt: 10
+  costStoneBuilt: 10
+  costWoodTower: 15
+  costStoneTower: 15
 --- !u!1 &2086771649
 GameObject:
   m_ObjectHideFlags: 0
@@ -9668,12 +9734,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPoolList:
-  - prefabToPool: {fileID: 1994693040836722, guid: cc0b6d4b15530d942bffb81f838c93fc, type: 3}
+  - prefabToPool: {fileID: 33611672}
     amountToPool: 2
     shouldExpand: 1
-  - prefabToPool: {fileID: 1321364810359602, guid: 86ecd374d18a24841bb8d7ea4a14c0eb, type: 3}
-    amountToPool: 2
-    shouldExpand: 0
   - prefabToPool: {fileID: 1110802649544280, guid: c903a5b42ec9ea04089eb3a1f02c51c8, type: 3}
     amountToPool: 17
     shouldExpand: 1
@@ -9683,9 +9746,6 @@ MonoBehaviour:
   - prefabToPool: {fileID: 1879852619728524, guid: 30ce0138157d8e1489a8d2ec56035bb7, type: 3}
     amountToPool: 7
     shouldExpand: 1
-  - prefabToPool: {fileID: 1420964390830392, guid: b159f5b54446f7c49bfcfa4a84c81cda, type: 3}
-    amountToPool: 5
-    shouldExpand: 1
   - prefabToPool: {fileID: 1884904741310042, guid: 99903ff7f2c772241902437b5ea27a4f, type: 3}
     amountToPool: 13
     shouldExpand: 1
@@ -9694,6 +9754,9 @@ MonoBehaviour:
     shouldExpand: 1
   - prefabToPool: {fileID: 1160329352374892, guid: 1b13308cf0c0f6b4fb4f182c3fd921f1, type: 3}
     amountToPool: 3
+    shouldExpand: 1
+  - prefabToPool: {fileID: 1520068213326888, guid: d8deb0d5cca03814e8f5cd71fb9e7a1e, type: 3}
+    amountToPool: 5
     shouldExpand: 1
   - prefabToPool: {fileID: 1882949367459502, guid: 7adcc5ca25de8e543ad11014ec7de3d3, type: 3}
     amountToPool: 8
@@ -9725,11 +9788,11 @@ MonoBehaviour:
   - prefabToPool: {fileID: 7436688572290955340, guid: abe6c79bb9a745f44936b18cfd95899b, type: 3}
     amountToPool: 2
     shouldExpand: 1
-  - prefabToPool: {fileID: 1763809724018642, guid: 779906fa38069b447b328c7912776cb9, type: 3}
+  - prefabToPool: {fileID: 621240443561020514, guid: d74701794f203f549abd5286f3da6310, type: 3}
     amountToPool: 2
     shouldExpand: 1
   - prefabToPool: {fileID: 8102418667458308404, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
-    amountToPool: 2
+    amountToPool: 5
     shouldExpand: 1
   - prefabToPool: {fileID: 1020711218635436, guid: dd5543970ad8a7742b587b37412bdeea, type: 3}
     amountToPool: 2
@@ -9756,8 +9819,8 @@ MonoBehaviour:
     amountToPool: 5
     shouldExpand: 1
   - prefabToPool: {fileID: 2712591032114247415, guid: cd374a0d5c0337d4480712bd277c91d5, type: 3}
-    amountToPool: 2
-    shouldExpand: 0
+    amountToPool: 5
+    shouldExpand: 1
   - prefabToPool: {fileID: 374518205036779870, guid: 8af0ac54d0186604ba65dd5e44c5f6e1, type: 3}
     amountToPool: 5
     shouldExpand: 1
@@ -9774,7 +9837,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2103611939
 GameObject:
@@ -10072,6 +10135,67 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2128267917
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5310463
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.20033479
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.83769894
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704515818023667710, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513460416401817273, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_Name
+      value: Humo_contruccionCFXR
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513460416401817273, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62c3d2b4d181de8468e2450585aadf2d, type: 3}
 --- !u!1 &1027143581543667
 GameObject:
   m_ObjectHideFlags: 0
@@ -10356,7 +10480,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4467457024805785
 Transform:
@@ -10991,15 +11115,15 @@ MonoBehaviour:
   resourcesRound: 2
   resourcesTime: 5
   biomaType: 2
-  UI_Resource: 22
+  UI_Resource: 23
   biomaClouds: 0
   biomaUnlocked: 3
-  biomaBuilt: 15
-  towerPrefab: 11
-  selectedAble: 19
-  selectedUnable: 20
-  UI: 21
-  VFX_Build: 23
+  biomaBuilt: 16
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 1
   isUnlocked: 0
@@ -11043,15 +11167,15 @@ MonoBehaviour:
   resourcesRound: 2
   resourcesTime: 5
   biomaType: 1
-  UI_Resource: 22
+  UI_Resource: 23
   biomaClouds: 0
   biomaUnlocked: 2
-  biomaBuilt: 14
-  towerPrefab: 11
-  selectedAble: 19
-  selectedUnable: 20
-  UI: 21
-  VFX_Build: 23
+  biomaBuilt: 15
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 1
   isUnlocked: 0
@@ -11095,15 +11219,15 @@ MonoBehaviour:
   resourcesRound: 0
   resourcesTime: 0
   biomaType: 0
-  UI_Resource: 22
+  UI_Resource: 23
   biomaClouds: 0
   biomaUnlocked: 5
   biomaBuilt: 0
-  towerPrefab: 11
-  selectedAble: 19
-  selectedUnable: 20
-  UI: 21
-  VFX_Build: 23
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 1
   isUnlocked: 0
@@ -11147,15 +11271,15 @@ MonoBehaviour:
   resourcesRound: 2
   resourcesTime: 5
   biomaType: 2
-  UI_Resource: 22
+  UI_Resource: 23
   biomaClouds: 0
   biomaUnlocked: 3
-  biomaBuilt: 15
-  towerPrefab: 11
-  selectedAble: 19
-  selectedUnable: 20
-  UI: 21
-  VFX_Build: 23
+  biomaBuilt: 16
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 1
   isUnlocked: 0
@@ -11213,15 +11337,15 @@ MonoBehaviour:
   resourcesRound: 2
   resourcesTime: 5
   biomaType: 1
-  UI_Resource: 22
+  UI_Resource: 23
   biomaClouds: 0
   biomaUnlocked: 2
-  biomaBuilt: 14
-  towerPrefab: 11
-  selectedAble: 19
-  selectedUnable: 20
-  UI: 21
-  VFX_Build: 23
+  biomaBuilt: 15
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 1
   isUnlocked: 0
@@ -11265,15 +11389,15 @@ MonoBehaviour:
   resourcesRound: 0
   resourcesTime: 0
   biomaType: 0
-  UI_Resource: 22
+  UI_Resource: 23
   biomaClouds: 0
   biomaUnlocked: 6
   biomaBuilt: 0
-  towerPrefab: 11
-  selectedAble: 19
-  selectedUnable: 20
-  UI: 21
-  VFX_Build: 23
+  towerPrefab: 12
+  selectedAble: 20
+  selectedUnable: 21
+  UI: 22
+  VFX_Build: 24
   nearBiomaList: []
   isAvailable: 1
   isUnlocked: 0

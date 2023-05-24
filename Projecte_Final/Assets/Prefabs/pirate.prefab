@@ -100,7 +100,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ayuntamiento: {fileID: 0}
+  HP: 0
+  max_HP: 0
+  damage_amount: 0
+  time_to_die: 2
+  die_timer: 0
   inside: 0
+  player_dead: 0
 --- !u!65 &240549537
 BoxCollider:
   m_ObjectHideFlags: 0

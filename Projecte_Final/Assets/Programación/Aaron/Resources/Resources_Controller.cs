@@ -17,13 +17,14 @@ public class Resources_Controller : MonoBehaviour
 
     public int biomaType;
     
+    public GameObject build_local;
+
     public PoolingItemsEnum UI_Resource;
 
     private GameObject localUI;
 
     public void IncreaseResource()
     {
-        //hacer animacion
         currentCoroutine = Coroutine_IncreaseResource();
         StartCoroutine(currentCoroutine);
         Producing = true;
@@ -31,6 +32,7 @@ public class Resources_Controller : MonoBehaviour
     
     private IEnumerator Coroutine_IncreaseResource()
     {
+        build_local.transform.GetChild(0).GetComponent<Animator>().SetBool("Work", true);
         yield return new WaitForSeconds(resourcesTime);
 
         ActivateUI();
@@ -41,12 +43,16 @@ public class Resources_Controller : MonoBehaviour
         localUI = PoolingManager.Instance.GetPooledObject((int)UI_Resource);
         localUI.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
         
+        build_local.transform.GetChild(0).GetComponent<Animator>().SetBool("Work", false);
+
         localUI.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(Harvest);
         localUI.gameObject.SetActive(true);
     }
 
     private void Harvest()
     {
+        build_local.GetComponent<Animator>().SetTrigger("Next");
+
         switch (biomaType)
         {
             case 1:

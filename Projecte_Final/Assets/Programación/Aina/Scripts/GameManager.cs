@@ -71,4 +71,13 @@ public class GameManager : MonoBehaviour
         woodText.text = $"{woodPlayer}";
         stoneText.text = $"{stonePlayer}";
     }
+
+    public void WinCheck()
+    {
+        
+    }
+
+    public void LoseCheck()
+    {
+    }
 }

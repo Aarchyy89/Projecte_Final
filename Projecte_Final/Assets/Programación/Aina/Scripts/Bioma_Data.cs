@@ -69,7 +69,6 @@ public class Bioma_Data : Resources_Controller
     private GameObject able_local;
     private GameObject unable_local;
     private GameObject unlocked_local;
-    private GameObject build_local;
     private GameObject tower_local;
     private GameObject VFXbuild_local;
 
@@ -109,7 +108,8 @@ public class Bioma_Data : Resources_Controller
         if (!isAvailable)
         {
             GameObject clouds = PoolingManager.Instance.GetPooledObject((int)biomaClouds);
-            clouds.transform.position = transform.position;
+            clouds.transform.position =
+                new Vector3(transform.position.x, transform.position.y + 0.24f, transform.position.z);
             clouds.transform.parent = transform;
             clouds.gameObject.SetActive(true);
         }

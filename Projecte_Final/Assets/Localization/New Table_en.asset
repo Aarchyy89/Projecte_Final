@@ -130,6 +130,22 @@ MonoBehaviour:
     m_Localized: Direction
     m_Metadata:
       m_Items: []
+  - m_Id: 18622841302118400
+    m_Localized: Move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18623101298634752
+    m_Localized: Rotation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18623899613097984
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18624707910004736
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

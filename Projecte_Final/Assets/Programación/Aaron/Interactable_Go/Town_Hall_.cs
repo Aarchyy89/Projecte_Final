@@ -8,7 +8,7 @@ public class Town_Hall_ : MonoBehaviour
 {
     [Header("Stats")]
     [SerializeField] public int TH_HP;
-    [SerializeField] private int damage_amount; //DAÑO QUE RECIBE 
+    [SerializeField] private int damage_amount; //DAÃ‘O QUE RECIBE 
     [SerializeField] private int hp_amount; //vida QUE recibe al mejorar
 
     //STATS SISTEMA DE MEJORA

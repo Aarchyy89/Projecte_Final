@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Reflection.Emit;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -32,9 +31,10 @@ public class Resources_Controller : MonoBehaviour
     
     private IEnumerator Coroutine_IncreaseResource()
     {
-        build_local.transform.GetChild(0).GetComponent<Animator>().SetBool("Work", true);
-        yield return new WaitForSeconds(resourcesTime);
+        build_local.GetComponent<Animator>().SetTrigger("Next");
 
+        yield return new WaitForSeconds(resourcesTime);
+        
         ActivateUI();
     }
     
@@ -42,8 +42,6 @@ public class Resources_Controller : MonoBehaviour
     {
         localUI = PoolingManager.Instance.GetPooledObject((int)UI_Resource);
         localUI.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
-        
-        build_local.transform.GetChild(0).GetComponent<Animator>().SetBool("Work", false);
 
         localUI.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(Harvest);
         localUI.gameObject.SetActive(true);
@@ -51,8 +49,6 @@ public class Resources_Controller : MonoBehaviour
 
     private void Harvest()
     {
-        build_local.GetComponent<Animator>().SetTrigger("Next");
-
         switch (biomaType)
         {
             case 1:
@@ -77,9 +73,13 @@ public class Resources_Controller : MonoBehaviour
             StartCoroutine(currentCoroutine);
             Producing = true;
         }
+        else
+        {
+            build_local.GetComponent<Animator>().SetTrigger("End");
+            Producing = false;
+        }
         
         localUI.gameObject.SetActive(false);
         PoolingManager.Instance.RemoveListener((int)UI_Resource, 1);
-        Producing = false;
     }
 }

@@ -155,6 +155,8 @@ public class Bioma_Data : Resources_Controller
     }
     private void Instantiate_Build()
     {
+        unlocked_local.SetActive(false);
+        
         build_local = PoolingManager.Instance.GetPooledObject((int)biomaBuilt);
         build_local.transform.position = transform.position;
         build_local.SetActive(true);
@@ -262,7 +264,7 @@ public class Bioma_Data : Resources_Controller
         Instantiate_VFXBuild();
         
         Invoke("Instantiate_Build", 1);
-        Invoke("IncreaseResource", 1.5f);
+        Invoke("IncreaseResource", 2f);
         
         GameManager.instance.RefreshUITxt();
     }

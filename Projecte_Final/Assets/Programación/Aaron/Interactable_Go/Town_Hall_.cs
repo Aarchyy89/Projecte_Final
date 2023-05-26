@@ -48,10 +48,17 @@ public class Town_Hall_ : MonoBehaviour
     }
 
 
+    private void OnEnable()
+    {
+        TH_HP = PlayerPrefs.GetInt("TH_HP", TH_HP);
+    }
+
+
     public void Mejora()
     {
         //mejoro vida
         TH_HP = TH_HP + hp_amount;
+        PlayerPrefs.SetInt("TH_HP", TH_HP);
 
         //llamo vfx
         VFX_mEJORA.SetActive(true);

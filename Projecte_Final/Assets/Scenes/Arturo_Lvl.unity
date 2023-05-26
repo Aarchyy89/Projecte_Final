@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 4664840caad4aec42ad6dba0caa944e5, type: 2}
 --- !u!1 &8168871
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +274,9 @@ GameObject:
   - component: {fileID: 26569318}
   - component: {fileID: 26569317}
   - component: {fileID: 26569321}
+  - component: {fileID: 26569322}
+  - component: {fileID: 26569323}
+  - component: {fileID: 26569324}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_14"
   m_TagString: Untagged
@@ -399,6 +402,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &26569322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26569316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &26569323
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26569316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &26569324
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26569316}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &27066564
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +509,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &28485619
 GameObject:
@@ -480,6 +524,9 @@ GameObject:
   - component: {fileID: 28485621}
   - component: {fileID: 28485620}
   - component: {fileID: 28485624}
+  - component: {fileID: 28485625}
+  - component: {fileID: 28485626}
+  - component: {fileID: 28485627}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_6"
   m_TagString: Untagged
@@ -605,6 +652,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &28485625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28485619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &28485626
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28485619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &28485627
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28485619}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &78707863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1473,9 @@ GameObject:
   - component: {fileID: 165035409}
   - component: {fileID: 165035408}
   - component: {fileID: 165035412}
+  - component: {fileID: 165035413}
+  - component: {fileID: 165035414}
+  - component: {fileID: 165035415}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_8"
   m_TagString: Untagged
@@ -1510,6 +1601,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &165035413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165035407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &165035414
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165035407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &165035415
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165035407}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &179893313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1655,9 @@ GameObject:
   - component: {fileID: 179893315}
   - component: {fileID: 179893314}
   - component: {fileID: 179893318}
+  - component: {fileID: 179893319}
+  - component: {fileID: 179893320}
+  - component: {fileID: 179893321}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_7"
   m_TagString: Untagged
@@ -1648,6 +1783,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &179893319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179893313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &179893320
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179893313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &179893321
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179893313}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &195121230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,6 +1975,9 @@ GameObject:
   - component: {fileID: 195865910}
   - component: {fileID: 195865909}
   - component: {fileID: 195865913}
+  - component: {fileID: 195865914}
+  - component: {fileID: 195865915}
+  - component: {fileID: 195865916}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_5"
   m_TagString: Untagged
@@ -1924,6 +2103,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &195865914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195865908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &195865915
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195865908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &195865916
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195865908}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &221974118
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,6 +2157,9 @@ GameObject:
   - component: {fileID: 221974120}
   - component: {fileID: 221974119}
   - component: {fileID: 221974123}
+  - component: {fileID: 221974124}
+  - component: {fileID: 221974125}
+  - component: {fileID: 221974126}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_30"
   m_TagString: Untagged
@@ -2062,6 +2285,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &221974124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221974118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &221974125
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221974118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &221974126
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221974118}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &260796429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,7 +2422,7 @@ RectTransform:
   - {fileID: 1712957287}
   - {fileID: 100302546}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3254,7 +3518,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &446884596
 GameObject:
@@ -3423,7 +3687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db3f9726a9c9a549908ec2623655f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyBoat: 2
+  enemyBoat: 21
   current_wave: {fileID: 0}
   spawnPoints:
   - {fileID: 280378505}
@@ -3446,7 +3710,7 @@ Transform:
   - {fileID: 647391890}
   - {fileID: 2005287800}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &468712166
 GameObject:
@@ -3599,6 +3863,9 @@ GameObject:
   - component: {fileID: 585320992}
   - component: {fileID: 585320991}
   - component: {fileID: 585320995}
+  - component: {fileID: 585320996}
+  - component: {fileID: 585320997}
+  - component: {fileID: 585320998}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_11"
   m_TagString: Untagged
@@ -3724,6 +3991,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &585320996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585320990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &585320997
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585320990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &585320998
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585320990}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &602107041
 GameObject:
   m_ObjectHideFlags: 0
@@ -4188,6 +4496,9 @@ GameObject:
   - component: {fileID: 645587018}
   - component: {fileID: 645587017}
   - component: {fileID: 645587021}
+  - component: {fileID: 645587022}
+  - component: {fileID: 645587023}
+  - component: {fileID: 645587024}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_23"
   m_TagString: Untagged
@@ -4313,6 +4624,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &645587022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645587016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &645587023
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645587016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &645587024
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645587016}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &647391889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,6 +4709,9 @@ GameObject:
   - component: {fileID: 653316149}
   - component: {fileID: 653316148}
   - component: {fileID: 653316152}
+  - component: {fileID: 653316153}
+  - component: {fileID: 653316154}
+  - component: {fileID: 653316155}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_27"
   m_TagString: Untagged
@@ -4482,6 +4837,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &653316153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653316147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &653316154
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653316147}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &653316155
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653316147}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &659497980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4676,6 +5072,9 @@ GameObject:
   - component: {fileID: 669963015}
   - component: {fileID: 669963014}
   - component: {fileID: 669963018}
+  - component: {fileID: 669963019}
+  - component: {fileID: 669963020}
+  - component: {fileID: 669963021}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_22"
   m_TagString: Untagged
@@ -4801,6 +5200,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &669963019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669963013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &669963020
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669963013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &669963021
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669963013}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &678249845
 GameObject:
   m_ObjectHideFlags: 0
@@ -4814,6 +5254,9 @@ GameObject:
   - component: {fileID: 678249847}
   - component: {fileID: 678249846}
   - component: {fileID: 678249850}
+  - component: {fileID: 678249851}
+  - component: {fileID: 678249852}
+  - component: {fileID: 678249853}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_18"
   m_TagString: Untagged
@@ -4939,6 +5382,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &678249851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678249845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &678249852
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678249845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &678249853
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678249845}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &681946963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4952,6 +5436,9 @@ GameObject:
   - component: {fileID: 681946965}
   - component: {fileID: 681946964}
   - component: {fileID: 681946968}
+  - component: {fileID: 681946969}
+  - component: {fileID: 681946970}
+  - component: {fileID: 681946971}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_20"
   m_TagString: Untagged
@@ -5077,6 +5564,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &681946969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681946963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &681946970
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681946963}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &681946971
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681946963}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &685238981
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,15 +5803,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2dc177a83db64ca47a35ce20aefcc5b9, type: 2}
+  m_sharedMaterial: {fileID: 2074598705167556644, guid: 2dc177a83db64ca47a35ce20aefcc5b9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5363,6 +5891,9 @@ GameObject:
   - component: {fileID: 701951014}
   - component: {fileID: 701951013}
   - component: {fileID: 701951017}
+  - component: {fileID: 701951018}
+  - component: {fileID: 701951019}
+  - component: {fileID: 701951020}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_16"
   m_TagString: Untagged
@@ -5488,6 +6019,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &701951018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701951012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &701951019
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701951012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &701951020
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701951012}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &702065037
 GameObject:
   m_ObjectHideFlags: 0
@@ -6360,6 +6932,9 @@ GameObject:
   - component: {fileID: 829844385}
   - component: {fileID: 829844384}
   - component: {fileID: 829844388}
+  - component: {fileID: 829844389}
+  - component: {fileID: 829844390}
+  - component: {fileID: 829844391}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_24"
   m_TagString: Untagged
@@ -6485,6 +7060,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &829844389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829844383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &829844390
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829844383}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &829844391
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829844383}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &836663905
 GameObject:
   m_ObjectHideFlags: 0
@@ -6799,15 +7415,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2dc177a83db64ca47a35ce20aefcc5b9, type: 2}
+  m_sharedMaterial: {fileID: 2074598705167556644, guid: 2dc177a83db64ca47a35ce20aefcc5b9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7163,6 +7779,9 @@ GameObject:
   - component: {fileID: 974713804}
   - component: {fileID: 974713803}
   - component: {fileID: 974713807}
+  - component: {fileID: 974713808}
+  - component: {fileID: 974713809}
+  - component: {fileID: 974713810}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_3"
   m_TagString: Untagged
@@ -7288,6 +7907,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &974713808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974713802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &974713809
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974713802}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &974713810
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974713802}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &980104684
 GameObject:
   m_ObjectHideFlags: 0
@@ -7488,6 +8148,9 @@ GameObject:
   - component: {fileID: 1025991219}
   - component: {fileID: 1025991218}
   - component: {fileID: 1025991222}
+  - component: {fileID: 1025991223}
+  - component: {fileID: 1025991224}
+  - component: {fileID: 1025991225}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_4"
   m_TagString: Untagged
@@ -7613,6 +8276,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1025991223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025991217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1025991224
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025991217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1025991225
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025991217}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1084519685
 GameObject:
   m_ObjectHideFlags: 0
@@ -7899,6 +8603,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: cb4eccc9f4c069044b0526dfc89cf901, type: 3}
       propertyPath: m_Name
       value: Town
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cb4eccc9f4c069044b0526dfc89cf901, type: 3}
+      propertyPath: m_TagString
+      value: TH
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cb4eccc9f4c069044b0526dfc89cf901, type: 3}
       propertyPath: m_RootOrder
@@ -8240,6 +8948,9 @@ GameObject:
   - component: {fileID: 1133627792}
   - component: {fileID: 1133627791}
   - component: {fileID: 1133627795}
+  - component: {fileID: 1133627796}
+  - component: {fileID: 1133627797}
+  - component: {fileID: 1133627798}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_15"
   m_TagString: Untagged
@@ -8365,6 +9076,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1133627796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133627790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1133627797
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133627790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1133627798
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133627790}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1140242638
 GameObject:
   m_ObjectHideFlags: 0
@@ -8378,6 +9130,9 @@ GameObject:
   - component: {fileID: 1140242640}
   - component: {fileID: 1140242639}
   - component: {fileID: 1140242643}
+  - component: {fileID: 1140242644}
+  - component: {fileID: 1140242645}
+  - component: {fileID: 1140242646}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_29"
   m_TagString: Untagged
@@ -8503,6 +9258,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1140242644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140242638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1140242645
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140242638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1140242646
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140242638}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1182156384
 GameObject:
   m_ObjectHideFlags: 0
@@ -8677,7 +9473,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -58.2, y: -37.1}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198218486
 MonoBehaviour:
@@ -8699,7 +9495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cb8adbdc907097a468a9464928757e6c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e90177de216086c448d614719322cebe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8770,7 +9566,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1231824468
 GameObject:
@@ -8920,6 +9716,9 @@ GameObject:
   - component: {fileID: 1238842973}
   - component: {fileID: 1238842972}
   - component: {fileID: 1238842976}
+  - component: {fileID: 1238842977}
+  - component: {fileID: 1238842978}
+  - component: {fileID: 1238842979}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_9"
   m_TagString: Untagged
@@ -9045,6 +9844,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1238842977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238842971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1238842978
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238842971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1238842979
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238842971}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1279534583
 GameObject:
   m_ObjectHideFlags: 0
@@ -9058,6 +9898,9 @@ GameObject:
   - component: {fileID: 1279534585}
   - component: {fileID: 1279534584}
   - component: {fileID: 1279534588}
+  - component: {fileID: 1279534589}
+  - component: {fileID: 1279534590}
+  - component: {fileID: 1279534591}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_26"
   m_TagString: Untagged
@@ -9183,6 +10026,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1279534589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279534583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1279534590
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279534583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1279534591
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279534583}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1350757845
 GameObject:
   m_ObjectHideFlags: 0
@@ -9771,7 +10655,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -58.200035, y: 38}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491394661
 MonoBehaviour:
@@ -9793,7 +10677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e09f4c5ff3140e4cadd696e7710d166, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66b567d6c551f004eabcd619bd607114, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10121,7 +11005,7 @@ Transform:
   - {fileID: 864027842}
   - {fileID: 885500134}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1533001134
 GameObject:
@@ -10136,6 +11020,9 @@ GameObject:
   - component: {fileID: 1533001136}
   - component: {fileID: 1533001135}
   - component: {fileID: 1533001139}
+  - component: {fileID: 1533001140}
+  - component: {fileID: 1533001141}
+  - component: {fileID: 1533001142}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_21"
   m_TagString: Untagged
@@ -10261,6 +11148,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1533001140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533001134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1533001141
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533001134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1533001142
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533001134}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1545737758
 GameObject:
   m_ObjectHideFlags: 0
@@ -10721,7 +11649,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1694623133
 GameObject:
@@ -10736,6 +11664,9 @@ GameObject:
   - component: {fileID: 1694623135}
   - component: {fileID: 1694623134}
   - component: {fileID: 1694623138}
+  - component: {fileID: 1694623139}
+  - component: {fileID: 1694623140}
+  - component: {fileID: 1694623141}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_19"
   m_TagString: Untagged
@@ -10861,6 +11792,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1694623139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694623133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1694623140
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694623133}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1694623141
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694623133}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1712957286
 GameObject:
   m_ObjectHideFlags: 0
@@ -11046,7 +12018,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1738293687
 GameObject:
@@ -11287,6 +12259,79 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+--- !u!1001 &1777348183
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2025762731, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025762731, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025762731, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518486108514024492, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: Invoke_point
+      value: 
+      objectReference: {fileID: 2025762730}
+    - target: {fileID: 8102418667458308404, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_Name
+      value: Final_Barco_Enemy_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.701383
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.0658803
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.14290725
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.98973614
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 196.432
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
 --- !u!1 &1807432776
 GameObject:
   m_ObjectHideFlags: 0
@@ -11342,7 +12387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11380,6 +12425,9 @@ GameObject:
   - component: {fileID: 1813432955}
   - component: {fileID: 1813432954}
   - component: {fileID: 1813432958}
+  - component: {fileID: 1813432959}
+  - component: {fileID: 1813432960}
+  - component: {fileID: 1813432961}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_2"
   m_TagString: Untagged
@@ -11505,6 +12553,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1813432959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813432953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1813432960
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813432953}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1813432961
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813432953}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1878205399
 GameObject:
   m_ObjectHideFlags: 0
@@ -11518,6 +12607,9 @@ GameObject:
   - component: {fileID: 1878205401}
   - component: {fileID: 1878205400}
   - component: {fileID: 1878205404}
+  - component: {fileID: 1878205405}
+  - component: {fileID: 1878205406}
+  - component: {fileID: 1878205407}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_12"
   m_TagString: Untagged
@@ -11643,6 +12735,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1878205405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878205399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1878205406
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878205399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1878205407
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878205399}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1898488002
 GameObject:
   m_ObjectHideFlags: 0
@@ -11656,6 +12789,9 @@ GameObject:
   - component: {fileID: 1898488004}
   - component: {fileID: 1898488003}
   - component: {fileID: 1898488007}
+  - component: {fileID: 1898488008}
+  - component: {fileID: 1898488009}
+  - component: {fileID: 1898488010}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_25"
   m_TagString: Untagged
@@ -11781,6 +12917,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1898488008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898488002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1898488009
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898488002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1898488010
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898488002}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1910130180
 GameObject:
   m_ObjectHideFlags: 0
@@ -11794,6 +12971,9 @@ GameObject:
   - component: {fileID: 1910130182}
   - component: {fileID: 1910130181}
   - component: {fileID: 1910130185}
+  - component: {fileID: 1910130186}
+  - component: {fileID: 1910130187}
+  - component: {fileID: 1910130188}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_13"
   m_TagString: Untagged
@@ -11919,6 +13099,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &1910130186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910130180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1910130187
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910130180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &1910130188
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910130180}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1920138412
 GameObject:
   m_ObjectHideFlags: 0
@@ -12502,6 +13723,11 @@ Transform:
   m_Father: {fileID: 454523038}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2025762730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2025762730, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
+  m_PrefabInstance: {fileID: 1777348183}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2043562924
 GameObject:
   m_ObjectHideFlags: 0
@@ -12653,6 +13879,9 @@ GameObject:
   - component: {fileID: 2086771651}
   - component: {fileID: 2086771650}
   - component: {fileID: 2086771654}
+  - component: {fileID: 2086771655}
+  - component: {fileID: 2086771656}
+  - component: {fileID: 2086771657}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_17"
   m_TagString: Untagged
@@ -12778,6 +14007,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &2086771655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086771649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &2086771656
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086771649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &2086771657
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086771649}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2090259125
 GameObject:
   m_ObjectHideFlags: 0
@@ -13004,7 +14274,7 @@ MonoBehaviour:
     amountToPool: 5
     shouldExpand: 1
   - prefabToPool: {fileID: 7436688572290955340, guid: abe6c79bb9a745f44936b18cfd95899b, type: 3}
-    amountToPool: 2
+    amountToPool: 5
     shouldExpand: 1
   - prefabToPool: {fileID: 621240443561020514, guid: d74701794f203f549abd5286f3da6310, type: 3}
     amountToPool: 2
@@ -13055,7 +14325,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2103611939
 GameObject:
@@ -13074,7 +14344,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2103611940
 Transform:
@@ -13089,7 +14359,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2103611941
 MonoBehaviour:
@@ -13170,6 +14440,9 @@ GameObject:
   - component: {fileID: 2104855424}
   - component: {fileID: 2104855423}
   - component: {fileID: 2104855427}
+  - component: {fileID: 2104855428}
+  - component: {fileID: 2104855429}
+  - component: {fileID: 2104855430}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_28"
   m_TagString: Untagged
@@ -13295,6 +14568,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &2104855428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104855422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &2104855429
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104855422}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &2104855430
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104855422}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2115939172
 GameObject:
   m_ObjectHideFlags: 0
@@ -13308,6 +14622,9 @@ GameObject:
   - component: {fileID: 2115939174}
   - component: {fileID: 2115939173}
   - component: {fileID: 2115939177}
+  - component: {fileID: 2115939178}
+  - component: {fileID: 2115939179}
+  - component: {fileID: 2115939180}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_10"
   m_TagString: Untagged
@@ -13433,6 +14750,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &2115939178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115939172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &2115939179
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115939172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &2115939180
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115939172}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2116004812
 GameObject:
   m_ObjectHideFlags: 0
@@ -13642,7 +15000,7 @@ GameObject:
   - component: {fileID: 64734790525656721}
   m_Layer: 0
   m_Name: Village
-  m_TagString: Untagged
+  m_TagString: Parcela
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13760,6 +15118,9 @@ GameObject:
   - component: {fileID: 23261800058872488}
   - component: {fileID: 64003993231841522}
   - component: {fileID: 64003993231841523}
+  - component: {fileID: 64003993231841524}
+  - component: {fileID: 64003993231841525}
+  - component: {fileID: 64003993231841526}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_1"
   m_TagString: Untagged
@@ -13856,7 +15217,7 @@ Transform:
   m_Children:
   - {fileID: 1113023268}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4467457024805785
 Transform:
@@ -14471,6 +15832,47 @@ MonoBehaviour:
   costStoneBuilt: 25
   costWoodTower: 30
   costStoneTower: 30
+--- !u!114 &64003993231841524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589122589478314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &64003993231841525
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589122589478314}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0.100168675, z: 0}
+--- !u!54 &64003993231841526
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589122589478314}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!64 &64122124810201970
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
@@ -8,10 +9,10 @@ public class Enemy_Ship_AI : MonoBehaviour
 {
     [Header("---Parameters---")]
     public NavMeshAgent navMeshAgent;
-    public Transform Parcela;
-
-    [Header("---Fillable GO---")]
-    public GameObject Invoked_Pirates;
+    
+    [Header("---Fillable GO---")] 
+    public PoolingItemsEnum pirate;
+    //public GameObject Invoked_Pirates;
     public GameObject Invoke_point;
 
     [Header("---Pirate_Timer---")]
@@ -40,17 +41,15 @@ public class Enemy_Ship_AI : MonoBehaviour
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-        Parcela = GameObject.FindGameObjectWithTag("Parcela").transform;
+        navMeshAgent.speed = 1;
         inside = false;
         stopped_ship = false;
     }
 
     void Update()
     {
-
         Go_to_cells();
         Checkear_Posicion_barco();
-
     }
 
     public void Go_to_cells()
@@ -58,27 +57,63 @@ public class Enemy_Ship_AI : MonoBehaviour
         if (navMeshAgent.speed >= 0.1f)
         {
             //anim.SetBool("Walk", true);
-            navMeshAgent.SetDestination(Parcela.position);
+            navMeshAgent.SetDestination(findClosestBiomaData().transform.position);
         }
+    }
+    
+    private GameObject findClosestBiomaData() 
+    {
+        var data= FindObjectsOfType<Bioma_Data>();
+        GameObject closestEnemy = null;
+        float closestDistance = 0;
+        bool first = true;
+         
+        foreach (var obj in data)
+        {
+            float distance = Vector3.Distance(obj.transform.position, transform.position);
+            if (first)
+            {
+                closestDistance = distance;
+                 
+                first = false;
+            }            
+            else if (distance < closestDistance)
+            {
+                closestEnemy = obj.gameObject;
+                closestDistance = distance;
+            }
+                                                                         
+        }
+        return closestEnemy;
     }
 
     public void Atacar_Ayuntamiento()
     {
-        if(inside == true)
+        Debug.Log("Void In");
+        if(inside)
         {
+            Debug.Log("speed 0");
             navMeshAgent.speed = 0;
             navMeshAgent.isStopped = true;
             stopped_ship = true;
         }
 
         //instanciar pirata + animacion
-        //animación atacar pirata
+        //animaciï¿½n atacar pirata
          
     }
 
     public void Llegan_los_piratas()
     {
-        Instantiate(Invoked_Pirates, Invoke_point.transform.position, Invoke_point.transform.rotation);
+        GameObject pirate = PoolingManager.Instance.GetPooledObject((int)this.pirate);
+
+        // Accedit component script varible pirates i canviarle per scriptable object
+
+        pirate.transform.position = Invoke_point.transform.position;
+        pirate.transform.rotation = Invoke_point.transform.rotation;
+        pirate.gameObject.SetActive(true);
+        
+        //Instantiate(Invoked_Pirates, Invoke_point.transform.position, Invoke_point.transform.rotation);
     }
 
     public void Checkear_Posicion_barco()

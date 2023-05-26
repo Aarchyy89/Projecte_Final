@@ -39,6 +39,8 @@ public class Sistema_Oleadas : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        StartRound();
     }
 
     private void StartRound()

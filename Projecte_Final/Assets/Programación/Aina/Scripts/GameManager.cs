@@ -64,8 +64,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        woodPlayer = 100;
-        stonePlayer = 100;
+        woodPlayer = 20;
+        stonePlayer = 20;
         RefreshUITxt();
     }
 

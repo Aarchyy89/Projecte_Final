@@ -27,6 +27,7 @@ public class Sistema_Oleadas : MonoBehaviour
 
     private bool timerActive;
     public bool waveActive;
+    public bool lastWave;
 
     private void Awake()
     {
@@ -38,11 +39,6 @@ public class Sistema_Oleadas : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    private void Start()
-    {
-        Checker();
     }
 
     private void StartRound()
@@ -67,7 +63,8 @@ public class Sistema_Oleadas : MonoBehaviour
     {
         if (enemyDifficultyData_list[waveNumber].TotalConstructions >= GameManager.instance.TotalConstructions 
             && enemyDifficultyData_list[waveNumber].TotalTowers >= GameManager.instance.TotalTowers
-            && enemyDifficultyData_list[waveNumber].LvlTownHall >= GameManager.instance.LvlTownHall)
+            && enemyDifficultyData_list[waveNumber].LvlTownHall >= GameManager.instance.LvlTownHall
+            || lastWave)
         {
             return true;
         }
@@ -89,7 +86,7 @@ public class Sistema_Oleadas : MonoBehaviour
     {
         if (!waveActive)
         {
-            StopCoroutine(TimerTriggerEnemy());
+            timerActive = false;
 
             Checker();
             waveActive = true;
@@ -100,11 +97,12 @@ public class Sistema_Oleadas : MonoBehaviour
     {
         if (!waveActive)
         {
-            StopCoroutine(TimerTriggerEnemy());
+            timerActive = false;
             
             currentCoroutine = TimerTriggerEnemy();
             StartCoroutine(currentCoroutine);
             waveActive = true;
+            timerActive = true;
         }
     }
 

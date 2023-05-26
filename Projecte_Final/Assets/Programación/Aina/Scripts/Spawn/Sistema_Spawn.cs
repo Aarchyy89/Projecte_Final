@@ -61,15 +61,17 @@ public class Sistema_Spawn : MonoBehaviour
     {
         Sistema_Oleadas sistemaOleadas = Sistema_Oleadas.Instance;
 
-        GameObject enemy = PoolingManager.Instance.GetPooledObject((int)enemyBoat);
+        GameObject boat = PoolingManager.Instance.GetPooledObject((int)enemyBoat);
 
-        if (enemy != null)
+        // Accedit component script varible pirates i canviarle per scriptable object
+        
+        if (boat != null)
         {
             --sistemaOleadas.totalBoats;
             
             int spawnPoint_index = Random.Range(0, spawnPoints.Count);
-            enemy.transform.position = spawnPoints[spawnPoint_index].position;
-            enemy.gameObject.SetActive(true);
+            boat.transform.position = spawnPoints[spawnPoint_index].position;
+            boat.gameObject.SetActive(true);
             
             spawnTimer = Random.Range(current_wave.SpawnTimer_min, current_wave.SpawnTimer_max);
         }
@@ -81,6 +83,10 @@ public class Sistema_Spawn : MonoBehaviour
             active_wave = false;
             sistemaOleadas.waveActive = false;
 
+            if (Sistema_Oleadas.Instance.lastWave)
+            {
+                GameManager.instance.WinCheck();
+            }
         }
     }
 }

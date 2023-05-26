@@ -74,9 +74,4 @@ public class Town_Hall_ : MonoBehaviour
             TH_Mesh_timer = 0;
         }
     }
-
-
-
-
-
 }

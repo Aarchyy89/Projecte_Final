@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -19,6 +20,8 @@ public class GameManager : MonoBehaviour
     [Header("----- UI Variables -----")] 
     public TMP_Text woodText;
     public TMP_Text stoneText;
+    [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject losePanel;
         
     public int WoodPlayer
     {
@@ -72,12 +75,20 @@ public class GameManager : MonoBehaviour
         stoneText.text = $"{stonePlayer}";
     }
 
+    public void LastRound()
+    {
+        Sistema_Oleadas.Instance.lastWave = true;
+        Sistema_Oleadas.Instance.waveActive = false;
+        Sistema_Oleadas.Instance.BuildTrigger();
+    }
+
     public void WinCheck()
     {
-        
+        winPanel.SetActive(true);
     }
 
     public void LoseCheck()
     {
+        losePanel.SetActive(true);
     }
 }

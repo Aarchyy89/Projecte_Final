@@ -104,8 +104,5 @@ public class Pirate : MonoBehaviour
             player_dead = false;
             die_timer = 0;
         }
-
-
     }
-
 }

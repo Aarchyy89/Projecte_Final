@@ -19,6 +19,7 @@ public class CameraManager : MonoBehaviour
     private void Awake()
     {
         _xRotation = transform.rotation.eulerAngles.x;
+        transform.rotation = Quaternion.Euler(35, Random.Range(-175, 175), 0);
         CameraZoom = Camera.main;
     }
 
@@ -47,11 +48,11 @@ public class CameraManager : MonoBehaviour
             position += transform.up * (_delta.y * -movementSpeed);
             transform.position += position * Time.deltaTime;
 
-            if (gameObject.transform.position.x >= 10 || gameObject.transform.position.x <= -10)
+            if (gameObject.transform.position.x >= 5 || gameObject.transform.position.x <= -5)
             {
                 gameObject.transform.position = local;
             }
-            if (gameObject.transform.position.y >= 5 || gameObject.transform.position.y <= -5)
+            if (gameObject.transform.position.y >= 4 || gameObject.transform.position.y <= -4)
             {
                 gameObject.transform.position = local;
             }

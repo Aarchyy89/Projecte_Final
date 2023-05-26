@@ -164,7 +164,7 @@ public class Bioma_Data : Resources_Controller
     private void Instantiate_Tower()
     {
         tower_local = PoolingManager.Instance.GetPooledObject((int)towerPrefab);
-        tower_local.transform.position = transform.position;
+        tower_local.transform.position = new Vector3(transform.position.x, 0.2f, transform.position.z);
         tower_local.SetActive(true);
     }
     

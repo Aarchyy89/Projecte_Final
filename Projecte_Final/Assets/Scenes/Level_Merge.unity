@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 26569319}
   - component: {fileID: 26569318}
   - component: {fileID: 26569317}
+  - component: {fileID: 26569321}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_14"
   m_TagString: Untagged
@@ -359,6 +360,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &26569321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26569316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 5
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &27066564
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +479,7 @@ GameObject:
   - component: {fileID: 28485622}
   - component: {fileID: 28485621}
   - component: {fileID: 28485620}
+  - component: {fileID: 28485624}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_6"
   m_TagString: Untagged
@@ -525,6 +566,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &28485624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28485619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 11
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &78707863
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +743,83 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+--- !u!1 &100302545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 100302546}
+  - component: {fileID: 100302548}
+  - component: {fileID: 100302547}
+  m_Layer: 5
+  m_Name: Lose_Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &100302546
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100302545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2116004813}
+  m_Father: {fileID: 260796433}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &100302547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100302545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &100302548
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100302545}
+  m_CullTransparentMesh: 1
 --- !u!1 &132315790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,6 +1384,7 @@ GameObject:
   - component: {fileID: 165035410}
   - component: {fileID: 165035409}
   - component: {fileID: 165035408}
+  - component: {fileID: 165035412}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_8"
   m_TagString: Untagged
@@ -1313,6 +1471,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &165035412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165035407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 1
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &179893313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,6 +1522,7 @@ GameObject:
   - component: {fileID: 179893316}
   - component: {fileID: 179893315}
   - component: {fileID: 179893314}
+  - component: {fileID: 179893318}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_7"
   m_TagString: Untagged
@@ -1411,6 +1609,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &179893318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179893313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 9
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &195121230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,6 +1798,7 @@ GameObject:
   - component: {fileID: 195865911}
   - component: {fileID: 195865910}
   - component: {fileID: 195865909}
+  - component: {fileID: 195865913}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_5"
   m_TagString: Untagged
@@ -1647,6 +1885,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &195865913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195865908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 1
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &221974118
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,6 +1936,7 @@ GameObject:
   - component: {fileID: 221974121}
   - component: {fileID: 221974120}
   - component: {fileID: 221974119}
+  - component: {fileID: 221974123}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_30"
   m_TagString: Untagged
@@ -1745,6 +2023,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &221974123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221974118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 1
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &260796429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,6 +2156,8 @@ RectTransform:
   m_Children:
   - {fileID: 930259354}
   - {fileID: 686879762}
+  - {fileID: 1712957287}
+  - {fileID: 100302546}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3280,6 +3599,7 @@ GameObject:
   - component: {fileID: 585320993}
   - component: {fileID: 585320992}
   - component: {fileID: 585320991}
+  - component: {fileID: 585320995}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_11"
   m_TagString: Untagged
@@ -3366,6 +3686,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &585320995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585320990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 11
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &602107041
 GameObject:
   m_ObjectHideFlags: 0
@@ -3829,6 +4188,7 @@ GameObject:
   - component: {fileID: 645587019}
   - component: {fileID: 645587018}
   - component: {fileID: 645587017}
+  - component: {fileID: 645587021}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_23"
   m_TagString: Untagged
@@ -3915,6 +4275,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &645587021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645587016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 11
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &647391889
 GameObject:
   m_ObjectHideFlags: 0
@@ -3958,6 +4357,7 @@ GameObject:
   - component: {fileID: 653316150}
   - component: {fileID: 653316149}
   - component: {fileID: 653316148}
+  - component: {fileID: 653316152}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_27"
   m_TagString: Untagged
@@ -4044,6 +4444,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &653316152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653316147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 11
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &659497980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4237,6 +4676,7 @@ GameObject:
   - component: {fileID: 669963016}
   - component: {fileID: 669963015}
   - component: {fileID: 669963014}
+  - component: {fileID: 669963018}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_22"
   m_TagString: Untagged
@@ -4323,6 +4763,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669963018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669963013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 1
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &678249845
 GameObject:
   m_ObjectHideFlags: 0
@@ -4335,6 +4814,7 @@ GameObject:
   - component: {fileID: 678249848}
   - component: {fileID: 678249847}
   - component: {fileID: 678249846}
+  - component: {fileID: 678249850}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_18"
   m_TagString: Untagged
@@ -4421,6 +4901,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678249850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678249845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 11
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &681946963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4433,6 +4952,7 @@ GameObject:
   - component: {fileID: 681946966}
   - component: {fileID: 681946965}
   - component: {fileID: 681946964}
+  - component: {fileID: 681946968}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_20"
   m_TagString: Untagged
@@ -4519,6 +5039,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &681946968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681946963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 2
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 3
+  biomaBuilt: 17
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &685238981
 GameObject:
   m_ObjectHideFlags: 0
@@ -4804,6 +5363,7 @@ GameObject:
   - component: {fileID: 701951015}
   - component: {fileID: 701951014}
   - component: {fileID: 701951013}
+  - component: {fileID: 701951017}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_16"
   m_TagString: Untagged
@@ -4890,6 +5450,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &701951017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701951012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 1
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &702065037
 GameObject:
   m_ObjectHideFlags: 0
@@ -5761,6 +6360,7 @@ GameObject:
   - component: {fileID: 829844386}
   - component: {fileID: 829844385}
   - component: {fileID: 829844384}
+  - component: {fileID: 829844388}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_24"
   m_TagString: Untagged
@@ -5847,6 +6447,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &829844388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829844383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 2
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 3
+  biomaBuilt: 17
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &836663905
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,6 +7163,7 @@ GameObject:
   - component: {fileID: 974713805}
   - component: {fileID: 974713804}
   - component: {fileID: 974713803}
+  - component: {fileID: 974713807}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_3"
   m_TagString: Untagged
@@ -6610,6 +7250,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &974713807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974713802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 11
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &980104684
 GameObject:
   m_ObjectHideFlags: 0
@@ -6809,6 +7488,7 @@ GameObject:
   - component: {fileID: 1025991220}
   - component: {fileID: 1025991219}
   - component: {fileID: 1025991218}
+  - component: {fileID: 1025991222}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_4"
   m_TagString: Untagged
@@ -6895,6 +7575,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1025991222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025991217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 2
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 4
+  biomaBuilt: 18
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &1084519685
 GameObject:
   m_ObjectHideFlags: 0
@@ -7459,6 +8178,7 @@ GameObject:
   - component: {fileID: 1133627793}
   - component: {fileID: 1133627792}
   - component: {fileID: 1133627791}
+  - component: {fileID: 1133627795}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_15"
   m_TagString: Untagged
@@ -7545,6 +8265,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1133627795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133627790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 2
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 4
+  biomaBuilt: 18
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &1140242638
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,6 +8316,7 @@ GameObject:
   - component: {fileID: 1140242641}
   - component: {fileID: 1140242640}
   - component: {fileID: 1140242639}
+  - component: {fileID: 1140242643}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_29"
   m_TagString: Untagged
@@ -7643,6 +8403,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1140242643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140242638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 11
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &1182156384
 GameObject:
   m_ObjectHideFlags: 0
@@ -7820,6 +8619,7 @@ MonoBehaviour:
   totalBoats: 0
   timeBetweenRounds: 5
   waveActive: 0
+  lastWave: 0
 --- !u!4 &1203796231
 Transform:
   m_ObjectHideFlags: 0
@@ -7835,6 +8635,141 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1231824468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1231824469}
+  - component: {fileID: 1231824471}
+  - component: {fileID: 1231824470}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1231824469
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231824468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1712957287}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 600, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1231824470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231824468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: You Won
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 100
+  m_fontSizeBase: 100
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1231824471
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231824468}
+  m_CullTransparentMesh: 1
 --- !u!1 &1238842971
 GameObject:
   m_ObjectHideFlags: 0
@@ -7847,6 +8782,7 @@ GameObject:
   - component: {fileID: 1238842974}
   - component: {fileID: 1238842973}
   - component: {fileID: 1238842972}
+  - component: {fileID: 1238842976}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_9"
   m_TagString: Untagged
@@ -7933,6 +8869,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1238842976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238842971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 11
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &1279534583
 GameObject:
   m_ObjectHideFlags: 0
@@ -7945,6 +8920,7 @@ GameObject:
   - component: {fileID: 1279534586}
   - component: {fileID: 1279534585}
   - component: {fileID: 1279534584}
+  - component: {fileID: 1279534588}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_26"
   m_TagString: Untagged
@@ -8031,6 +9007,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279534588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279534583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 2
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 4
+  biomaBuilt: 18
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &1350757845
 GameObject:
   m_ObjectHideFlags: 0
@@ -8908,6 +9923,7 @@ GameObject:
   - component: {fileID: 1533001137}
   - component: {fileID: 1533001136}
   - component: {fileID: 1533001135}
+  - component: {fileID: 1533001139}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_21"
   m_TagString: Untagged
@@ -8994,6 +10010,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1533001139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533001134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 1
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &1545737758
 GameObject:
   m_ObjectHideFlags: 0
@@ -9439,6 +10494,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   woodText: {fileID: 930259355}
   stoneText: {fileID: 686879763}
+  winPanel: {fileID: 1712957286}
+  losePanel: {fileID: 100302545}
 --- !u!4 &1573520995
 Transform:
   m_ObjectHideFlags: 0
@@ -9466,6 +10523,7 @@ GameObject:
   - component: {fileID: 1694623136}
   - component: {fileID: 1694623135}
   - component: {fileID: 1694623134}
+  - component: {fileID: 1694623138}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_19"
   m_TagString: Untagged
@@ -9552,6 +10610,122 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1694623138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694623133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 2
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 4
+  biomaBuilt: 18
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
+--- !u!1 &1712957286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712957287}
+  - component: {fileID: 1712957289}
+  - component: {fileID: 1712957288}
+  m_Layer: 5
+  m_Name: Win_Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1712957287
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712957286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1231824469}
+  m_Father: {fileID: 260796433}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1712957288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712957286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1712957289
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712957286}
+  m_CullTransparentMesh: 1
 --- !u!1 &1731410681
 GameObject:
   m_ObjectHideFlags: 0
@@ -9755,14 +10929,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738293687}
-  m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
+  m_LocalRotation: {x: 0.28257096, y: 0.32619035, z: -0.102847405, w: 0.89620084}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35, y: 40, z: 0}
 --- !u!1 &1738989136
 GameObject:
   m_ObjectHideFlags: 0
@@ -9913,6 +11087,7 @@ GameObject:
   - component: {fileID: 1813432956}
   - component: {fileID: 1813432955}
   - component: {fileID: 1813432954}
+  - component: {fileID: 1813432958}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_2"
   m_TagString: Untagged
@@ -9999,6 +11174,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1813432958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813432953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 9
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &1878205399
 GameObject:
   m_ObjectHideFlags: 0
@@ -10011,6 +11225,7 @@ GameObject:
   - component: {fileID: 1878205402}
   - component: {fileID: 1878205401}
   - component: {fileID: 1878205400}
+  - component: {fileID: 1878205404}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_12"
   m_TagString: Untagged
@@ -10097,6 +11312,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1878205404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878205399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 1
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &1898488002
 GameObject:
   m_ObjectHideFlags: 0
@@ -10109,6 +11363,7 @@ GameObject:
   - component: {fileID: 1898488005}
   - component: {fileID: 1898488004}
   - component: {fileID: 1898488003}
+  - component: {fileID: 1898488007}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_25"
   m_TagString: Untagged
@@ -10195,6 +11450,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1898488007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898488002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 9
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &1910130180
 GameObject:
   m_ObjectHideFlags: 0
@@ -10207,6 +11501,7 @@ GameObject:
   - component: {fileID: 1910130183}
   - component: {fileID: 1910130182}
   - component: {fileID: 1910130181}
+  - component: {fileID: 1910130185}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_13"
   m_TagString: Untagged
@@ -10293,6 +11588,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1910130185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910130180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 2
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 4
+  biomaBuilt: 18
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &1920138412
 GameObject:
   m_ObjectHideFlags: 0
@@ -11026,6 +12360,7 @@ GameObject:
   - component: {fileID: 2086771652}
   - component: {fileID: 2086771651}
   - component: {fileID: 2086771650}
+  - component: {fileID: 2086771654}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_17"
   m_TagString: Untagged
@@ -11112,6 +12447,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2086771654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086771649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 9
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &2090259125
 GameObject:
   m_ObjectHideFlags: 0
@@ -11302,7 +12676,7 @@ MonoBehaviour:
     amountToPool: 3
     shouldExpand: 1
   - prefabToPool: {fileID: 1520068213326888, guid: d8deb0d5cca03814e8f5cd71fb9e7a1e, type: 3}
-    amountToPool: 5
+    amountToPool: 2
     shouldExpand: 1
   - prefabToPool: {fileID: 1882949367459502, guid: 7adcc5ca25de8e543ad11014ec7de3d3, type: 3}
     amountToPool: 8
@@ -11317,13 +12691,13 @@ MonoBehaviour:
     amountToPool: 9
     shouldExpand: 1
   - prefabToPool: {fileID: 919132149155446097, guid: 754cc4f3c5d084542a6e992d35957b05, type: 3}
-    amountToPool: 2
+    amountToPool: 5
     shouldExpand: 1
   - prefabToPool: {fileID: 919132149155446097, guid: 754cc4f3c5d084542a6e992d35957b05, type: 3}
-    amountToPool: 2
+    amountToPool: 5
     shouldExpand: 1
   - prefabToPool: {fileID: 919132149155446097, guid: 754cc4f3c5d084542a6e992d35957b05, type: 3}
-    amountToPool: 2
+    amountToPool: 5
     shouldExpand: 1
   - prefabToPool: {fileID: 4950528158122991275, guid: 2d53c6cd26817db48971361d2071127c, type: 3}
     amountToPool: 10
@@ -11503,6 +12877,7 @@ GameObject:
   - component: {fileID: 2104855425}
   - component: {fileID: 2104855424}
   - component: {fileID: 2104855423}
+  - component: {fileID: 2104855427}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_28"
   m_TagString: Untagged
@@ -11589,6 +12964,45 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2104855427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104855422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 1
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!1 &2115939172
 GameObject:
   m_ObjectHideFlags: 0
@@ -11601,6 +13015,7 @@ GameObject:
   - component: {fileID: 2115939175}
   - component: {fileID: 2115939174}
   - component: {fileID: 2115939173}
+  - component: {fileID: 2115939177}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_10"
   m_TagString: Untagged
@@ -11687,6 +13102,180 @@ Transform:
   m_Father: {fileID: 885500134}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2115939177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115939172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 2
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 4
+  biomaBuilt: 18
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 1
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
+--- !u!1 &2116004812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2116004813}
+  - component: {fileID: 2116004815}
+  - component: {fileID: 2116004814}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2116004813
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116004812}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 100302546}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 600, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2116004814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116004812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: You Lost
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 100
+  m_fontSizeBase: 100
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2116004815
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116004812}
+  m_CullTransparentMesh: 1
 --- !u!1 &1027143581543667
 GameObject:
   m_ObjectHideFlags: 0
@@ -11878,6 +13467,7 @@ GameObject:
   - component: {fileID: 33138664106766156}
   - component: {fileID: 23261800058872488}
   - component: {fileID: 64003993231841522}
+  - component: {fileID: 64003993231841523}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_1"
   m_TagString: Untagged
@@ -12549,6 +14139,45 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 1341def1465b9ee42ab1a58327fc3676, type: 3}
+--- !u!114 &64003993231841523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589122589478314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d356e886c70ec9468f9abd6f25eb933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Producing: 0
+  resourcesMax: 20
+  resourcesRound: 5
+  resourcesTime: 3
+  biomaType: 0
+  build_local: {fileID: 0}
+  UI_Resource: 25
+  biomaClouds: 0
+  biomaUnlocked: 5
+  biomaBuilt: 0
+  towerPrefab: 14
+  selectedAble: 22
+  selectedUnable: 23
+  UI: 24
+  VFX_Build: 26
+  nearBiomaList: []
+  isAvailable: 0
+  isUnlocked: 0
+  isBuilt: 0
+  canBuild: 0
+  isTower: 0
+  costWoodUnlock: 20
+  costStoneUnlock: 20
+  costWoodBuilt: 25
+  costStoneBuilt: 25
+  costWoodTower: 30
+  costStoneTower: 30
 --- !u!64 &64122124810201970
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -19,8 +19,10 @@ public class LevelManager : MonoBehaviour
     private int current_edif;
     public int current_Hp_edif;
     public int edif_mejora_1;
+    public int edif_mejora_2;
 
     public bool Puedo_Mejorar;
+    public bool Puedo_Mejorar_2;
 
     public static LevelManager instance;
 
@@ -47,11 +49,20 @@ public class LevelManager : MonoBehaviour
 
         Recuento_Edif();
         Town_Hall_.instance.Cambio_de_Mesh();
+        Town_Hall_.instance.Cambio_de_Mesh_2();
        
         if(Puedo_Mejorar)
         {
             Town_Hall_.instance.Mejora();
+            //Town_Hall_.instance.TH_HP = Town_Hall_.instance.TH_HP + Town_Hall_.instance.hp_amount;
+            Debug.Log("Hey");
             Puedo_Mejorar = false;
+        }
+
+        if(Puedo_Mejorar_2)
+        {
+            Town_Hall_.instance.Mejora_2();
+            Puedo_Mejorar_2 = false;
             Debug.Log("false");
         }
     }
@@ -67,7 +78,14 @@ public class LevelManager : MonoBehaviour
         if (current_edif >= edif_mejora_1)
         {
             Puedo_Mejorar = true;
-            Debug.Log("true");
+        }
+    }
+
+    public void Mejora_2()
+    {
+        if (current_edif >= edif_mejora_2)
+        {
+            Puedo_Mejorar_2 = true;
         }
     }
 }

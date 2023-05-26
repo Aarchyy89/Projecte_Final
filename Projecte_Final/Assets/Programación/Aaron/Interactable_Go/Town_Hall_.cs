@@ -9,7 +9,7 @@ public class Town_Hall_ : MonoBehaviour
     [Header("Stats")]
     [SerializeField] public int TH_HP;
     [SerializeField] private int damage_amount; //DAÑO QUE RECIBE 
-    [SerializeField] private int hp_amount; //vida QUE recibe al mejorar
+    [SerializeField] public int hp_amount; //vida QUE recibe al mejorar
 
     //STATS SISTEMA DE MEJORA
     //SE UPGRADEA CADA X EDIFICIOS CONSTRUIDOS -> SUBIDA DE STATS 
@@ -17,12 +17,14 @@ public class Town_Hall_ : MonoBehaviour
     [Header("---fillable---")]
     //[SerializeField] private Slider health_bar;
     [SerializeField] private GameObject VFX_mEJORA;
+    [SerializeField] private GameObject VFX_2;
 
     [Header("---Cambio Mesh Timer---")]
     [SerializeField] private float time_to_swapmesh = 3f;
     [SerializeField] private float TH_Mesh_timer = 0f;
 
-    public bool jejeje;
+    public bool mejorado;
+    public bool mejorado_2;
 
     public static Town_Hall_ instance;
 
@@ -57,12 +59,26 @@ public class Town_Hall_ : MonoBehaviour
         //Destruyo el gameObjt
         Destroy(VFX_mEJORA, 3f);
         Destroy(gameObject, 2.2f);
-        jejeje = true;
+        mejorado = true;
+    }
+
+    public void Mejora_2()
+    {
+        //mejoro vida
+        TH_HP = TH_HP + hp_amount;
+
+        //llamo vfx
+        VFX_mEJORA.SetActive(true);
+
+        //Destruyo el gameObjt
+        Destroy(VFX_mEJORA, 3f);
+        Destroy(gameObject, 2.2f);
+        mejorado_2 = true;
     }
 
     public void Cambio_de_Mesh()
     {
-        if (jejeje == true)
+        if (mejorado == true)
         {
             TH_Mesh_timer += Time.deltaTime;
         }
@@ -70,7 +86,22 @@ public class Town_Hall_ : MonoBehaviour
         if (TH_Mesh_timer >= time_to_swapmesh)
         {
             LevelManager.instance.th_2.SetActive(true);
-            jejeje = false;
+            mejorado = false;
+            TH_Mesh_timer = 0;
+        }
+    }
+
+    public void Cambio_de_Mesh_2()
+    {
+        if (mejorado_2 == true)
+        {
+            TH_Mesh_timer += Time.deltaTime;
+        }
+
+        if (TH_Mesh_timer >= time_to_swapmesh)
+        {
+            LevelManager.instance.th_3.SetActive(true);
+            mejorado_2 = false;
             TH_Mesh_timer = 0;
         }
     }

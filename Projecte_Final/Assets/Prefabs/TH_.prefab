@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3125811509253534514}
   - component: {fileID: 3125811509253534513}
   m_Layer: 0
-  m_Name: FINAL_TOWN_HALL
+  m_Name: TH_
   m_TagString: TH
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

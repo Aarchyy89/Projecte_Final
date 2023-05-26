@@ -108,8 +108,7 @@ public class Bioma_Data : Resources_Controller
         if (!isAvailable)
         {
             GameObject clouds = PoolingManager.Instance.GetPooledObject((int)biomaClouds);
-            clouds.transform.position =
-                new Vector3(transform.position.x, transform.position.y + 0.24f, transform.position.z);
+            clouds.transform.position = new Vector3(transform.position.x, transform.position.y + 0.3f, transform.position.z);
             clouds.transform.parent = transform;
             clouds.gameObject.SetActive(true);
         }
@@ -118,7 +117,7 @@ public class Bioma_Data : Resources_Controller
     private void ActivateUI(int costWood, int costStone)
     {
         ui_local = PoolingManager.Instance.GetPooledObject((int)UI);
-        ui_local.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+        ui_local.transform.position = new Vector3(transform.position.x, 1f, transform.position.z);
         
         ui_local.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costWood}";
         ui_local.transform.GetChild(2).GetComponent<TMP_Text>().text = $"{costStone}";

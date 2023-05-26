@@ -44,6 +44,16 @@ public class Resources_Controller : MonoBehaviour
         localUI.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
 
         localUI.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(Harvest);
+
+        if (biomaType == 1)
+        {
+            localUI.transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
+        }
+        else
+        {
+            localUI.transform.GetChild(1).GetChild(1).gameObject.SetActive(true);
+        }
+        
         localUI.gameObject.SetActive(true);
     }
 

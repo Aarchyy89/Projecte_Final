@@ -54,8 +54,6 @@ public class LevelManager : MonoBehaviour
             Puedo_Mejorar = false;
             Debug.Log("false");
         }
-
-
     }
 
     public void Recuento_Edif()

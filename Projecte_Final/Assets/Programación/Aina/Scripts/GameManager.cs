@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
         stoneText.text = $"{stonePlayer}";
     }
 
+    // Pasar a millor d'ultim nivell
     public void LastRound()
     {
         Sistema_Oleadas.Instance.lastWave = true;

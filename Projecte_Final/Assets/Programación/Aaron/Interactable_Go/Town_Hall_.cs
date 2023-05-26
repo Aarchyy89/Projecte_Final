@@ -74,4 +74,14 @@ public class Town_Hall_ : MonoBehaviour
             TH_Mesh_timer = 0;
         }
     }
+
+    public void TakeDamage(int damage)
+    {
+        TH_HP -= damage;
+
+        if (TH_HP <= 0)
+        {
+            GameManager.instance.LoseCheck();
+        }
+    }
 }

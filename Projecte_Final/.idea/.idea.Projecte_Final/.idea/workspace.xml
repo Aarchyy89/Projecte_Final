@@ -7,9 +7,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Programación/Aina/Scripts/Resources_Controller.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -46,7 +43,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.13f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\a.nees\Documents\Github.projects\Projecte_Final\Projecte_Final -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\a.nees\Documents\Github.projects\Projecte_Final\Projecte_Final" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -111,6 +108,7 @@
       <workItem from="1685055317856" duration="612000" />
       <workItem from="1685087242716" duration="3324000" />
       <workItem from="1685090984251" duration="101000" />
+      <workItem from="1685105497771" duration="1919000" />
     </task>
     <servers />
   </component>

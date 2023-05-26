@@ -20,21 +20,6 @@ public class Pirate : MonoBehaviour
     public bool inside;
     public bool player_dead;
 
-    public static Pirate instance;
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
-    }
-
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();

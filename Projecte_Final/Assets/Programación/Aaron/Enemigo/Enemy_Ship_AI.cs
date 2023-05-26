@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics.Tracing;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -21,22 +17,6 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     public bool inside;
     public bool stopped_ship;
-
-    public static Enemy_Ship_AI instance;
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
-        //anim = GetComponent<Animator>();
-    }
 
     void Start()
     {
@@ -103,13 +83,13 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     public void Llegan_los_piratas()
     {
-        GameObject pirate = PoolingManager.Instance.GetPooledObject((int)this.pirate);
+        GameObject pirateLocal = PoolingManager.Instance.GetPooledObject((int)pirate);
 
         // Accedit component script varible pirates i canviarle per scriptable object
 
-        pirate.transform.position = Invoke_point.transform.position;
-        pirate.transform.rotation = Invoke_point.transform.rotation;
-        pirate.gameObject.SetActive(true);
+        pirateLocal.transform.position = Invoke_point.transform.position;
+        pirateLocal.transform.rotation = Invoke_point.transform.rotation;
+        pirateLocal.gameObject.SetActive(true);
         
         //Instantiate(Invoked_Pirates, Invoke_point.transform.position, Invoke_point.transform.rotation);
     }

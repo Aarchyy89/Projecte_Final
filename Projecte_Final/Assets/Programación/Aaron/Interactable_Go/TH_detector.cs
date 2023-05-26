@@ -8,8 +8,8 @@ public class TH_detector : MonoBehaviour
     {
         if (other.CompareTag("Pirate"))
         {
-            Pirate.instance.inside = true;
-            Pirate.instance.Atacar_Ayuntamiento();
+            other.GetComponent<Pirate>().inside = true;
+            other.GetComponent<Pirate>().Atacar_Ayuntamiento();
         }
     }
 }

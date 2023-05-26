@@ -103,9 +103,9 @@ MonoBehaviour:
   range: 5.65
   turret_speed: 3
   fire_Rate: 1
-  bullet: {fileID: 621240443561020514, guid: d74701794f203f549abd5286f3da6310, type: 3}
   Shoot_Point: {fileID: 7938889956413588879}
   piratetag: Pirate
+  bala: 20
 --- !u!1 &7938889954495317549
 GameObject:
   m_ObjectHideFlags: 0

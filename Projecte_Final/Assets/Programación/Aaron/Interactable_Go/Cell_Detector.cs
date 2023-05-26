@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Cell_Detector : MonoBehaviour
@@ -9,8 +7,8 @@ public class Cell_Detector : MonoBehaviour
         if(other.CompareTag("Ship"))
         {
             Debug.Log("He entrado");
-            Enemy_Ship_AI.instance.inside = true;
-            Enemy_Ship_AI.instance.Atacar_Ayuntamiento();
+            other.GetComponent<Enemy_Ship_AI>().inside = true;
+            other.GetComponent<Enemy_Ship_AI>().Atacar_Ayuntamiento();
         }
     }
 }

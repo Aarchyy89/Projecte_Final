@@ -15,11 +15,11 @@ public class Tower_Defense : MonoBehaviour
     private float fire_Countdown = 0f;
 
     [Header("---fillable GO---")]
-    public GameObject bullet;
     public Transform Shoot_Point;
     
     public string piratetag = "Pirate";
 
+    public PoolingItemsEnum bala;
 
     private void Start()
     {
@@ -85,7 +85,8 @@ public class Tower_Defense : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject bulletGO = (GameObject)Instantiate(bullet, Shoot_Point.position, Shoot_Point.rotation);
+        GameObject bulletGO = PoolingManager.Instance.GetPooledObject((int)bala);
+        bulletGO.SetActive(true);
         Bala_Escopeta buullet = bulletGO.GetComponent<Bala_Escopeta>();
 
         if(buullet != null)

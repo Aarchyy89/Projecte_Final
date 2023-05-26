@@ -146,6 +146,12 @@ MonoBehaviour:
     m_Localized: Sound
     m_Metadata:
       m_Items: []
+  - m_Id: 18957834490572800
+    m_Localized: 'Move/ buy/
+
+      select'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -143,6 +143,12 @@ MonoBehaviour:
     m_Key: Sonido
     m_Metadata:
       m_Items: []
+  - m_Id: 18957834490572800
+    m_Key: 'Move/ comprar/
+
+      seleccionar'
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

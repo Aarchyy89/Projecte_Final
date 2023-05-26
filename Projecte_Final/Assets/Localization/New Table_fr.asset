@@ -146,6 +146,10 @@ MonoBehaviour:
     m_Localized: Son
     m_Metadata:
       m_Items: []
+  - m_Id: 18957834490572800
+    m_Localized: "D\xE9m\xE9nager/ acheter/\r\ns\xE9lectionner"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

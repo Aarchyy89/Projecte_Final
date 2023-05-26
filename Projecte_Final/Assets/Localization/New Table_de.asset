@@ -146,6 +146,10 @@ MonoBehaviour:
     m_Localized: Klang
     m_Metadata:
       m_Items: []
+  - m_Id: 18957834490572800
+    m_Localized: "Umzug/kauf/\r\nw\xE4hlen"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

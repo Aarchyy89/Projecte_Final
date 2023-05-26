@@ -7,6 +7,7 @@ public class Enemy_Ship_AI : MonoBehaviour
 {
     [Header("---Parameters---")]
     public NavMeshAgent navMeshAgent;
+    public float range = 2f;
     
     [Header("---Fillable GO---")] 
     public PoolingItemsEnum pirate;
@@ -23,6 +24,8 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     public bool Hora_de_irse = false;
 
+
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -33,9 +36,16 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     void Update()
     {
-        Go_to_cells();
         Checkear_Posicion_barco();
-        Me_voy();
+
+        if(Hora_de_irse)
+        {
+            Me_voy();
+        }
+        else
+        {
+            Go_to_cells();
+        }
     }
 
     public void Go_to_cells()
@@ -96,7 +106,8 @@ public class Enemy_Ship_AI : MonoBehaviour
         pirateLocal.transform.position = Invoke_point.transform.position;
         pirateLocal.transform.rotation = Invoke_point.transform.rotation;
         pirateLocal.gameObject.SetActive(true);
-        
+
+        Hora_de_irse = true;
         //Instantiate(Invoked_Pirates, Invoke_point.transform.position, Invoke_point.transform.rotation);
     }
 
@@ -112,24 +123,45 @@ public class Enemy_Ship_AI : MonoBehaviour
             Llegan_los_piratas();
             stopped_ship = false;
             pirate_spawn_timer = 0;
-            Hora_de_irse = true;
         }
-
     }
 
     public void Me_voy()
     {
-        if(Hora_de_irse)
-        {
             GameObject go = GameObject.FindGameObjectWithTag("Waypoints");
-            foreach (Transform t in go.transform)
-            {
-                Waypoints.Add(t);
-            }
-            navMeshAgent.SetDestination(Waypoints[Random.Range(0, Waypoints.Count)].position);
+           
+            navMeshAgent.speed = 3;
+            navMeshAgent.isStopped = false;
+            //navMeshAgent.SetDestination();
             Debug.Log("Hey");
-            Hora_de_irse = false;
-        }
+            //Hora_de_irse = false;
+
+
     }
 
+
+    private GameObject WP()
+    {
+        GameObject closestEnemy = null;
+        float closestDistance = 0;
+        bool first = true;
+
+        foreach (var obj in Waypoints)
+        {
+            float distance = Vector3.Distance(obj.transform.position, transform.position);
+            if (first)
+            {
+                closestDistance = distance;
+
+                first = false;
+            }
+            else if (distance < closestDistance)
+            {
+                closestEnemy = obj.gameObject;
+                closestDistance = distance;
+            }
+
+        }
+        return closestEnemy;
+    }
 }

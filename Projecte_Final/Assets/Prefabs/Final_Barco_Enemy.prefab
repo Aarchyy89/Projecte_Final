@@ -199,6 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 5518486108514024493}
+  range: 2
   pirate: 19
   Invoke_point: {fileID: 2025762730}
   Waypoints:

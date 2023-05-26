@@ -89,10 +89,8 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     public void Atacar_Ayuntamiento()
     {
-        Debug.Log("Void In");
         if(inside)
         {
-            Debug.Log("speed 0");
             navMeshAgent.speed = 0;
             navMeshAgent.isStopped = true;
             stopped_ship = true;

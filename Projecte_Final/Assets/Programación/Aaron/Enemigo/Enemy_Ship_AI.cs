@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SocialPlatforms;
 
 public class Enemy_Ship_AI : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class Enemy_Ship_AI : MonoBehaviour
     public PoolingItemsEnum pirate;
     //public GameObject Invoked_Pirates;
     public GameObject Invoke_point;
+    public List<Transform> Waypoints = new List<Transform>();
 
     [Header("---Pirate_Timer---")]
     [SerializeField] private float time_to_spawn = 2f;
@@ -17,6 +20,8 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     public bool inside;
     public bool stopped_ship;
+
+    public bool Hora_de_irse = false;
 
     void Start()
     {
@@ -30,6 +35,7 @@ public class Enemy_Ship_AI : MonoBehaviour
     {
         Go_to_cells();
         Checkear_Posicion_barco();
+        Me_voy();
     }
 
     public void Go_to_cells()
@@ -106,6 +112,23 @@ public class Enemy_Ship_AI : MonoBehaviour
             Llegan_los_piratas();
             stopped_ship = false;
             pirate_spawn_timer = 0;
+            Hora_de_irse = true;
+        }
+
+    }
+
+    public void Me_voy()
+    {
+        if(Hora_de_irse)
+        {
+            GameObject go = GameObject.FindGameObjectWithTag("Waypoints");
+            foreach (Transform t in go.transform)
+            {
+                Waypoints.Add(t);
+            }
+            navMeshAgent.SetDestination(Waypoints[Random.Range(0, Waypoints.Count)].position);
+            Debug.Log("Hey");
+            Hora_de_irse = false;
         }
     }
 

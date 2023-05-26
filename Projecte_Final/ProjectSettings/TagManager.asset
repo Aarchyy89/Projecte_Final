@@ -10,6 +10,7 @@ TagManager:
   - FxTemporaire
   - Pirate
   - Parcela
+  - Waypoints
   layers:
   - Default
   - TransparentFX

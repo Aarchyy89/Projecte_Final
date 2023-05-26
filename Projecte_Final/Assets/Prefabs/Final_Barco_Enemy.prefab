@@ -201,7 +201,13 @@ MonoBehaviour:
   navMeshAgent: {fileID: 5518486108514024493}
   pirate: 19
   Invoke_point: {fileID: 2025762730}
+  Waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   time_to_spawn: 2
   pirate_spawn_timer: 0
   inside: 0
   stopped_ship: 0
+  Hora_de_irse: 0

@@ -6,7 +6,6 @@ public class Cell_Detector : MonoBehaviour
     {
         if(other.CompareTag("Ship"))
         {
-            Debug.Log("He entrado");
             other.GetComponent<Enemy_Ship_AI>().inside = true;
             other.GetComponent<Enemy_Ship_AI>().Atacar_Ayuntamiento();
         }

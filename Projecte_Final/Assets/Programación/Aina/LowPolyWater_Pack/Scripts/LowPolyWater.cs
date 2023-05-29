@@ -12,7 +12,7 @@ namespace LowPolyWater
         public Vector3 waveOriginPosition = new Vector3(0.0f, 0.0f, 0.0f);
 
         MeshFilter meshFilter;
-        Mesh mesh;
+        [SerializeField]Mesh mesh;
         Vector3[] vertices;
 
         private void Awake()
@@ -33,7 +33,7 @@ namespace LowPolyWater
         /// <returns></returns>
         MeshFilter CreateMeshLowPoly(MeshFilter mf)
         {
-            mesh = mf.sharedMesh;
+            //mesh = mf.sharedMesh;
 
             //Get the original vertices of the gameobject's mesh
             Vector3[] originalVertices = mesh.vertices;

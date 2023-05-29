@@ -89,4 +89,12 @@ public class LevelManager : MonoBehaviour
             Puedo_Mejorar_2 = true;
         }
     }
+
+    public void Mejora_GM()
+    {
+        if(GameManager.instance.TotalTowers >= edif_mejora_1)
+        {
+            Puedo_Mejorar = true;
+        }
+    }
 }

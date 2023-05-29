@@ -18,6 +18,7 @@ public class Town_Hall_ : MonoBehaviour
     //[SerializeField] private Slider health_bar;
     [SerializeField] private GameObject VFX_mEJORA;
     [SerializeField] private GameObject VFX_2;
+    [SerializeField] private Slider Health_Slider;
 
     [Header("---Cambio Mesh Timer---")]
     [SerializeField] private float time_to_swapmesh = 3f;
@@ -46,6 +47,10 @@ public class Town_Hall_ : MonoBehaviour
         }
 
     }
+    private void Start()
+    {
+        Health_Slider.value = TH_HP;
+    }
 
 
     private void OnEnable()
@@ -58,6 +63,7 @@ public class Town_Hall_ : MonoBehaviour
     {
         //mejoro vida
         TH_HP = TH_HP + hp_amount;
+        Health_Slider.value = TH_HP;
         PlayerPrefs.SetInt("TH_HP", TH_HP);
 
         //llamo vfx
@@ -73,6 +79,7 @@ public class Town_Hall_ : MonoBehaviour
     {
         //mejoro vida
         TH_HP = TH_HP + hp_amount;
+        Health_Slider.value = TH_HP;
 
         //llamo vfx
         VFX_mEJORA.SetActive(true);
@@ -116,6 +123,7 @@ public class Town_Hall_ : MonoBehaviour
     public void TakeDamage(int damage)
     {
         TH_HP -= damage;
+        Health_Slider.value = TH_HP;
 
         if (TH_HP <= 0)
         {

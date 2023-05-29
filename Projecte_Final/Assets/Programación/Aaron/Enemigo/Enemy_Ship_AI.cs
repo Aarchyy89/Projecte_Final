@@ -109,7 +109,7 @@ public class Enemy_Ship_AI : MonoBehaviour
 
             // Accedit component script varible pirates i canviarle per scriptable object
 
-            pirateLocal.transform.position = Invoke_point.transform.position;
+            pirateLocal.transform.position = new Vector3(Invoke_point.transform.position.x, Invoke_point.transform.position.y + 1.2f, Invoke_point.transform.position.z);
             pirateLocal.transform.rotation = Invoke_point.transform.rotation;
             pirateLocal.gameObject.SetActive(true);
 

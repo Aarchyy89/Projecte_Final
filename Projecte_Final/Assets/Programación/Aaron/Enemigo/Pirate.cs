@@ -6,6 +6,7 @@ public class Pirate : MonoBehaviour
     [Header("---Parameters---")]
     private NavMeshAgent navMeshAgent;
     public Transform ayuntamiento;
+    [SerializeField] private Animator anim;
     //[SerializeField] private Animator anim;
 
     [Header("Stats")]
@@ -53,9 +54,12 @@ public class Pirate : MonoBehaviour
         {
             navMeshAgent.speed = 0;
             navMeshAgent.isStopped = true;
-            //atacar animacion
+            anim.SetBool("Attack", true);
             //llamar al script del ayuntamiento y aplicar la funcion de quitar vida
-            Hago_Daño();
+        }
+        else
+        {
+            anim.SetBool("Attack", false);
         }
 
     }

@@ -487,6 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ayuntamiento: {fileID: 0}
+  anim: {fileID: 1556224960375629919}
   HP: 80
   damage_amount: 10
   Attack_damage: 5

@@ -19,6 +19,8 @@ public class Sistema_Oleadas : MonoBehaviour
     public int totalBoats;
     private int totalEnemies;
 
+    public int TotalEnemies => totalEnemies;
+
     [Tooltip("Waiting time between one round and another")]
     [SerializeField] private float timeBetweenRounds = 30;
 

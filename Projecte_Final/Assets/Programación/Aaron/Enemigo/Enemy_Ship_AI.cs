@@ -14,6 +14,7 @@ public class Enemy_Ship_AI : MonoBehaviour
     //public GameObject Invoked_Pirates;
     public GameObject Invoke_point;
     public GameObject[] Waypoints;
+    private int Instantiated_Pirates;
 
     [Header("---Pirate_Timer---")]
     [SerializeField] private float time_to_spawn = 2f;
@@ -97,16 +98,29 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     public void Llegan_los_piratas()
     {
-        GameObject pirateLocal = PoolingManager.Instance.GetPooledObject((int)pirate);
+        if(Instantiated_Pirates > 0)
+        {
 
-        // Accedit component script varible pirates i canviarle per scriptable object
+            GameObject pirateLocal = PoolingManager.Instance.GetPooledObject((int)pirate);
 
-        pirateLocal.transform.position = Invoke_point.transform.position;
-        pirateLocal.transform.rotation = Invoke_point.transform.rotation;
-        pirateLocal.gameObject.SetActive(true);
+            Instantiated_Pirates--;
 
-        Hora_de_irse = true;
-        //Instantiate(Invoked_Pirates, Invoke_point.transform.position, Invoke_point.transform.rotation);
+            Debug.Log(Instantiated_Pirates);
+
+            // Accedit component script varible pirates i canviarle per scriptable object
+
+            pirateLocal.transform.position = Invoke_point.transform.position;
+            pirateLocal.transform.rotation = Invoke_point.transform.rotation;
+            pirateLocal.gameObject.SetActive(true);
+
+
+            //Instantiate(Invoked_Pirates, Invoke_point.transform.position, Invoke_point.transform.rotation);
+        }
+        else
+        {
+            Hora_de_irse = true;
+            CancelInvoke("Llegan_los_piratas");
+        }
     }
 
     public void Checkear_Posicion_barco()
@@ -116,9 +130,12 @@ public class Enemy_Ship_AI : MonoBehaviour
             pirate_spawn_timer += Time.deltaTime;
         }
 
+
         if (pirate_spawn_timer >= time_to_spawn)
         {
-            Llegan_los_piratas();
+            Instantiated_Pirates = Sistema_Oleadas.Instance.TotalEnemies;
+            InvokeRepeating("Llegan_los_piratas", 2, 3);
+            //Llegan_los_piratas();
             stopped_ship = false;
             pirate_spawn_timer = 0;
         }
@@ -126,18 +143,21 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     public void Me_voy()
     {
+        Waypoints = GameObject.FindGameObjectsWithTag("Waypoints");
         navMeshAgent.speed = 3;
         navMeshAgent.isStopped = false;
         navMeshAgent.SetDestination(WP().transform.position);
-        Debug.Log(WP().name);
-        Debug.Log("Ainaaa");
+        if(transform.position == WP().transform.position)
+        {
+            gameObject.SetActive(false);
+        }
         //Hora_de_irse = false;
     }
 
 
     private GameObject WP()
     {
-        Waypoints = GameObject.FindGameObjectsWithTag("Waypoints");
+       
         GameObject closestEnemy = null;
         float closestDistance = 0;
         bool first = true;

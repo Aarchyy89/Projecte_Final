@@ -10,8 +10,8 @@ public class Pirate : MonoBehaviour
 
     [Header("Stats")]
     [SerializeField] private int HP;
-    [SerializeField] private int max_HP;
     [SerializeField] private int damage_amount;
+    [SerializeField] private int Attack_damage;
 
     [Header("---Death_Timer---")]
     [SerializeField] private float time_to_die = 2f;
@@ -54,9 +54,15 @@ public class Pirate : MonoBehaviour
             navMeshAgent.speed = 0;
             navMeshAgent.isStopped = true;
             //atacar animacion
-            //llamar al script del ayuntamiento y aplicar la funcion de quitar vida 
+            //llamar al script del ayuntamiento y aplicar la funcion de quitar vida
+            Hago_Daño();
         }
 
+    }
+
+    public void Hago_Daño()
+    {
+        Town_Hall_.instance.TakeDamage(Attack_damage);
     }
 
     public void TAKE_damage()

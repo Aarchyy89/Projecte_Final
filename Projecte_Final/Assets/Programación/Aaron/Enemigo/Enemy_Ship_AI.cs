@@ -13,7 +13,7 @@ public class Enemy_Ship_AI : MonoBehaviour
     public PoolingItemsEnum pirate;
     //public GameObject Invoked_Pirates;
     public GameObject Invoke_point;
-    public List<Transform> Waypoints = new List<Transform>();
+    public GameObject[] Waypoints;
 
     [Header("---Pirate_Timer---")]
     [SerializeField] private float time_to_spawn = 2f;
@@ -23,8 +23,6 @@ public class Enemy_Ship_AI : MonoBehaviour
     public bool stopped_ship;
 
     public bool Hora_de_irse = false;
-
-
 
     void Start()
     {
@@ -128,20 +126,18 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     public void Me_voy()
     {
-            GameObject go = GameObject.FindGameObjectWithTag("Waypoints");
-           
-            navMeshAgent.speed = 3;
-            navMeshAgent.isStopped = false;
-            //navMeshAgent.SetDestination();
-            Debug.Log("Hey");
-            //Hora_de_irse = false;
-
-
+        navMeshAgent.speed = 3;
+        navMeshAgent.isStopped = false;
+        navMeshAgent.SetDestination(WP().transform.position);
+        Debug.Log(WP().name);
+        Debug.Log("Ainaaa");
+        //Hora_de_irse = false;
     }
 
 
     private GameObject WP()
     {
+        Waypoints = GameObject.FindGameObjectsWithTag("Waypoints");
         GameObject closestEnemy = null;
         float closestDistance = 0;
         bool first = true;

@@ -17,7 +17,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField] public GameObject th_3;
 
     private int current_edif;
-    public int current_Hp_edif;
     public int edif_mejora_1;
     public int edif_mejora_2;
 
@@ -40,7 +39,6 @@ public class LevelManager : MonoBehaviour
     private void Update()
     {
         //Resources_Controller.instance.IncreaseMadera();
-        current_Hp_edif = Town_Hall_.instance.TH_HP;
 
         if (Input.GetKeyDown(KeyCode.T))
         {
@@ -92,9 +90,28 @@ public class LevelManager : MonoBehaviour
 
     public void Mejora_GM()
     {
-        if(GameManager.instance.TotalTowers >= edif_mejora_1)
+        if(GameManager.instance.TotalTowers == edif_mejora_1)
         {
             Puedo_Mejorar = true;
         }
+        else
+        {
+            Puedo_Mejorar = false;
+        }
     }
+
+    public void Mejora_GM_2()
+    {
+        if (GameManager.instance.TotalTowers == edif_mejora_2)
+        {
+            Puedo_Mejorar_2 = true;
+        }
+        else
+        {
+            Puedo_Mejorar_2 = false;
+        }
+    }
+
+
+
 }

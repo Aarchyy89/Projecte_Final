@@ -71,17 +71,6 @@ public class Town_Hall_ : MonoBehaviour
         Destroy(gameObject, 2.2f);
         mejorado = true;
     }
-
-    private void DeactivateTownHall()
-    {
-        gameObject.SetActive(false);
-    }
-    
-    private void DeactivateVFX()
-    {
-        VFX_mEJORA.SetActive(false);
-    }
-
     public void Mejora_2()
     {
         //mejoro vida
@@ -96,6 +85,17 @@ public class Town_Hall_ : MonoBehaviour
         Destroy(gameObject, 2.2f);
         mejorado_2 = true;
     }
+
+    private void DeactivateTownHall()
+    {
+        gameObject.SetActive(false);
+    }
+    
+    private void DeactivateVFX()
+    {
+        VFX_mEJORA.SetActive(false);
+    }
+
 
     public void Cambio_de_Mesh()
     {

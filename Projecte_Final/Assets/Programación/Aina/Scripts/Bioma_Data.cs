@@ -274,6 +274,7 @@ public class Bioma_Data : Resources_Controller
         GameManager.instance.StonePlayer -= costStoneTower;
         GameManager.instance.TotalTowers += 1;
         LevelManager.instance.Mejora_GM();
+        LevelManager.instance.Mejora_GM_2();
         
         isTower = true;
 

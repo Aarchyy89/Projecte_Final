@@ -793,12 +793,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pirate_target: {fileID: 7818174694911877878, guid: abe6c79bb9a745f44936b18cfd95899b, type: 3}
   part_Torotate: {fileID: 8370385932557305671}
-  range: 1
+  range: 1.5
   turret_speed: 3
   fire_Rate: 1
-  bullet: {fileID: 621240443561020514, guid: d74701794f203f549abd5286f3da6310, type: 3}
   Shoot_Point: {fileID: 8370385932262556906}
   piratetag: Pirate
+  bala: 20
 --- !u!1 &4859285851851858560
 GameObject:
   m_ObjectHideFlags: 0

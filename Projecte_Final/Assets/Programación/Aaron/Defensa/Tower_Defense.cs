@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tower_Defense : MonoBehaviour
 {
-    public Transform pirate_target;
+    public Pirate pirate_target;
     public Transform part_Torotate;
     //[SerializeField] private AudioClip Shoot_clip;
 
@@ -51,15 +51,13 @@ public class Tower_Defense : MonoBehaviour
 
         if (nearestEnemy != null && shortestDistance <= range)
         {
-            pirate_target = nearestEnemy.transform;
+            pirate_target = nearestEnemy.GetComponent<Pirate>();
         }
         else
         {
             pirate_target = null;
         }
     }
-
-    
 
     private void Update()
     {
@@ -69,7 +67,7 @@ public class Tower_Defense : MonoBehaviour
         }
 
         //rotacion de la torreta al jugador 
-        Vector3 dir = pirate_target.position - transform.position;
+        Vector3 dir = pirate_target.transform.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = Quaternion.Lerp(part_Torotate.rotation, lookRotation, Time.deltaTime * turret_speed).eulerAngles;
         part_Torotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
@@ -86,7 +84,10 @@ public class Tower_Defense : MonoBehaviour
     private void Shoot()
     {
         GameObject bulletGO = PoolingManager.Instance.GetPooledObject((int)bala);
+        bulletGO.transform.position = gameObject.transform.position;
+        bulletGO.transform.rotation = gameObject.transform.rotation;
         bulletGO.SetActive(true);
+        
         Bala_Escopeta buullet = bulletGO.GetComponent<Bala_Escopeta>();
 
         if(buullet != null)

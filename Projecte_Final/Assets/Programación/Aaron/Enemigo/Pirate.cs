@@ -3,18 +3,18 @@ using UnityEngine.AI;
 
 public class Pirate : MonoBehaviour
 {
-    [Header("---Parameters---")]
+    [Header("--- Parameters ---")]
     private NavMeshAgent navMeshAgent;
     public Transform ayuntamiento;
     [SerializeField] private Animator anim;
     //[SerializeField] private Animator anim;
 
-    [Header("Stats")]
+    [Header("--- Stats ---")]
     [SerializeField] private int HP;
     [SerializeField] private int damage_amount;
     [SerializeField] private int Attack_damage;
 
-    [Header("---Death_Timer---")]
+    [Header("--- Death Timer ---")]
     [SerializeField] private float time_to_die = 2f;
     [SerializeField] private float die_timer = 0f;
 
@@ -32,11 +32,6 @@ public class Pirate : MonoBehaviour
     private void Update()
     {
         Go_TH();
-        Pirate_Death();
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            TAKE_damage();
-        }
     }
 
     public void Go_TH()
@@ -64,37 +59,27 @@ public class Pirate : MonoBehaviour
 
     }
 
-    public void Hago_Daño()
+    public void Make_Damage()
     {
         Town_Hall_.instance.TakeDamage(Attack_damage);
     }
 
-    public void TAKE_damage()
+    public void TAKE_damage(int damage)
     {
-        HP -= damage_amount;
+        HP -= damage;
         //Health_bar.value = HP;
-
 
         if (HP <= 0)
         {
             player_dead = true;
-            //animator.SetTrigger("Die");
-            
+            navMeshAgent.speed = 0;
+            anim.SetTrigger("Die");
+            Invoke("Pirate_Death", 2);
         }
     }
 
     private void Pirate_Death()
     {
-        if (player_dead)
-        {
-            die_timer += Time.deltaTime;
-        }
-
-        if (die_timer >= time_to_die)
-        {
-            Destroy(gameObject);
-            player_dead = false;
-            die_timer = 0;
-        }
+        gameObject.SetActive(false);
     }
 }

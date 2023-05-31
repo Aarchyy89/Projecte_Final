@@ -1,28 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bala_Escopeta : MonoBehaviour
 {
-    private Transform pirate_target;
+    private Pirate pirate_target;
 
     public float speed = 70f;
+    [SerializeField] private int damage;
 
-    public void Seek(Transform _target)
+    public void Seek(Pirate _target)
     {
         pirate_target = _target;
-        Destroy(gameObject, 5);
+        Invoke("Lifetime", 5);
     }
 
     private void Update()
     {
-        if (pirate_target == null)
+        if (pirate_target == null && !pirate_target.player_dead)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             return;
         }
 
-        Vector3 dir = pirate_target.position - transform.position;
+        Vector3 dir = pirate_target.gameObject.transform.position - transform.position;
         float distance_This = speed * Time.deltaTime;
 
         if (dir.magnitude <= distance_This)
@@ -34,9 +33,15 @@ public class Bala_Escopeta : MonoBehaviour
         transform.Translate(dir.normalized * distance_This, Space.World);
     }
 
-    public void HitTarget()
+    private void HitTarget()
     {
-        //Pirate.instance.TAKE_damage();
-        Destroy(gameObject);
+        pirate_target.TAKE_damage(damage);
+        gameObject.SetActive(false);
+    }
+    
+    private void Lifetime()
+    {
+        pirate_target.TAKE_damage(damage);
+        gameObject.SetActive(false);
     }
 }

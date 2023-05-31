@@ -17,7 +17,6 @@ public class Town_Hall_ : MonoBehaviour
     [Header("---fillable---")]
     //[SerializeField] private Slider health_bar;
     [SerializeField] private GameObject VFX_mEJORA;
-    [SerializeField] private GameObject VFX_2;
     [SerializeField] private Slider Health_Slider;
 
     [Header("---Cambio Mesh Timer---")]
@@ -45,19 +44,17 @@ public class Town_Hall_ : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
     }
+    
     private void Start()
     {
         Health_Slider.value = TH_HP;
     }
 
-
     private void OnEnable()
     {
         TH_HP = PlayerPrefs.GetInt("TH_HP", TH_HP);
     }
-
 
     public void Mejora()
     {
@@ -70,9 +67,19 @@ public class Town_Hall_ : MonoBehaviour
         VFX_mEJORA.SetActive(true);
         
         //Destruyo el gameObjt
-        Destroy(VFX_mEJORA, 3f);
+        Invoke("DeactivateVFX", 3f);
         Destroy(gameObject, 2.2f);
         mejorado = true;
+    }
+
+    private void DeactivateTownHall()
+    {
+        gameObject.SetActive(false);
+    }
+    
+    private void DeactivateVFX()
+    {
+        VFX_mEJORA.SetActive(false);
     }
 
     public void Mejora_2()
@@ -85,7 +92,7 @@ public class Town_Hall_ : MonoBehaviour
         VFX_mEJORA.SetActive(true);
 
         //Destruyo el gameObjt
-        Destroy(VFX_mEJORA, 3f);
+        Invoke("DeactivateVFX", 3f);
         Destroy(gameObject, 2.2f);
         mejorado_2 = true;
     }

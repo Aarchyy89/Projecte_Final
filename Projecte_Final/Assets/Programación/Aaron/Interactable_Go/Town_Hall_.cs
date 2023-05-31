@@ -48,6 +48,7 @@ public class Town_Hall_ : MonoBehaviour
     
     private void Start()
     {
+        TH_HP = 70;
         Health_Slider.value = TH_HP;
     }
 
@@ -71,6 +72,7 @@ public class Town_Hall_ : MonoBehaviour
         Destroy(gameObject, 2.2f);
         mejorado = true;
     }
+    
     public void Mejora_2()
     {
         //mejoro vida

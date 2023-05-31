@@ -16485,6 +16485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Town Hall
       objectReference: {fileID: 0}
+    - target: {fileID: 7886123453495197087, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7886123454401617061, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: VFX_mEJORA
       value: 

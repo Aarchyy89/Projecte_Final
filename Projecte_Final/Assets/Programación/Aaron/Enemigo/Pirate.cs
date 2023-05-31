@@ -20,6 +20,7 @@ public class Pirate : MonoBehaviour
 
     public bool inside;
     public bool player_dead;
+    private GameObject activeTownHall;
 
     void Start()
     {
@@ -61,7 +62,8 @@ public class Pirate : MonoBehaviour
 
     public void Make_Damage()
     {
-        Town_Hall_.instance.TakeDamage(Attack_damage);
+        activeTownHall = GameObject.FindGameObjectWithTag("TH");
+        activeTownHall.GetComponent<Town_Hall_>().TakeDamage(Attack_damage);
     }
 
     public void TAKE_damage(int damage)

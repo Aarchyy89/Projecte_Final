@@ -22,7 +22,11 @@ public class GameManager : MonoBehaviour
     public TMP_Text stoneText;
     [SerializeField] private GameObject winPanel;
     [SerializeField] private GameObject losePanel;
-        
+
+    [Header("----- Wave Variables -----")]
+    private int index_triggerDatas;
+    [SerializeField] private List<Trigger_Data> _triggerDatas;
+
     public int WoodPlayer
     {
         get { return woodPlayer; }
@@ -69,6 +73,14 @@ public class GameManager : MonoBehaviour
         RefreshUITxt();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            Sistema_Oleadas.Instance.TouchTrigger();
+        }
+    }
+
     public void RefreshUITxt()
     {
         woodText.text = $"{woodPlayer}";
@@ -81,6 +93,16 @@ public class GameManager : MonoBehaviour
         Sistema_Oleadas.Instance.lastWave = true;
         Sistema_Oleadas.Instance.waveActive = false;
         Sistema_Oleadas.Instance.BuildTrigger();
+    }
+
+    public void TriggerRound()
+    {
+        if (_triggerDatas[index_triggerDatas].TotalConstructions >= totalConstructions 
+            && _triggerDatas[index_triggerDatas].TotalTowers >= totalTowers)
+        {
+            Sistema_Oleadas.Instance.BuildTrigger();
+            ++index_triggerDatas;
+        }
     }
 
     public void WinCheck()

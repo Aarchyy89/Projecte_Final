@@ -19,7 +19,10 @@ public class WaveData : ScriptableObject
     private int enemyAttackStats;
 
     [SerializeField, Tooltip("Variable float of maximum waiting time between instances")]
-    private int enemySpeedStats;
+    private float enemySpeedStats;
+    
+    [SerializeField, Tooltip("Variable float of maximum waiting time between instances")]
+    private int enemyHealth;
 
     // Getters
     
@@ -33,5 +36,7 @@ public class WaveData : ScriptableObject
     
     public int EnemyAttackStats => enemyAttackStats;
     
-    public int EnemySpeedStats => enemySpeedStats;
+    public float EnemySpeedStats => enemySpeedStats;
+
+    public int EnemyHealth => enemyHealth;
 }

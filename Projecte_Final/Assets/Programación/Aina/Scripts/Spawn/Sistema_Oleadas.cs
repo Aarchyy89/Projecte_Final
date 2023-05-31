@@ -9,7 +9,7 @@ public class Sistema_Oleadas : MonoBehaviour
     public static Sistema_Oleadas Instance;
     
     [Header("----- Wave Variables -----")] 
-    [SerializeField] private List<WaveData> waveData_list;
+    public List<WaveData> waveData_list;
     [SerializeField] private List<EnemyDifficultyData> enemyDifficultyData_list;
 
     [Tooltip("Current Wave")]
@@ -22,7 +22,7 @@ public class Sistema_Oleadas : MonoBehaviour
     public int TotalEnemies => totalEnemies;
 
     [Tooltip("Waiting time between one round and another")]
-    [SerializeField] private float timeBetweenRounds = 30;
+    [SerializeField] private float timeBetweenRounds = 10;
 
     [Header("----- Wave Trigger -----")]
     private IEnumerator currentCoroutine;
@@ -41,8 +41,6 @@ public class Sistema_Oleadas : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        StartRound();
     }
 
     private void StartRound()
@@ -99,7 +97,7 @@ public class Sistema_Oleadas : MonoBehaviour
     
     public void TouchTrigger()
     {
-        if (!waveActive)
+        if (!waveActive && GameManager.instance.TotalTowers >= 2)
         {
             timerActive = false;
             
@@ -113,6 +111,7 @@ public class Sistema_Oleadas : MonoBehaviour
     IEnumerator TimerTriggerEnemy()
     {
         float timer = 0;
+        Debug.Log("start round");
         
         while (timerActive)
         {

@@ -7141,6 +7141,25 @@ MonoBehaviour:
   stoneText: {fileID: 1283105250}
   winPanel: {fileID: 941286821}
   losePanel: {fileID: 1134655110}
+  _triggerDatas:
+  - {fileID: 11400000, guid: 2295a4c47842aac4fa0fca927ed3e6eb, type: 2}
+  - {fileID: 11400000, guid: b418de9c5b1d66c46adfc7ff1976667c, type: 2}
+  - {fileID: 11400000, guid: 5e6fff602f6951e4bb0d2f6a75152824, type: 2}
+  - {fileID: 11400000, guid: 30fb1eb8d208a1e45829544779f5f875, type: 2}
+  - {fileID: 11400000, guid: 4651263edd29737458b02928f4aa4b49, type: 2}
+  - {fileID: 11400000, guid: 77d95448626af554a93ec9045fbd75a5, type: 2}
+  - {fileID: 11400000, guid: 6abde9c1c07a8324e8c6fa76dbd5257e, type: 2}
+  - {fileID: 11400000, guid: 2fde82bd163f70643ba7fe153ac9c66a, type: 2}
+  - {fileID: 11400000, guid: 807721484a818fe4eac70ffb5a10696a, type: 2}
+  - {fileID: 11400000, guid: e241d226ea680ba4ba77854bd56de1cb, type: 2}
+  - {fileID: 11400000, guid: 3c1d0bfaae6fade429d479dc00bae7ca, type: 2}
+  - {fileID: 11400000, guid: b65e7cfd560860547b11b4cc1240c904, type: 2}
+  - {fileID: 11400000, guid: 086803a6e5cf420478e8d3463a9f7ea3, type: 2}
+  - {fileID: 11400000, guid: 0db7dfcb61553bf4098d194e8dad0eb7, type: 2}
+  - {fileID: 11400000, guid: 16f32a3074c06574f87ec1b8d0de1b81, type: 2}
+  - {fileID: 11400000, guid: 19a34f74ba3a9b8439d2b23f16094500, type: 2}
+  - {fileID: 11400000, guid: 7cacb31048742654c95071f9b520725a, type: 2}
+  - {fileID: 11400000, guid: 70db58e7923c29348b40f98dbd3a8c14, type: 2}
 --- !u!1 &864558936
 GameObject:
   m_ObjectHideFlags: 0
@@ -17021,7 +17040,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveData_list:
   - {fileID: 11400000, guid: 6fd3351705e777a4fa23de8db32f2c6d, type: 2}
-  - {fileID: 11400000, guid: 23febead32b3936418ba88a35f074eb7, type: 2}
+  - {fileID: 11400000, guid: 37140179e59c0d9419dd47f1c1229cbe, type: 2}
+  - {fileID: 11400000, guid: 8e21d90bb255d4040bae0b286e5266a8, type: 2}
+  - {fileID: 11400000, guid: 61dacc7ac2d77404482e43861927bae1, type: 2}
+  - {fileID: 11400000, guid: e3b5c9a1d57d68c4e92a8746b3d15a29, type: 2}
+  - {fileID: 11400000, guid: 08ab4acacf67a0747bc5d36c8e4535be, type: 2}
+  - {fileID: 11400000, guid: f994922e2cbb3314c996b42d5d6092d5, type: 2}
+  - {fileID: 11400000, guid: 6d671ff66c19a9649a015ce2c2e6411f, type: 2}
+  - {fileID: 11400000, guid: a7785d014b914934f88ebcfb2d589940, type: 2}
+  - {fileID: 11400000, guid: d106eabbfbdc91a4aa3359cc54ac0694, type: 2}
   enemyDifficultyData_list:
   - {fileID: 11400000, guid: 0046b255199aac347bf33f628d5df029, type: 2}
   - {fileID: 11400000, guid: a1530183e84bec9429ef5b09d3047974, type: 2}

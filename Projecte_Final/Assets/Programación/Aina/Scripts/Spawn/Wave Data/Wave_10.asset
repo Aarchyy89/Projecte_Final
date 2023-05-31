@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a84e0f97e4519649a181c333a71002e, type: 3}
-  m_Name: Wave_1
+  m_Name: Wave_10
   m_EditorClassIdentifier: 
   spawnTimer_min: 3
   spawnTimer_max: 4
-  totalEnemyBoats: 1
-  totalEnemies: 3
-  enemyAttackStats: 5
-  enemySpeedStats: 1
-  enemyHealth: 50
+  totalEnemyBoats: 3
+  totalEnemies: 8
+  enemyAttackStats: 22
+  enemySpeedStats: 3
+  enemyHealth: 100

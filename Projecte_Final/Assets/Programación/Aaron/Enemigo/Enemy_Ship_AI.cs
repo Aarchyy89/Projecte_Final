@@ -25,6 +25,8 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     public bool Hora_de_irse = false;
 
+    private Transform WayOut;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -39,6 +41,7 @@ public class Enemy_Ship_AI : MonoBehaviour
 
         if(Hora_de_irse)
         {
+            WayOut = WP().transform;
             Me_voy();
         }
         else
@@ -111,6 +114,9 @@ public class Enemy_Ship_AI : MonoBehaviour
 
             pirateLocal.transform.position = new Vector3(Invoke_point.transform.position.x, Invoke_point.transform.position.y + 1.2f, Invoke_point.transform.position.z);
             pirateLocal.transform.rotation = Invoke_point.transform.rotation;
+            pirateLocal.GetComponent<Pirate>().Vida = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemyHealth;
+            pirateLocal.GetComponent<Pirate>().Damage = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemyAttackStats;
+            pirateLocal.GetComponent<Pirate>().NavMeshAgent.speed = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemySpeedStats;
             pirateLocal.gameObject.SetActive(true);
 
 
@@ -130,7 +136,6 @@ public class Enemy_Ship_AI : MonoBehaviour
             pirate_spawn_timer += Time.deltaTime;
         }
 
-
         if (pirate_spawn_timer >= time_to_spawn)
         {
             Instantiated_Pirates = Sistema_Oleadas.Instance.TotalEnemies;
@@ -146,8 +151,8 @@ public class Enemy_Ship_AI : MonoBehaviour
         Waypoints = GameObject.FindGameObjectsWithTag("Waypoints");
         navMeshAgent.speed = 3;
         navMeshAgent.isStopped = false;
-        navMeshAgent.SetDestination(WP().transform.position);
-        if(transform.position == WP().transform.position)
+        navMeshAgent.SetDestination(WayOut.position);
+        if(transform.position == WayOut.position)
         {
             gameObject.SetActive(false);
         }

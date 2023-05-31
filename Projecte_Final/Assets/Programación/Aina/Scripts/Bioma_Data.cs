@@ -266,6 +266,7 @@ public class Bioma_Data : Resources_Controller
         Invoke("IncreaseResource", 2f);
         
         GameManager.instance.RefreshUITxt();
+        GameManager.instance.TriggerRound();
     }
     
     private void BuildTower()
@@ -286,6 +287,7 @@ public class Bioma_Data : Resources_Controller
 
         Instantiate_Tower();
         GameManager.instance.RefreshUITxt();
+        GameManager.instance.TriggerRound();
     }
     
 }

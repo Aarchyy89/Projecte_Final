@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,21 +11,38 @@ public class Pirate : MonoBehaviour
     //[SerializeField] private Animator anim;
 
     [Header("--- Stats ---")]
-    [SerializeField] private int HP;
-    [SerializeField] private int damage_amount;
-    [SerializeField] private int Attack_damage;
-
-    [Header("--- Death Timer ---")]
-    [SerializeField] private float time_to_die = 2f;
-    [SerializeField] private float die_timer = 0f;
+    private int HP;
+    private int Attack_damage;
 
     public bool inside;
     public bool player_dead;
     private GameObject activeTownHall;
+    
+    public int Vida
+    {
+        get { return HP; }
+        set { HP = value; }
+    }
+    
+    public int Damage
+    {
+        get { return Attack_damage; }
+        set { Attack_damage = value; }
+    }
+    
+    public NavMeshAgent NavMeshAgent
+    {
+        get { return navMeshAgent; }
+        set { navMeshAgent = value; }
+    }
+
+    private void Awake()
+    {
+        navMeshAgent = GetComponent<NavMeshAgent>();
+    }
 
     void Start()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
         ayuntamiento = GameObject.FindGameObjectWithTag("TH").transform;
         inside = false;
         player_dead = false;

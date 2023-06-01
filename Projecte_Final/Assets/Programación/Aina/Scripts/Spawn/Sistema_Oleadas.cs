@@ -63,9 +63,9 @@ public class Sistema_Oleadas : MonoBehaviour
     
     private bool CheckNextRound()
     {
-        if (enemyDifficultyData_list[waveNumber].TotalConstructions >= GameManager.instance.TotalConstructions 
-            && enemyDifficultyData_list[waveNumber].TotalTowers >= GameManager.instance.TotalTowers
-            && enemyDifficultyData_list[waveNumber].LvlTownHall >= GameManager.instance.LvlTownHall
+        if (enemyDifficultyData_list[waveNumber].TotalConstructions <= GameManager.instance.TotalConstructions 
+            && enemyDifficultyData_list[waveNumber].TotalTowers <= GameManager.instance.TotalTowers
+            && enemyDifficultyData_list[waveNumber].LvlTownHall <= GameManager.instance.LvlTownHall
             || lastWave)
         {
             return true;
@@ -76,7 +76,7 @@ public class Sistema_Oleadas : MonoBehaviour
     
     private void Checker()
     {
-        if (CheckNextRound() && waveNumber != waveData_list.Count)
+        if (CheckNextRound() && waveNumber != enemyDifficultyData_list.Count)
         {
             ++waveNumber;
         }

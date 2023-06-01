@@ -37,11 +37,21 @@ public class Bala_Escopeta : MonoBehaviour
     {
         pirate_target.TAKE_damage(damage);
         gameObject.SetActive(false);
+
+        if (Sistema_Oleadas.Instance.lastWave)
+        {
+            --GameManager.instance._LastRoundEnemies;
+        }
     }
     
     private void Lifetime()
     {
         pirate_target.TAKE_damage(damage);
         gameObject.SetActive(false);
+
+        if (Sistema_Oleadas.Instance.lastWave)
+        {
+            --GameManager.instance._LastRoundEnemies;
+        }
     }
 }

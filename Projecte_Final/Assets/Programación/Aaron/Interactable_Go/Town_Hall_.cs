@@ -88,16 +88,10 @@ public class Town_Hall_ : MonoBehaviour
         mejorado_2 = true;
     }
 
-    private void DeactivateTownHall()
-    {
-        gameObject.SetActive(false);
-    }
-    
     private void DeactivateVFX()
     {
         VFX_mEJORA.SetActive(false);
     }
-
 
     public void Cambio_de_Mesh()
     {
@@ -126,6 +120,7 @@ public class Town_Hall_ : MonoBehaviour
             LevelManager.instance.th_3.SetActive(true);
             mejorado_2 = false;
             TH_Mesh_timer = 0;
+            GameManager.instance.LastRound();
         }
     }
 

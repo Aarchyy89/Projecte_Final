@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     private int totalTowers;
     private int lvlTownHall;
 
+    private int LastRoundEnemies;
+
     [Header("----- UI Variables -----")] 
     public TMP_Text woodText;
     public TMP_Text stoneText;
@@ -56,6 +58,12 @@ public class GameManager : MonoBehaviour
         get { return lvlTownHall; }
         set { lvlTownHall = value; }
     }
+    
+    public int _LastRoundEnemies
+    {
+        get { return LastRoundEnemies; }
+        set { LastRoundEnemies = value; }
+    }
 
     private void Awake()
     {
@@ -68,8 +76,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        woodPlayer = 200;
-        stonePlayer = 200;
+        woodPlayer = 20;
+        stonePlayer = 20;
         RefreshUITxt();
     }
 
@@ -91,6 +99,7 @@ public class GameManager : MonoBehaviour
     public void LastRound()
     {
         Sistema_Oleadas.Instance.lastWave = true;
+        LastRoundEnemies = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].TotalEnemies;
         Sistema_Oleadas.Instance.waveActive = false;
         Sistema_Oleadas.Instance.BuildTrigger();
     }
@@ -107,7 +116,10 @@ public class GameManager : MonoBehaviour
 
     public void WinCheck()
     {
-        winPanel.SetActive(true);
+        if (Sistema_Oleadas.Instance.lastWave && LastRoundEnemies <= 0)
+        {
+            winPanel.SetActive(true);
+        }
     }
 
     public void LoseCheck()

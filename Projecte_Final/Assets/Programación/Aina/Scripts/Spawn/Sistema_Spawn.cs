@@ -82,11 +82,6 @@ public class Sistema_Spawn : MonoBehaviour
         {
             active_wave = false;
             sistemaOleadas.waveActive = false;
-
-            if (sistemaOleadas.lastWave)
-            {
-                GameManager.instance.WinCheck();
-            }
         }
     }
 }

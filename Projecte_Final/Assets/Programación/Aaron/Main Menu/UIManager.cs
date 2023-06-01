@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,22 +14,46 @@ public class UIManager : MonoBehaviour
     public GameObject Volumen_panel;
     public GameObject Brillo_panel;
     public GameObject Mainpanel;
+    public GameObject Pausepanel;
+    private bool pauseBool;
     public static UIManager instance;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name == "Level_Merge")
+        {
+            if (!pauseBool)
+            {
+                Pausepanel.SetActive(true);
+                pauseBool = true;
+                Time.timeScale = 0;
+            }
+        }
+    }
 
-
+    public void ResumeGame()
+    {
+        Pausepanel.SetActive(false);
+        pauseBool = false;
+        Time.timeScale = 1;
+    }
 
     //PANEL MAIN MENU
     public void Jugar()
     {
         SceneManager.LoadScene(1);
     }
+    
+    public void MainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+    }
 
     public void Controles()
     {
         panel_controles.SetActive(true);
         Mainpanel.SetActive(false);
-
     }
 
     public void Opciones()
@@ -41,8 +66,7 @@ public class UIManager : MonoBehaviour
     {
         Application.Quit();
     }
-
-
+    
     //OPCIONES
     public void Idioma()
     {
@@ -66,8 +90,6 @@ public class UIManager : MonoBehaviour
         Idioma_panel.SetActive(false);
         Mainpanel.SetActive(false);
         panel_opciones.SetActive(true);
-
-
     }
 
     //RETURNS

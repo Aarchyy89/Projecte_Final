@@ -96,6 +96,8 @@ public class Pirate : MonoBehaviour
             anim.SetTrigger("Die");
             Invoke("Pirate_Death", 2);
         }
+        
+        GameManager.instance.WinCheck();
     }
 
     private void Pirate_Death()

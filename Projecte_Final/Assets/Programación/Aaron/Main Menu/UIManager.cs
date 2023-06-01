@@ -11,8 +11,6 @@ public class UIManager : MonoBehaviour
     public GameObject panel_controles;
     public GameObject panel_opciones;
     public GameObject Idioma_panel;
-    public GameObject Volumen_panel;
-    public GameObject Brillo_panel;
     public GameObject Mainpanel;
     public GameObject Pausepanel;
     private bool pauseBool;
@@ -75,15 +73,6 @@ public class UIManager : MonoBehaviour
         panel_opciones.SetActive(false);
     }
 
-    public void Volumen()
-    {
-        Volumen_panel.SetActive(true);
-    }
-
-    public void Brillo()
-    {
-        Brillo_panel.SetActive(true);
-    }
     
     public void volvermenuopciones()
     {
@@ -103,8 +92,6 @@ public class UIManager : MonoBehaviour
     public void ReturnSettings()
     {
         Idioma_panel.SetActive(false);
-        Volumen_panel.SetActive(false);
-        Brillo_panel.SetActive(false);
         panel_controles.SetActive(false);
     }
 }

@@ -9,7 +9,6 @@ public class Volume_Manager : MonoBehaviour
     [Header("musica")] 
     public Slider sliderMusica;
     public float slidervalueMusica;
-    public Image imgMuteMusica;
     public AudioSource sourceMusica;
 
 
@@ -17,7 +16,7 @@ public class Volume_Manager : MonoBehaviour
     {
         sliderMusica.value = PlayerPrefs.GetFloat("volmenMusica", 0.5f);
         sourceMusica.volume = sliderMusica.value;
-        musicaMute();
+        //musicaMute();
     }
 
     public void slidermusica(float valorMusica)
@@ -25,11 +24,11 @@ public class Volume_Manager : MonoBehaviour
         slidervalueMusica = valorMusica;
         PlayerPrefs.SetFloat("volmenMusica", slidervalueMusica);
         sourceMusica.volume = sliderMusica.value;
-        musicaMute();
+        //musicaMute();
 
     }
 
-    public void musicaMute()
+    /*public void musicaMute()
     {
         if (slidervalueMusica == 0)
         {
@@ -39,5 +38,5 @@ public class Volume_Manager : MonoBehaviour
         {
             imgMuteMusica.enabled = false;
         }
-    }
+    }*/
 }

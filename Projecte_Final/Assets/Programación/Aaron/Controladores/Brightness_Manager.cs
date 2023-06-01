@@ -6,7 +6,6 @@ using TMPro;
 
 public class Brightness_Manager : MonoBehaviour
 {
-    public GameObject brightness_panel;
     public Slider SliderBrightness;
 
     public PostProcessProfile brightness;
@@ -40,8 +39,4 @@ public class Brightness_Manager : MonoBehaviour
         PlayerPrefs.SetFloat("brillo", SliderBrightness.value);
     }
 
-    public void Brillo()
-    {
-        brightness_panel.SetActive(true);
-    }
 }

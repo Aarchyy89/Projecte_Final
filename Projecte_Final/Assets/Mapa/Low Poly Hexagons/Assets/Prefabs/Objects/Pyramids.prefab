@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33722072844804276}
   - component: {fileID: 23459177958940732}
   - component: {fileID: 65611263474854420}
+  - component: {fileID: -3836400220628578026}
   m_Layer: 0
   m_Name: Pyramids
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.90059257, y: 0.32410067, z: 0.9904976}
   m_Center: {x: -0.032833785, y: 0.3623877, z: -0.01924342}
+--- !u!208 &-3836400220628578026
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097627780168390}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.45000002, y: 0.162, z: 0.49500003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.033, y: 0.36200002, z: -0.019000001}
+  m_TimeToStationary: 0.5

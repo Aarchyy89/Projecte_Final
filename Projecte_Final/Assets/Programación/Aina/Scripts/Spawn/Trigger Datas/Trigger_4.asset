@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3273d2d7878bdca4fbb1980f7ea75aa7, type: 3}
   m_Name: Trigger_4
   m_EditorClassIdentifier: 
-  totalConstructions: 18
+  totalConstructions: 10
   totalTowers: 6

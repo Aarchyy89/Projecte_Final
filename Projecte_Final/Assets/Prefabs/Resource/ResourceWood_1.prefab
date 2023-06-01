@@ -478,6 +478,7 @@ GameObject:
   - component: {fileID: 4946248839871432527}
   - component: {fileID: 4946248839871432524}
   - component: {fileID: 4946248839871432525}
+  - component: {fileID: 2486657817310200305}
   m_Layer: 0
   m_Name: ResourceWood_1
   m_TagString: Untagged
@@ -541,6 +542,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Villager: {fileID: 1576122528303199505}
+--- !u!208 &2486657817310200305
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4950528158122991275}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.55}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.4, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &4950888375355202649
 GameObject:
   m_ObjectHideFlags: 0

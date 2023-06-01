@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     private int index_triggerDatas;
     [SerializeField] private List<Trigger_Data> _triggerDatas;
 
+    public int cantBuy;
+
     public int WoodPlayer
     {
         get { return woodPlayer; }
@@ -76,8 +78,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        woodPlayer = 20;
-        stonePlayer = 20;
+        woodPlayer = 50;
+        stonePlayer = 50;
         RefreshUITxt();
     }
 
@@ -106,9 +108,10 @@ public class GameManager : MonoBehaviour
 
     public void TriggerRound()
     {
-        if (_triggerDatas[index_triggerDatas].TotalConstructions >= totalConstructions 
-            && _triggerDatas[index_triggerDatas].TotalTowers >= totalTowers)
+        if (_triggerDatas[index_triggerDatas].TotalTowers > totalTowers
+            && _triggerDatas[index_triggerDatas].TotalConstructions > totalConstructions)
         {
+            Debug.Log(_triggerDatas[index_triggerDatas].TotalTowers);
             Sistema_Oleadas.Instance.BuildTrigger();
             ++index_triggerDatas;
         }
@@ -119,6 +122,15 @@ public class GameManager : MonoBehaviour
         if (Sistema_Oleadas.Instance.lastWave && LastRoundEnemies <= 0)
         {
             winPanel.SetActive(true);
+        }
+    }
+
+    public void NonResources()
+    {
+        Debug.Log("red");
+        if (cantBuy > 4)
+        {
+            LoseCheck();
         }
     }
 

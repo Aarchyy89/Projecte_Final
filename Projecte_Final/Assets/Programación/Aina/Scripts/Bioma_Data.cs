@@ -194,10 +194,13 @@ public class Bioma_Data : Resources_Controller
                     ui_local.gameObject.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
                    
                     Instantiate_Able();
+                    GameManager.instance.cantBuy = 0;
                 }
                 else
                 {
                     Instantiate_Unable();
+                    ++GameManager.instance.cantBuy;
+                    GameManager.instance.NonResources();
                 }
 
             }
@@ -210,10 +213,13 @@ public class Bioma_Data : Resources_Controller
                     ui_local.gameObject.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(BuildHexagon);
                    
                     Instantiate_Able();
+                    GameManager.instance.cantBuy = 0;
                 }
                 else
                 {
                     Instantiate_Unable();
+                    ++GameManager.instance.cantBuy;
+                    GameManager.instance.NonResources();
                 }
             }
             else if(isUnlocked && !isBuilt && !canBuild && !isTower || isUnlocked && isBuilt && resourcesMax == 0 && !isTower)
@@ -225,10 +231,13 @@ public class Bioma_Data : Resources_Controller
                     ui_local.gameObject.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(BuildTower);
                    
                     Instantiate_Able();
+                    GameManager.instance.cantBuy = 0;
                 }
                 else
                 {
                     Instantiate_Unable();
+                    ++GameManager.instance.cantBuy;
+                    GameManager.instance.NonResources();
                 }
             }
         }
@@ -266,7 +275,7 @@ public class Bioma_Data : Resources_Controller
         Invoke("IncreaseResource", 2f);
         
         GameManager.instance.RefreshUITxt();
-        GameManager.instance.TriggerRound();
+        //GameManager.instance.TriggerRound();
     }
     
     private void BuildTower()

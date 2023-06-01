@@ -1252,6 +1252,7 @@ GameObject:
   - component: {fileID: 7592530728577237232}
   - component: {fileID: 7592530728577237230}
   - component: {fileID: 7592530728577237233}
+  - component: {fileID: 703970753252436038}
   m_Layer: 0
   m_Name: StoneWood_2
   m_TagString: Untagged
@@ -1313,6 +1314,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Villager: {fileID: 7592530727414345476}
+--- !u!208 &703970753252436038
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7592530728577237235}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.6}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.4, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &4225698249444207666
 PrefabInstance:
   m_ObjectHideFlags: 0

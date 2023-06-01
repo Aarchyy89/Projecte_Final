@@ -8767,6 +8767,7 @@ MonoBehaviour:
   winPanel: {fileID: 941286821}
   losePanel: {fileID: 0}
   _triggerDatas: []
+  cantBuy: 0
 --- !u!1 &864558936
 GameObject:
   m_ObjectHideFlags: 0
@@ -19941,7 +19942,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108916965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.45, y: 0.7, z: 0}
+  m_LocalPosition: {x: -2.36, y: 0.7, z: 0}
   m_LocalScale: {x: 0.59341, y: 0.59341, z: 0.59341}
   m_ConstrainProportionsScale: 0
   m_Children: []

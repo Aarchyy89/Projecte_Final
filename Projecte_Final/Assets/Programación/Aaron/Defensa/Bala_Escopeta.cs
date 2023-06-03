@@ -6,11 +6,12 @@ public class Bala_Escopeta : MonoBehaviour
 
     public float speed = 70f;
     [SerializeField] private int damage;
-
+    [SerializeField] private AudioClip sound;
     public void Seek(Pirate _target)
     {
         pirate_target = _target;
         Invoke("Lifetime", 5);
+        BackGround_Music.instance.AudioClip(sound);
     }
 
     private void Update()

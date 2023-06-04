@@ -14,8 +14,10 @@ public class Volume_Manager : MonoBehaviour
 
     void Start()
     {
-        sliderMusica.value = PlayerPrefs.GetFloat("volmenMusica", 0.5f);
-        sourceMusica.volume = sliderMusica.value;
+        AudioListener.volume = PlayerPrefs.GetFloat("volmenMusica");
+        
+        //sliderMusica.value = PlayerPrefs.GetFloat("volmenMusica", 0.5f);
+        //sourceMusica.volume = sliderMusica.value;
         //musicaMute();
     }
 
@@ -26,6 +28,13 @@ public class Volume_Manager : MonoBehaviour
         sourceMusica.volume = sliderMusica.value;
         //musicaMute();
 
+    }
+
+    public void MasterVolume()
+    {
+        AudioListener.volume = sliderMusica.value;
+        
+        PlayerPrefs.SetFloat("volmenMusica", sliderMusica.value);
     }
 
     /*public void musicaMute()

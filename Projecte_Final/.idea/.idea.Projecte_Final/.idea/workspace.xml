@@ -34,6 +34,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Downloads/Build\Projecte_Final.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\ainan\Downloads\Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.13f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\ainan\OneDrive\Documents\GitHub\Projecte_Final\Projecte_Final -debugCodeOptimization" />
@@ -43,7 +51,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.13f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\a.nees\Documents\Github.projects\Projecte_Final\Projecte_Final -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\a.nees\Documents\Github.projects\Projecte_Final\Projecte_Final" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -122,6 +130,7 @@
       <workItem from="1685604565324" duration="1449000" />
       <workItem from="1685622891946" duration="2477000" />
       <workItem from="1685626262392" duration="40000" />
+      <workItem from="1685894841039" duration="2466000" />
     </task>
     <servers />
   </component>

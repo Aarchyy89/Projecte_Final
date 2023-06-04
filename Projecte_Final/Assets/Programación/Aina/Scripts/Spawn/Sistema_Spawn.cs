@@ -36,6 +36,7 @@ public class Sistema_Spawn : MonoBehaviour
 
     public void StartSpawner()
     {
+        BackGround_Music.instance.PlayPirateMusic();
         currentCoroutine = Coroutine_StartSpawner();
         StartCoroutine(currentCoroutine);
     }

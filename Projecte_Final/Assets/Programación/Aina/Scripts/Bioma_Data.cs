@@ -261,9 +261,13 @@ public class Bioma_Data : Resources_Controller
         
         ui_local.SetActive(false);
         able_local.SetActive(false);
-
-        Instantiate_Unlock();
-        MakeAvailableNearBiomes();
+        
+        Instantiate_VFXBuild();
+        
+        Invoke("Instantiate_Unlock", 1);
+        Invoke("MakeAvailableNearBiomes", 2f);
+        Invoke("Deactivate_VFXBuild", 2f);
+        
         GameManager.instance.RefreshUITxt();
     }
     
@@ -287,7 +291,6 @@ public class Bioma_Data : Resources_Controller
         Invoke("Deactivate_VFXBuild", 2f);
 
         GameManager.instance.RefreshUITxt();
-        //GameManager.instance.TriggerRound();
     }
     
     private void BuildTower()
@@ -306,8 +309,12 @@ public class Bioma_Data : Resources_Controller
         unlocked_local.SetActive(false);
         
         if (build_local != null) build_local.SetActive(false);
+        
+        Instantiate_VFXBuild();
+        
+        Invoke("Instantiate_Tower", 1);
+        Invoke("Deactivate_VFXBuild", 2f);
 
-        Instantiate_Tower();
         GameManager.instance.RefreshUITxt();
         GameManager.instance.TriggerRound();
     }

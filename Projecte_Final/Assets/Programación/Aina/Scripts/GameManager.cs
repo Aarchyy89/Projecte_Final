@@ -28,6 +28,10 @@ public class GameManager : MonoBehaviour
     [Header("----- Wave Variables -----")]
     private int index_triggerDatas;
     [SerializeField] private List<Trigger_Data> _triggerDatas;
+    
+    [Header("----- Music Variables -----")]
+    [SerializeField] private GameObject winMusic;
+    [SerializeField] private GameObject loseMusic;
 
     public int cantBuy;
 
@@ -122,12 +126,12 @@ public class GameManager : MonoBehaviour
         if (Sistema_Oleadas.Instance.lastWave && LastRoundEnemies <= 0)
         {
             winPanel.SetActive(true);
+            winMusic.SetActive(true);
         }
     }
 
     public void NonResources()
     {
-        Debug.Log("red");
         if (cantBuy > 4)
         {
             LoseCheck();
@@ -137,5 +141,6 @@ public class GameManager : MonoBehaviour
     public void LoseCheck()
     {
         losePanel.SetActive(true);
+        loseMusic.SetActive(true);
     }
 }

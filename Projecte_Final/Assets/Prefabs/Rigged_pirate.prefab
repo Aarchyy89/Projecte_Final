@@ -488,13 +488,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ayuntamiento: {fileID: 0}
   anim: {fileID: 1556224960375629919}
-  HP: 80
-  damage_amount: 10
-  Attack_damage: 5
-  time_to_die: 2
-  die_timer: 0
   inside: 0
   player_dead: 0
+  sound: {fileID: 8300000, guid: e4c80e3afb493fe4bb528dda4fd8fbff, type: 3}
+  muertesound:
+  - {fileID: 8300000, guid: 8e8f6a631d93c6f4690aad425cf46dde, type: 3}
+  - {fileID: 8300000, guid: af692f0013eccd34daee4780c3388b2e, type: 3}
 --- !u!65 &3701154225478977902
 BoxCollider:
   m_ObjectHideFlags: 0

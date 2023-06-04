@@ -1004,6 +1004,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Villager: {fileID: 1820826541705473798}
+  sound: {fileID: 8300000, guid: 56d3585e0c0063e44a32d96be844a4a4, type: 3}
+  soundEND: {fileID: 8300000, guid: c3d62767a1fb2ce4db4c5e3b6b4553b1, type: 3}
 --- !u!208 &3664777545586081840
 NavMeshObstacle:
   m_ObjectHideFlags: 0

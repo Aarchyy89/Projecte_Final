@@ -1,6 +1,8 @@
 using System;
+using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 using UnityEngine.AI;
+
 
 public class Pirate : MonoBehaviour
 {
@@ -17,7 +19,17 @@ public class Pirate : MonoBehaviour
     public bool inside;
     public bool player_dead;
     private GameObject activeTownHall;
-    
+
+    [SerializeField] private AudioClip sound;
+    [SerializeField] private AudioClip[] muertesound;
+
+
+    public void espadasound()
+    {
+        BackGround_Music.instance.AudioClip(sound);
+
+
+    }
     public int Vida
     {
         get { return HP; }
@@ -94,6 +106,7 @@ public class Pirate : MonoBehaviour
             player_dead = true;
             navMeshAgent.speed = 0;
             anim.SetTrigger("Die");
+            BackGround_Music.instance.AudioClip(muertesound[0]);
             Invoke("Pirate_Death", 2);
         }
         
@@ -104,4 +117,6 @@ public class Pirate : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
+    
 }

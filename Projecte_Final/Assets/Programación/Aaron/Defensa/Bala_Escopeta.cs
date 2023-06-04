@@ -11,7 +11,6 @@ public class Bala_Escopeta : MonoBehaviour
     {
         pirate_target = _target;
         Invoke("Lifetime", 5);
-        BackGround_Music.instance.AudioClip(sound);
     }
 
     private void Update()

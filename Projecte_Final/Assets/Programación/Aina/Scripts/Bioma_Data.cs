@@ -72,6 +72,11 @@ public class Bioma_Data : Resources_Controller
     private GameObject tower_local;
     private GameObject VFXbuild_local;
 
+
+    [SerializeField] private AudioClip sound;
+    [SerializeField] private AudioClip BUYsound;
+
+
     private void Start()
     {
         GetNearBiomes();
@@ -169,6 +174,7 @@ public class Bioma_Data : Resources_Controller
     
     private void Instantiate_VFXBuild()
     {
+        BackGround_Music.instance.AudioClip(sound);
         VFXbuild_local = PoolingManager.Instance.GetPooledObject((int)VFX_Build);
         VFXbuild_local.transform.position = transform.position;
         VFXbuild_local.SetActive(true);
@@ -177,6 +183,8 @@ public class Bioma_Data : Resources_Controller
     private void Deactivate_VFXBuild()
     {
         VFXbuild_local.SetActive(false);
+        BackGround_Music.instance.Stopsound();
+
     }
 
     private void OnMouseDown()
@@ -245,6 +253,7 @@ public class Bioma_Data : Resources_Controller
 
     private void UnlockHexagon()
     {
+        BackGround_Music.instance.AudioClip(BUYsound);
         GameManager.instance.WoodPlayer -= costWoodUnlock;
         GameManager.instance.StonePlayer -= costStoneUnlock;
 
@@ -260,6 +269,8 @@ public class Bioma_Data : Resources_Controller
     
     private void BuildHexagon()
     {
+        BackGround_Music.instance.AudioClip(BUYsound);
+
         GameManager.instance.WoodPlayer -= costWoodBuilt;
         GameManager.instance.StonePlayer -= costStoneBuilt;
         GameManager.instance.TotalConstructions += 1;
@@ -273,13 +284,15 @@ public class Bioma_Data : Resources_Controller
         
         Invoke("Instantiate_Build", 1);
         Invoke("IncreaseResource", 2f);
-        
+        Invoke("Deactivate_VFXBuild", 2f);
+
         GameManager.instance.RefreshUITxt();
         //GameManager.instance.TriggerRound();
     }
     
     private void BuildTower()
     {
+        BackGround_Music.instance.AudioClip(BUYsound);
         GameManager.instance.WoodPlayer -= costWoodTower;
         GameManager.instance.StonePlayer -= costStoneTower;
         GameManager.instance.TotalTowers += 1;

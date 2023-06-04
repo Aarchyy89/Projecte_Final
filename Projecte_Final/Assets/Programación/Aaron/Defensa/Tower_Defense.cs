@@ -6,7 +6,7 @@ public class Tower_Defense : MonoBehaviour
 {
     public Pirate pirate_target;
     public Transform part_Torotate;
-    //[SerializeField] private AudioClip Shoot_clip;
+    [SerializeField] private AudioClip sound;
 
     [Header("Attributes")]
     public float range;
@@ -94,6 +94,8 @@ public class Tower_Defense : MonoBehaviour
         {
             buullet.Seek(pirate_target);
         }
+
+        BackGround_Music.instance.AudioClip(sound);
 
         /**Audio_Manager.instance.AudioClip(Shoot_clip);
 

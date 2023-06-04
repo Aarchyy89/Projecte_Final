@@ -810,6 +810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pirate_target: {fileID: 7818174694911877878, guid: abe6c79bb9a745f44936b18cfd95899b, type: 3}
   part_Torotate: {fileID: 8370385932557305671}
+  sound: {fileID: 8300000, guid: d3ec2d86c47428c4ab83c6049eb6c420, type: 3}
   range: 1.5
   turret_speed: 3
   fire_Rate: 1

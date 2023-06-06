@@ -1,7 +1,7 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.SocialPlatforms;
 
 public class Enemy_Ship_AI : MonoBehaviour
 {
@@ -26,6 +26,7 @@ public class Enemy_Ship_AI : MonoBehaviour
     public bool Hora_de_irse = false;
 
     private Transform WayOut;
+    private IEnumerator currentCoroutine;
 
     void Start()
     {
@@ -101,32 +102,20 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     public void Llegan_los_piratas()
     {
-        if(Instantiated_Pirates > 0)
-        {
+        GameObject pirateLocal = PoolingManager.Instance.GetPooledObject((int)pirate);
 
-            GameObject pirateLocal = PoolingManager.Instance.GetPooledObject((int)pirate);
+        Instantiated_Pirates--;
 
-            Instantiated_Pirates--;
+        Debug.Log(Instantiated_Pirates);
 
-            Debug.Log(Instantiated_Pirates);
+        // Accedit component script varible pirates i canviarle per scriptable object
 
-            // Accedit component script varible pirates i canviarle per scriptable object
-
-            pirateLocal.transform.position = new Vector3(Invoke_point.transform.position.x, Invoke_point.transform.position.y + 1.2f, Invoke_point.transform.position.z);
-            pirateLocal.transform.rotation = Invoke_point.transform.rotation;
-            pirateLocal.GetComponent<Pirate>().Vida = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemyHealth;
-            pirateLocal.GetComponent<Pirate>().Damage = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemyAttackStats;
-            pirateLocal.GetComponent<Pirate>().NavMeshAgent.speed = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemySpeedStats;
-            pirateLocal.gameObject.SetActive(true);
-
-
-            //Instantiate(Invoked_Pirates, Invoke_point.transform.position, Invoke_point.transform.rotation);
-        }
-        else
-        {
-            Hora_de_irse = true;
-            CancelInvoke("Llegan_los_piratas");
-        }
+        pirateLocal.transform.position = new Vector3(Invoke_point.transform.position.x, Invoke_point.transform.position.y + 1.2f, Invoke_point.transform.position.z);
+        pirateLocal.transform.rotation = Invoke_point.transform.rotation;
+        pirateLocal.GetComponent<Pirate>().Vida = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemyHealth;
+        pirateLocal.GetComponent<Pirate>().Damage = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemyAttackStats;
+        pirateLocal.GetComponent<Pirate>().NavMeshAgent.speed = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemySpeedStats;
+        pirateLocal.gameObject.SetActive(true);
     }
 
     public void Checkear_Posicion_barco()
@@ -139,16 +128,35 @@ public class Enemy_Ship_AI : MonoBehaviour
         if (pirate_spawn_timer >= time_to_spawn)
         {
             Instantiated_Pirates = Sistema_Oleadas.Instance.TotalEnemies;
-            InvokeRepeating("Llegan_los_piratas", 2, 3);
-            //Llegan_los_piratas();
             stopped_ship = false;
             pirate_spawn_timer = 0;
+            currentCoroutine = Coroutine_IncreaseResource();
+            StartCoroutine(currentCoroutine);
         }
+    }
+
+    private IEnumerator Coroutine_IncreaseResource()
+    {
+        float timer_l = 0;
+        
+        while (Instantiated_Pirates > 0)
+        {
+            timer_l += Time.deltaTime;
+            
+            if (timer_l >= 2)
+            {
+                Llegan_los_piratas();
+                timer_l = 0;
+            }
+            
+            yield return null;
+        }
+
+        Hora_de_irse = true;
     }
 
     public void Me_voy()
     {
-        Waypoints = GameObject.FindGameObjectsWithTag("Waypoints");
         navMeshAgent.speed = 3;
         navMeshAgent.isStopped = false;
         navMeshAgent.SetDestination(WayOut.position);
@@ -162,7 +170,7 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     private GameObject WP()
     {
-       
+        Waypoints = GameObject.FindGameObjectsWithTag("Waypoints");
         GameObject closestEnemy = null;
         float closestDistance = 0;
         bool first = true;

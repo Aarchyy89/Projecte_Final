@@ -85,7 +85,7 @@ public class Bioma_Data : Resources_Controller
 
     private void GetNearBiomes()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, 1);
+        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, 0.75f);
         
         foreach (var hitCollider in hitColliders)
         {

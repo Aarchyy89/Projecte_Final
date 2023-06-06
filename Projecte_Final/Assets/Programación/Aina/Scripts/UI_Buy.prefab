@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 2076867430301726553}
   - component: {fileID: 2076867430301726558}
   - component: {fileID: 2076867430301726554}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: UI_Buy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &2076867430301726558
 MonoBehaviour:
   m_ObjectHideFlags: 0

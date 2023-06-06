@@ -1,8 +1,5 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -112,8 +109,9 @@ public class GameManager : MonoBehaviour
 
     public void TriggerRound()
     {
-        if (_triggerDatas[index_triggerDatas].TotalTowers > totalTowers
-            && _triggerDatas[index_triggerDatas].TotalConstructions > totalConstructions)
+        Debug.Log("inside trigger");
+        if (_triggerDatas[index_triggerDatas].TotalTowers >= totalTowers
+            && _triggerDatas[index_triggerDatas].TotalConstructions >= totalConstructions)
         {
             Debug.Log(_triggerDatas[index_triggerDatas].TotalTowers);
             Sistema_Oleadas.Instance.BuildTrigger();

@@ -21,7 +21,7 @@ public class Resources_Controller : MonoBehaviour
     public PoolingItemsEnum UI_Resource;
 
     private GameObject localUI;
-
+    
     public void IncreaseResource()
     {
         currentCoroutine = Coroutine_IncreaseResource();

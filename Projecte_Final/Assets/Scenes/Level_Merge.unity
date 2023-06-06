@@ -2926,8 +2926,8 @@ MonoBehaviour:
   isTower: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 6
+  costStoneBuilt: 8
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -3375,8 +3375,8 @@ MonoBehaviour:
   isTower: 0
   costWoodUnlock: 5
   costStoneUnlock: 5
-  costWoodBuilt: 8
-  costStoneBuilt: 8
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 10
   costStoneTower: 10
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -4201,8 +4201,8 @@ MonoBehaviour:
   isTower: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 6
+  costStoneBuilt: 8
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -6129,8 +6129,8 @@ MonoBehaviour:
   isTower: 0
   costWoodUnlock: 5
   costStoneUnlock: 5
-  costWoodBuilt: 8
-  costStoneBuilt: 8
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 10
   costStoneTower: 10
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -11589,8 +11589,8 @@ MonoBehaviour:
   isTower: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 6
+  costStoneBuilt: 8
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -14623,8 +14623,8 @@ MonoBehaviour:
   isTower: 0
   costWoodUnlock: 5
   costStoneUnlock: 5
-  costWoodBuilt: 8
-  costStoneBuilt: 8
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 10
   costStoneTower: 10
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -19888,8 +19888,8 @@ MonoBehaviour:
   isTower: 0
   costWoodUnlock: 5
   costStoneUnlock: 5
-  costWoodBuilt: 8
-  costStoneBuilt: 8
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 10
   costStoneTower: 10
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -21175,8 +21175,8 @@ MonoBehaviour:
   isTower: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 8
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -24584,8 +24584,8 @@ MonoBehaviour:
   isTower: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 8
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -27116,8 +27116,8 @@ MonoBehaviour:
   isTower: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 8
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}

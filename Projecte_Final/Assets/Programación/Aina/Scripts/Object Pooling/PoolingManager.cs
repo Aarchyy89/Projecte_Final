@@ -123,7 +123,10 @@ public class PoolingManager : MonoBehaviour
     {
 	    foreach (var go in pooledObjectsList[index])
 	    {
-		    go.transform.GetChild(child).GetComponent<Button>().onClick.RemoveAllListeners();
+		    if (!go.activeInHierarchy)
+		    {
+			    go.transform.GetChild(child).GetComponent<Button>().onClick.RemoveAllListeners();
+		    }
 	    }
     }
 }

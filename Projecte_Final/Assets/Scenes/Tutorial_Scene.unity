@@ -241,6 +241,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1848331
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -456,6 +458,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &12126127
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -708,17 +712,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 942625172}
-  - {fileID: 255751398}
-  - {fileID: 947001289}
-  - {fileID: 389740892}
-  - {fileID: 851222246}
-  - {fileID: 1757704687}
-  - {fileID: 2013963286}
-  - {fileID: 1017211252}
-  - {fileID: 1511312064}
+  - {fileID: 1645031939}
+  - {fileID: 615612118}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: -9.869, y: -0.726, z: -35.829}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -876,6 +874,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &34625511
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1134,6 +1134,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &51814769
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1977,6 +1979,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &151903685
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2050,7 +2054,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2583766185149759798, guid: 21774f07d2ddd59489312f484b7742d6, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2583766185149759798, guid: 21774f07d2ddd59489312f484b7742d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2396,6 +2400,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &164745276
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2534,6 +2540,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &170845711
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2672,6 +2680,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &172655361
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2917,6 +2927,8 @@ MonoBehaviour:
   costStoneBuilt: 8
   costWoodTower: 10
   costStoneTower: 10
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &207423393
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3099,6 +3111,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &240042468
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3454,13 +3468,13 @@ RectTransform:
   - {fileID: 914662200}
   - {fileID: 1064393662}
   - {fileID: 869772001}
-  m_Father: {fileID: 18870093}
-  m_RootOrder: 1
+  m_Father: {fileID: 1645031939}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1820.0001, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &255751399
 MonoBehaviour:
@@ -3499,6 +3513,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255751397}
+  m_CullTransparentMesh: 1
+--- !u!1 &262748771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 262748772}
+  - component: {fileID: 262748774}
+  - component: {fileID: 262748773}
+  m_Layer: 5
+  m_Name: _2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &262748772
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262748771}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0000334492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1948660475}
+  m_Father: {fileID: 615612118}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 18.000008, y: -286.99997}
+  m_SizeDelta: {x: 1320.816, y: 231.625}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &262748773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262748771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &262748774
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262748771}
   m_CullTransparentMesh: 1
 --- !u!1 &266929601
 GameObject:
@@ -3611,6 +3702,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &268527542
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3749,6 +3842,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &269847226
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3887,6 +3982,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &279678171
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5037,6 +5134,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &339855191
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5175,6 +5274,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &353477350
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5239,6 +5340,141 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353477347}
   m_Mesh: {fileID: 4300000, guid: 3809834aaf39bdb45aa59310501239af, type: 3}
+--- !u!1 &355360969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355360970}
+  - component: {fileID: 355360972}
+  - component: {fileID: 355360971}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &355360970
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355360969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1631924710}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &355360971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355360969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Buenas! Nuestro alcalde te da la bienvenida a nuestra isla. '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: ac1bdfab736483245b1443624e465c61, type: 2}
+  m_sharedMaterial: {fileID: -7780683361169820523, guid: ac1bdfab736483245b1443624e465c61, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 80
+  m_fontSizeBase: 80
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &355360972
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355360969}
+  m_CullTransparentMesh: 1
 --- !u!1 &387302080
 GameObject:
   m_ObjectHideFlags: 0
@@ -5409,13 +5645,13 @@ RectTransform:
   - {fileID: 1875764643}
   - {fileID: 1884543939}
   - {fileID: 742434764}
-  m_Father: {fileID: 18870093}
-  m_RootOrder: 3
+  m_Father: {fileID: 1645031939}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1820.0001, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &389740893
 MonoBehaviour:
@@ -5529,6 +5765,8 @@ MonoBehaviour:
   costStoneBuilt: 8
   costWoodTower: 10
   costStoneTower: 10
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &402314588
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5914,6 +6152,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &422425280
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6128,6 +6368,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &449987036
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6555,6 +6797,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &462983863
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6737,6 +6981,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &474702631
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6875,6 +7121,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &493256274
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7262,6 +7510,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &528947146
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7400,6 +7650,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &547210725
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7538,6 +7790,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &551027295
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7720,6 +7974,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &570895110
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8198,8 +8454,50 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &615612117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615612118}
+  m_Layer: 5
+  m_Name: Paneles_tuto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &615612118
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615612117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1631924710}
+  - {fileID: 262748772}
+  - {fileID: 1002042582}
+  - {fileID: 1126632048}
+  - {fileID: 1960000973}
+  - {fileID: 821694759}
+  m_Father: {fileID: 18870093}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &619190682
 GameObject:
   m_ObjectHideFlags: 0
@@ -8450,6 +8748,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &649387566
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8588,6 +8888,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &657209157
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8694,7 +8996,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &674924649
 GameObject:
@@ -8822,7 +9124,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676004366
 GameObject:
@@ -8854,7 +9156,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!108 &676004368
 Light:
@@ -9036,6 +9338,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &684348184
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9174,6 +9478,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &686312217
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9376,7 +9682,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &705090521
 MonoBehaviour:
@@ -9521,7 +9827,7 @@ Transform:
   - {fileID: 307512377}
   - {fileID: 151313035}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &723794427
 GameObject:
@@ -9628,6 +9934,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &727794666
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9766,6 +10074,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &733084925
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10214,6 +10524,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &752348106
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10492,7 +10804,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -227.09064, y: -83.26706}
+  m_AnchoredPosition: {x: -227.09064, y: -83.26709}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &758768074
@@ -10803,6 +11115,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &772522441
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10941,6 +11255,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &773872502
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11079,6 +11395,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &776437529
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11217,6 +11535,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &792690346
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11355,6 +11675,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &808693517
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11574,6 +11896,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813878700}
   m_CullTransparentMesh: 1
+--- !u!1 &821694758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821694759}
+  - component: {fileID: 821694761}
+  - component: {fileID: 821694760}
+  m_Layer: 5
+  m_Name: flecha_img
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &821694759
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821694758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 615612118}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &821694760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821694758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: fb080cc5dd46f6f4fb50319a244f1c0b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &821694761
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821694758}
+  m_CullTransparentMesh: 1
 --- !u!1 &825493380
 GameObject:
   m_ObjectHideFlags: 0
@@ -11648,6 +12046,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &825493383
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11863,13 +12263,13 @@ RectTransform:
   - {fileID: 813878701}
   - {fileID: 1078630038}
   - {fileID: 1496149305}
-  m_Father: {fileID: 18870093}
-  m_RootOrder: 4
+  m_Father: {fileID: 1645031939}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.1408081, y: 3.741455}
-  m_SizeDelta: {x: 0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0.14086914, y: 3.741455}
+  m_SizeDelta: {x: 1820.0002, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &851243355
 GameObject:
@@ -11901,7 +12301,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &851243357
 MonoBehaviour:
@@ -11938,6 +12338,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 19a34f74ba3a9b8439d2b23f16094500, type: 2}
   - {fileID: 11400000, guid: 7cacb31048742654c95071f9b520725a, type: 2}
   - {fileID: 11400000, guid: 70db58e7923c29348b40f98dbd3a8c14, type: 2}
+  winMusic: {fileID: 0}
+  loseMusic: {fileID: 0}
   cantBuy: 0
 --- !u!1 &864558936
 GameObject:
@@ -11970,7 +12372,7 @@ Transform:
   - {fileID: 2108916966}
   - {fileID: 1257709750}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &866667836
 GameObject:
@@ -12392,6 +12794,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &884369846
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12530,6 +12934,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &885961193
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12968,13 +13374,13 @@ RectTransform:
   - {fileID: 69470275}
   - {fileID: 1370848946}
   - {fileID: 1874802218}
-  m_Father: {fileID: 18870093}
-  m_RootOrder: 2
+  m_Father: {fileID: 1645031939}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1820.0001, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &947001290
 MonoBehaviour:
@@ -13149,6 +13555,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970570670}
   m_CullTransparentMesh: 1
+--- !u!1 &975568853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 975568854}
+  - component: {fileID: 975568856}
+  - component: {fileID: 975568855}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &975568854
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975568853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1960000973}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &975568855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975568853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Esta vez no has encontrado recursos, as\xED que podemos construir directamente
+    por el precio indicado. Vamos, prueba a comprar. "
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: ac1bdfab736483245b1443624e465c61, type: 2}
+  m_sharedMaterial: {fileID: -7780683361169820523, guid: ac1bdfab736483245b1443624e465c61, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 70
+  m_fontSizeBase: 70
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &975568856
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975568853}
+  m_CullTransparentMesh: 1
 --- !u!1 &980974347
 GameObject:
   m_ObjectHideFlags: 0
@@ -13223,6 +13765,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &980974350
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13518,6 +14062,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1001771096
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13582,6 +14128,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001771090}
   m_Mesh: {fileID: 4300000, guid: 1341def1465b9ee42ab1a58327fc3676, type: 3}
+--- !u!1 &1002042581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1002042582}
+  - component: {fileID: 1002042584}
+  - component: {fileID: 1002042583}
+  m_Layer: 5
+  m_Name: _3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1002042582
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002042581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1449762442}
+  m_Father: {fileID: 615612118}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 18, y: -287}
+  m_SizeDelta: {x: 1320.816, y: 231.625}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1002042583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002042581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1002042584
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002042581}
+  m_CullTransparentMesh: 1
 --- !u!1 &1016450341
 GameObject:
   m_ObjectHideFlags: 0
@@ -13791,13 +14414,13 @@ RectTransform:
   - {fileID: 1304421886}
   - {fileID: 73565833}
   - {fileID: 282124891}
-  m_Father: {fileID: 18870093}
-  m_RootOrder: 7
+  m_Father: {fileID: 1645031939}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.14031982, y: 3.741211}
-  m_SizeDelta: {x: 0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0.14038086, y: 3.741211}
+  m_SizeDelta: {x: 1820.0002, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1017211253
 MonoBehaviour:
@@ -13955,6 +14578,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1021254555
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14019,6 +14644,142 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021254549}
   m_Mesh: {fileID: 4300000, guid: 1341def1465b9ee42ab1a58327fc3676, type: 3}
+--- !u!1 &1025395161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1025395162}
+  - component: {fileID: 1025395164}
+  - component: {fileID: 1025395163}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1025395162
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025395161}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1126632048}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1025395163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025395161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Cada parcela tiene un precio. El cual ir\xE1 en aumento seg\xFAn el radio
+    disponible vaya aumentando. Ahora, compra la celda. "
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: ac1bdfab736483245b1443624e465c61, type: 2}
+  m_sharedMaterial: {fileID: -7780683361169820523, guid: ac1bdfab736483245b1443624e465c61, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 70
+  m_fontSizeBase: 70
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1025395164
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025395161}
+  m_CullTransparentMesh: 1
 --- !u!1 &1036251475
 GameObject:
   m_ObjectHideFlags: 0
@@ -14093,6 +14854,8 @@ MonoBehaviour:
   costStoneBuilt: 8
   costWoodTower: 10
   costStoneTower: 10
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1036251478
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14409,6 +15172,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1064769376
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14547,6 +15312,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1065089030
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14789,6 +15556,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1105961572
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15241,6 +16010,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112057473}
   m_CullTransparentMesh: 1
+--- !u!1 &1126632047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126632048}
+  - component: {fileID: 1126632050}
+  - component: {fileID: 1126632049}
+  m_Layer: 5
+  m_Name: _4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1126632048
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126632047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0000334492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1025395162}
+  m_Father: {fileID: 615612118}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 18.000008, y: -286.99997}
+  m_SizeDelta: {x: 1320.816, y: 231.625}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1126632049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126632047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1126632050
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126632047}
+  m_CullTransparentMesh: 1
 --- !u!1 &1130517544
 GameObject:
   m_ObjectHideFlags: 0
@@ -15661,7 +16507,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1153634494
 MonoBehaviour:
@@ -16074,6 +16920,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1198633502
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16468,7 +17316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8879482689450210190, guid: 9d69ff70de6b293478674d00393d8186, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16543,7 +17391,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1257594234
 MonoBehaviour:
@@ -16685,6 +17533,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1277474004
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16823,6 +17673,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1293364079
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17350,6 +18202,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1347432423
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17532,6 +18386,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1351863971
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18023,7 +18879,7 @@ Transform:
   - {fileID: 600684270}
   - {fileID: 193782395}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1418997136
 MonoBehaviour:
@@ -18167,6 +19023,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1419987596
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18337,6 +19195,143 @@ Transform:
   m_Father: {fileID: 1418997135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1449762441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449762442}
+  - component: {fileID: 1449762444}
+  - component: {fileID: 1449762443}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1449762442
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449762441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1002042582}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1449762443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449762441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "La isla est\xE1 compuesta por 90 parcelas con diferentes biomas en las
+    que, individualmente, podr\xE1s tanto obtener recursos como construir torres
+    de defensa. Selecciona la indicada"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: ac1bdfab736483245b1443624e465c61, type: 2}
+  m_sharedMaterial: {fileID: -7780683361169820523, guid: ac1bdfab736483245b1443624e465c61, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 70
+  m_fontSizeBase: 70
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1449762444
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449762441}
+  m_CullTransparentMesh: 1
 --- !u!1 &1454565978
 GameObject:
   m_ObjectHideFlags: 0
@@ -18531,6 +19526,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1459038768
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18824,6 +19821,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1484774662
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19066,6 +20065,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1500318247
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19204,6 +20205,8 @@ MonoBehaviour:
   costStoneBuilt: 8
   costWoodTower: 10
   costStoneTower: 10
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1506177157
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19301,13 +20304,13 @@ RectTransform:
   - {fileID: 2125177920}
   - {fileID: 1794449874}
   - {fileID: 1410208448}
-  m_Father: {fileID: 18870093}
-  m_RootOrder: 8
+  m_Father: {fileID: 1645031939}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.1408081, y: 3.741455}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.14086914, y: 3.741455}
+  m_SizeDelta: {x: 1820.0001, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1511312065
 MonoBehaviour:
@@ -19542,6 +20545,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1543934544
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19724,6 +20729,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1560457266
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20259,7 +21266,6 @@ GameObject:
   - component: {fileID: 1602973177}
   - component: {fileID: 1602973176}
   - component: {fileID: 1602973175}
-  - component: {fileID: 1602973174}
   - component: {fileID: 1602973178}
   m_Layer: 0
   m_Name: Main Camera
@@ -20268,22 +21274,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1602973174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602973173}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df4053f61023e5941b50d1c665f3084a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 1
-  rotationSpeed: 0.01
-  CameraZoom: {fileID: 0}
-  sensitivity: 1
 --- !u!81 &1602973175
 AudioListener:
   m_ObjectHideFlags: 0
@@ -20319,7 +21309,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -20342,7 +21332,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602973173}
-  m_LocalRotation: {x: 0.28257096, y: 0.32619035, z: -0.102847405, w: 0.89620084}
+  m_LocalRotation: {x: 0.17987056, y: 0.33569595, z: -0.06546753, w: 0.92231715}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -20350,7 +21340,7 @@ Transform:
   - {fileID: 1140393076}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 35, y: 40, z: 0}
+  m_LocalEulerAnglesHint: {x: 22.071, y: 40, z: 0}
 --- !u!114 &1602973178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20485,6 +21475,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1611779790
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20613,7 +21605,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1617079276
 GameObject:
@@ -20733,6 +21725,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1617079282
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20871,6 +21865,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1617197979
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21009,6 +22005,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1623071325
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21073,6 +22071,127 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623071322}
   m_Mesh: {fileID: 4300000, guid: ec55075d188c17f409c030e2fa6d4ebf, type: 3}
+--- !u!1 &1631924709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1631924710}
+  - component: {fileID: 1631924712}
+  - component: {fileID: 1631924711}
+  m_Layer: 5
+  m_Name: _1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1631924710
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631924709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0000334492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 355360970}
+  m_Father: {fileID: 615612118}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 18.000008, y: -286.99997}
+  m_SizeDelta: {x: 1320.816, y: 231.625}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1631924711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631924709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1631924712
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631924709}
+  m_CullTransparentMesh: 1
+--- !u!1 &1645031938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645031939}
+  m_Layer: 5
+  m_Name: Ui_Principal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1645031939
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645031938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 255751398}
+  - {fileID: 947001289}
+  - {fileID: 389740892}
+  - {fileID: 851222246}
+  - {fileID: 1757704687}
+  - {fileID: 2013963286}
+  - {fileID: 1017211252}
+  - {fileID: 1511312064}
+  m_Father: {fileID: 18870093}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1658774379
 GameObject:
   m_ObjectHideFlags: 0
@@ -21323,6 +22442,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1663939907
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21498,6 +22619,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1671628135
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21638,6 +22761,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674026559}
   m_CullTransparentMesh: 1
+--- !u!1001 &1681947713
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.20033455
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.73
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.45910338
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.03230469
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.883853
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.083572395
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -10.218
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -125
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1.143
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_Name
+      value: tut_aldeano
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239493932873949333, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a0fb0279ab114f24ab9a4a157725eb87, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 73333040821718a46afc3c4469926412, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 218b9c0b334d2ac4bb7d5a5d25f9f659, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73333040821718a46afc3c4469926412, type: 3}
 --- !u!1 &1688669125
 GameObject:
   m_ObjectHideFlags: 0
@@ -21712,6 +22912,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1688669128
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21894,6 +23096,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1699188285
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22211,6 +23415,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1704068054
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22426,6 +23632,8 @@ MonoBehaviour:
   costStoneBuilt: 0
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1706468808
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22608,6 +23816,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1721241787
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22790,6 +24000,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1723348702
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22972,6 +24184,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1723897860
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23115,6 +24329,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1729654233
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23466,13 +24682,13 @@ RectTransform:
   - {fileID: 1139087149}
   - {fileID: 245578259}
   - {fileID: 758768073}
-  m_Father: {fileID: 18870093}
-  m_RootOrder: 5
+  m_Father: {fileID: 1645031939}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.14031982, y: 3.741211}
-  m_SizeDelta: {x: 0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0.14038086, y: 3.741211}
+  m_SizeDelta: {x: 1820.0002, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1757704688
 MonoBehaviour:
@@ -23586,6 +24802,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1764222048
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23724,6 +24942,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1764288192
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23862,6 +25082,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1768737730
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24350,6 +25572,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1816048322
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24488,6 +25712,8 @@ MonoBehaviour:
   costStoneBuilt: 0
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1829501373
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24670,6 +25896,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1834732308
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25182,6 +26410,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1872795363
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25320,6 +26550,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1873793461
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26114,6 +27346,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1910429920
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26196,6 +27430,142 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.006569699
   m_Center: {x: 0.00030450462, y: 0.0034804058, z: -0.00011869788}
+--- !u!1 &1948660474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948660475}
+  - component: {fileID: 1948660477}
+  - component: {fileID: 1948660476}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1948660475
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948660474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 262748772}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1948660476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948660474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Este es nuestro ayuntamiento; el edificio principal y coraz\xF3n de la
+    isla. Prot\xE9gelo a toda costa!"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: ac1bdfab736483245b1443624e465c61, type: 2}
+  m_sharedMaterial: {fileID: -7780683361169820523, guid: ac1bdfab736483245b1443624e465c61, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 80
+  m_fontSizeBase: 80
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1948660477
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948660474}
+  m_CullTransparentMesh: 1
 --- !u!1 &1957546010
 GameObject:
   m_ObjectHideFlags: 0
@@ -26226,7 +27596,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1957546012
 MonoBehaviour:
@@ -26255,7 +27625,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1602973174}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CameraManager, Assembly-CSharp
         m_MethodName: OnLook
         m_Mode: 0
@@ -26271,7 +27641,7 @@ MonoBehaviour:
     m_ActionName: GamePlay/Look[/Mouse/delta]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1602973174}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CameraManager, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
@@ -26287,7 +27657,7 @@ MonoBehaviour:
     m_ActionName: GamePlay/Move[/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1602973174}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CameraManager, Assembly-CSharp
         m_MethodName: OnRotate
         m_Mode: 0
@@ -26306,6 +27676,83 @@ MonoBehaviour:
   m_DefaultActionMap: GamePlay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!1 &1960000972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1960000973}
+  - component: {fileID: 1960000975}
+  - component: {fileID: 1960000974}
+  m_Layer: 5
+  m_Name: _5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1960000973
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960000972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0000334492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 975568854}
+  m_Father: {fileID: 615612118}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 18.000008, y: -286.99997}
+  m_SizeDelta: {x: 1320.816, y: 231.625}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1960000974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960000972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1960000975
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960000972}
+  m_CullTransparentMesh: 1
 --- !u!1 &1964271252
 GameObject:
   m_ObjectHideFlags: 0
@@ -26380,6 +27827,8 @@ MonoBehaviour:
   costStoneBuilt: 10
   costWoodTower: 15
   costStoneTower: 15
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1964271255
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26562,6 +28011,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &1995419883
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26733,13 +28184,13 @@ RectTransform:
   m_Children:
   - {fileID: 1339537006}
   - {fileID: 2113221668}
-  m_Father: {fileID: 18870093}
-  m_RootOrder: 6
+  m_Father: {fileID: 1645031939}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.14031982, y: 3.741211}
-  m_SizeDelta: {x: 0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0.14038086, y: 3.741211}
+  m_SizeDelta: {x: 1820.0002, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013963287
 MonoBehaviour:
@@ -26929,6 +28380,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &2025320116
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27038,7 +28491,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2029626115
 GameObject:
@@ -27158,6 +28611,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &2029626121
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27462,7 +28917,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2583766185149759798, guid: 21774f07d2ddd59489312f484b7742d6, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2583766185149759798, guid: 21774f07d2ddd59489312f484b7742d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27551,7 +29006,7 @@ PrefabInstance:
       objectReference: {fileID: 1725926146}
     - target: {fileID: 7886123453495197084, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7886123453495197084, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27744,6 +29199,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &2090919570
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28292,6 +29749,8 @@ MonoBehaviour:
   costStoneBuilt: 30
   costWoodTower: 35
   costStoneTower: 35
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &2119596087
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28521,7 +29980,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2127355355
 MonoBehaviour:
@@ -28595,7 +30054,7 @@ Transform:
   - {fileID: 132826048}
   - {fileID: 1422775187}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2136753103
 GameObject:
@@ -28671,6 +30130,8 @@ MonoBehaviour:
   costStoneBuilt: 15
   costWoodTower: 20
   costStoneTower: 20
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &2136753106
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28809,6 +30270,8 @@ MonoBehaviour:
   costStoneBuilt: 20
   costWoodTower: 25
   costStoneTower: 25
+  sound: {fileID: 0}
+  BUYsound: {fileID: 0}
 --- !u!64 &2142207985
 MeshCollider:
   m_ObjectHideFlags: 0

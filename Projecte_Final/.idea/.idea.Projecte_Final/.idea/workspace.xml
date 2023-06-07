@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Programación/Aina/Scripts/Trailer/Dolly.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -133,6 +136,7 @@
       <workItem from="1685894841039" duration="2466000" />
       <workItem from="1686058218542" duration="4811000" />
       <workItem from="1686145496965" duration="3342000" />
+      <workItem from="1686156944474" duration="2024000" />
     </task>
     <servers />
   </component>

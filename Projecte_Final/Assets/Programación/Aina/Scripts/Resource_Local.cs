@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Resource_Local : MonoBehaviour
@@ -7,6 +5,7 @@ public class Resource_Local : MonoBehaviour
     [SerializeField] private Animator Villager;
     [SerializeField] private AudioClip sound;
     [SerializeField] private AudioClip soundEND;
+    public PoolingItemsEnum recolect_vfx;
 
     public void Reprocucsound()
     {
@@ -24,6 +23,12 @@ public class Resource_Local : MonoBehaviour
     
     public void VillagerWork()
     {
+        GameObject recolectVFX = PoolingManager.Instance.GetPooledObject((int)recolect_vfx);
+        GameObject point = gameObject.transform.GetChild(1).gameObject;
+        recolectVFX.transform.position = point.transform.position;
+        recolectVFX.transform.rotation = point.transform.rotation;
+        recolectVFX.gameObject.SetActive(true);
+        
         Villager.SetBool("Work", true);
     }
 }

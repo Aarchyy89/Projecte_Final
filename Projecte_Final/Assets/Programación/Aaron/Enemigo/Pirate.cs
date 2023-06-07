@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,6 +10,9 @@ public class Pirate : MonoBehaviour
     public Transform ayuntamiento;
     [SerializeField] private Animator anim;
     //[SerializeField] private Animator anim;
+    public PoolingItemsEnum death_vfx;
+    public PoolingItemsEnum attack_vfx;
+    private IEnumerator currentCoroutine;
 
     [Header("--- Stats ---")]
     private int HP;
@@ -25,9 +29,8 @@ public class Pirate : MonoBehaviour
     public void espadasound()
     {
         BackGround_Music.instance.AudioClip(sound);
-
-
     }
+    
     public int Vida
     {
         get { return HP; }
@@ -85,11 +88,15 @@ public class Pirate : MonoBehaviour
         {
             anim.SetBool("Attack", false);
         }
-
     }
 
     public void Make_Damage()
     {
+        GameObject attackVFX = PoolingManager.Instance.GetPooledObject((int)attack_vfx);
+        GameObject point = gameObject.transform.GetChild(1).gameObject;
+        attackVFX.transform.position = point.transform.position;
+        attackVFX.transform.rotation = point.transform.rotation;
+        attackVFX.gameObject.SetActive(true);
         activeTownHall = GameObject.FindGameObjectWithTag("TH");
         activeTownHall.GetComponent<Town_Hall_>().TakeDamage(Attack_damage);
     }
@@ -105,16 +112,24 @@ public class Pirate : MonoBehaviour
             navMeshAgent.speed = 0;
             anim.SetTrigger("Die");
             BackGround_Music.instance.AudioClip(muertesound[0]);
-            Invoke("Pirate_Death", 2);
+            currentCoroutine = Coroutine_PirateDeath();
+            StartCoroutine(currentCoroutine);
         }
         
         GameManager.instance.WinCheck();
     }
 
-    private void Pirate_Death()
+    private IEnumerator Coroutine_PirateDeath()
     {
+        yield return new WaitForSeconds(1.5f);
+        
+        GameObject deathVFX = PoolingManager.Instance.GetPooledObject((int)death_vfx);
+        deathVFX.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.25f, gameObject.transform.position.z);
+        deathVFX.transform.rotation = gameObject.transform.rotation;
+        deathVFX.gameObject.SetActive(true);
+        
+        yield return new WaitForSeconds(0.5f);
+        
         gameObject.SetActive(false);
     }
-
-    
 }

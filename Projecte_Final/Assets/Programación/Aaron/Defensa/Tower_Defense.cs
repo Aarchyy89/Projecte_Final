@@ -20,6 +20,7 @@ public class Tower_Defense : MonoBehaviour
     public string piratetag = "Pirate";
 
     public PoolingItemsEnum bala;
+    public PoolingItemsEnum disparo_vfx;
 
     private void Start()
     {
@@ -87,6 +88,11 @@ public class Tower_Defense : MonoBehaviour
         bulletGO.transform.position = gameObject.transform.position;
         bulletGO.transform.rotation = gameObject.transform.rotation;
         bulletGO.SetActive(true);
+        
+        GameObject disparoVfx = PoolingManager.Instance.GetPooledObject((int)disparo_vfx);
+        disparoVfx.transform.position = gameObject.transform.position;
+        disparoVfx.transform.rotation = gameObject.transform.rotation;
+        disparoVfx.SetActive(true);
         
         Bala_Escopeta buullet = bulletGO.GetComponent<Bala_Escopeta>();
 

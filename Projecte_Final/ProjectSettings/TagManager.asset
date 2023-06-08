@@ -4,25 +4,25 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Carpet
-  - Glass
-  - MetalHeavy
-  - MetalLight
-  - Rubber
-  - BuddyBot
-  - HUD
+  - Suelo
+  - Ship
+  - TH
+  - FxTemporaire
+  - Pirate
+  - Parcela
+  - Waypoints
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Suelo
   - Water
   - UI
+  - PopUpp Ui
   - 
   - 
-  - DynamicObjects
-  - LightingHidden
-  - PostProcessing
+  - 
+  - 
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 175960497
     locked: 0

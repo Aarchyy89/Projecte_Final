@@ -196,7 +196,8 @@ public class Bioma_Data : Resources_Controller
             if (!isUnlocked)
             {
                 ActivateUI(costWoodUnlock,costStoneUnlock);
-                
+                Manager.instance.D_3();
+
                 if (GameManager.instance.WoodPlayer >= costWoodUnlock && GameManager.instance.StonePlayer >= costStoneUnlock)
                 {
                     ui_local.gameObject.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(UnlockHexagon);
@@ -253,6 +254,8 @@ public class Bioma_Data : Resources_Controller
 
     private void UnlockHexagon()
     {
+        Manager.instance.D_4();
+
         BackGround_Music.instance.AudioClip(BUYsound);
         GameManager.instance.WoodPlayer -= costWoodUnlock;
         GameManager.instance.StonePlayer -= costStoneUnlock;
@@ -273,6 +276,8 @@ public class Bioma_Data : Resources_Controller
     
     private void BuildHexagon()
     {
+        Manager.instance.D_6();
+
         BackGround_Music.instance.AudioClip(BUYsound);
 
         GameManager.instance.WoodPlayer -= costWoodBuilt;

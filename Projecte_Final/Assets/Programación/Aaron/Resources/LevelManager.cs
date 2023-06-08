@@ -111,4 +111,9 @@ public class LevelManager : MonoBehaviour
             Puedo_Mejorar_2 = false;
         }
     }
+
+    public void Instancia_tutorial()
+    {
+        //nstantiate()
+    }
 }

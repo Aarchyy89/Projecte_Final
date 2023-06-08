@@ -817,6 +817,7 @@ MonoBehaviour:
   Shoot_Point: {fileID: 8370385932262556906}
   piratetag: Pirate
   bala: 20
+  disparo_vfx: 29
 --- !u!1 &4859285851851858560
 GameObject:
   m_ObjectHideFlags: 0

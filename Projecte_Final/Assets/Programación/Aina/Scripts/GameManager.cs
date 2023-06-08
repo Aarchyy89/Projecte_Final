@@ -110,8 +110,9 @@ public class GameManager : MonoBehaviour
     public void TriggerRound()
     {
         Debug.Log("inside trigger");
-        if (_triggerDatas[index_triggerDatas].TotalTowers >= totalTowers
-            && _triggerDatas[index_triggerDatas].TotalConstructions >= totalConstructions)
+        
+        if (_triggerDatas[index_triggerDatas].TotalTowers <= totalTowers
+            && _triggerDatas[index_triggerDatas].TotalConstructions <= totalConstructions)
         {
             Debug.Log(_triggerDatas[index_triggerDatas].TotalTowers);
             Sistema_Oleadas.Instance.BuildTrigger();

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Dolly : MonoBehaviour
 {
     [SerializeField] private GameObject Villager_1;
+    [SerializeField] private GameObject Dialogue;
 
     public void VillagerWave()
     {
@@ -19,5 +20,15 @@ public class Dolly : MonoBehaviour
     public void VillagerTalkFalse()
     {
         Villager_1.GetComponent<Animator>().SetBool("Talking", false);
+    }
+    
+    public void DialogueIn()
+    {
+        Dialogue.GetComponent<Animator>().SetTrigger("In");
+    }
+    
+    public void DialogueTxt()
+    {
+        Dialogue.GetComponent<Animator>().SetTrigger("Next");
     }
 }

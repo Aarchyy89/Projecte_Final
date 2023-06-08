@@ -89,10 +89,12 @@ public class Tower_Defense : MonoBehaviour
         bulletGO.transform.rotation = gameObject.transform.rotation;
         bulletGO.SetActive(true);
         
+        /*
         GameObject disparoVfx = PoolingManager.Instance.GetPooledObject((int)disparo_vfx);
         disparoVfx.transform.position = gameObject.transform.position;
-        disparoVfx.transform.rotation = gameObject.transform.rotation;
+        disparoVfx.transform.rotation = new Quaternion(gameObject.transform.rotation.x, 0,  gameObject.transform.rotation.z, 0f);
         disparoVfx.SetActive(true);
+        */
         
         Bala_Escopeta buullet = bulletGO.GetComponent<Bala_Escopeta>();
 
@@ -103,12 +105,13 @@ public class Tower_Defense : MonoBehaviour
 
         BackGround_Music.instance.AudioClip(sound);
 
-        /**Audio_Manager.instance.AudioClip(Shoot_clip);
+        /*
+         Audio_Manager.instance.AudioClip(Shoot_clip);
 
         if (buullet != null)
         {
             buullet.Seek(target);
-        }*/
-
+        }
+        */
     }
 }

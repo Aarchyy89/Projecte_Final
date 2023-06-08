@@ -12560,8 +12560,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 19a34f74ba3a9b8439d2b23f16094500, type: 2}
   - {fileID: 11400000, guid: 7cacb31048742654c95071f9b520725a, type: 2}
   - {fileID: 11400000, guid: 70db58e7923c29348b40f98dbd3a8c14, type: 2}
-  winMusic: {fileID: 0}
-  loseMusic: {fileID: 0}
+  winMusic: {fileID: 1176600351}
+  loseMusic: {fileID: 85972945}
   cantBuy: 0
 --- !u!1 &864558936
 GameObject:

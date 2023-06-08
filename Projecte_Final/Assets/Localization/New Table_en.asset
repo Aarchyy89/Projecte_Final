@@ -152,6 +152,48 @@ MonoBehaviour:
       select'
     m_Metadata:
       m_Items: []
+  - m_Id: 23620503197585408
+    m_Localized: Hello good! Our mayor welcomes you to our island.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620534898135040
+    m_Localized: This is our town hall; the main building and heart of the island.
+      Protect it at all costs!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620536676519936
+    m_Localized: The island is made up of 90 plots with different biomes where, individually,
+      you can both obtain resources and build defense towers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620537850925056
+    m_Localized: Each parcel has a price. Which will increase as the available radius
+      increases. Now buy the cell.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620538924666880
+    m_Localized: You haven't found any resources this time, so we can build directly
+      for the listed price. Come on, try shopping.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620539528646656
+    m_Localized: Wow, a defensive tower! These buildings will attack waves of enemies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540132626432
+    m_Localized: Speaking of which... a wave is coming. Be very careful!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540870823936
+    m_Localized: Each wave will have a different number of ships, from which more
+      pirates will appear as you progress.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620661599670272
+    m_Localized: Manage to improve your town hall to its maximum level and resist
+      until the end. Cheer up!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

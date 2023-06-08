@@ -152,6 +152,51 @@ MonoBehaviour:
       Selezionare'
     m_Metadata:
       m_Items: []
+  - m_Id: 23620503197585408
+    m_Localized: "Ciao buon! Il nostro sindaco vi d\xE0 il benvenuto sulla nostra
+      isola."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620661599670272
+    m_Localized: Riesci a migliorare il tuo municipio al massimo livello e resisti
+      fino alla fine. Rallegrarsi!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540870823936
+    m_Localized: "Ogni ondata avr\xE0 un numero diverso di navi, da cui appariranno
+      pi\xF9 pirati man mano che avanzi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540132626432
+    m_Localized: A proposito... sta arrivando un'onda. Essere molto attenti!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620539528646656
+    m_Localized: Wow, una torre difensiva! Questi edifici attaccheranno ondate di
+      nemici.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620538924666880
+    m_Localized: Non hai trovato alcuna risorsa questa volta, quindi possiamo costruire
+      direttamente per il prezzo indicato. Dai, prova a fare shopping.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620537850925056
+    m_Localized: "Ogni pacco ha un prezzo. Che aumenter\xE0 all'aumentare del raggio
+      disponibile. Ora compra la cella."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620536676519936
+    m_Localized: "L'isola \xE8 composta da 90 appezzamenti con diversi biomi dove,
+      individualmente, puoi sia ottenere risorse che costruire torri di difesa. Seleziona
+      l'indicato"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620534898135040
+    m_Localized: "Questo \xE8 il nostro municipio; l'edificio principale e il cuore
+      dell'isola. Proteggilo a tutti i costi!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -152,6 +152,50 @@ MonoBehaviour:
       seleccionar'
     m_Metadata:
       m_Items: []
+  - m_Id: 23620661599670272
+    m_Localized: "Aconsegueix millorar el teu ajuntament al m\xE0xim nivell i resisteix
+      fins al final. \xC0nim!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540870823936
+    m_Localized: "Cada onada tindr\xE0 un nombre de vaixells diferent, del qual aniran
+      apareixent m\xE9s pirates segons vagis progressant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540132626432
+    m_Localized: "Parlant sobre aix\xF2... s'acosta una onada. Aneu amb compte!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620539528646656
+    m_Localized: Camina, una torre defensiva! Aquests edificis atacaran les onades
+      d'enemics.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620538924666880
+    m_Localized: "Aquest cop no has trobat recursos, aix\xED que podem construir
+      directament pel preu indicat. Vaja, prova de comprar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620537850925056
+    m_Localized: "Cada parcel\xB7la t\xE9 un preu. El qual anir\xE0 en augment segons
+      el radi disponible vagi augmentant. Ara compra la cel\xB7la."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620536676519936
+    m_Localized: "L'illa est\xE0 composta per 90 parcel\xB7les amb diferents biomes
+      on, individualment, podr\xE0s tant obtenir recursos com construir torres de
+      defensa. Selecciona la indicada."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620534898135040
+    m_Localized: "Aquest \xE9s el nostre ajuntament; l'edifici principal i el cor
+      de l'illa. Protegeix-lo costi el que costi!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620503197585408
+    m_Localized: "Bones! El nostre alcalde us d\xF3na la benvinguda a la nostra illa."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

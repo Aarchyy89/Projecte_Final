@@ -150,6 +150,51 @@ MonoBehaviour:
     m_Localized: "D\xE9m\xE9nager/ acheter/\r\ns\xE9lectionner"
     m_Metadata:
       m_Items: []
+  - m_Id: 23620503197585408
+    m_Localized: "Salut bien! Notre maire vous souhaite la bienvenue sur notre \xEEle."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620534898135040
+    m_Localized: "C'est notre mairie; le b\xE2timent principal et le c\u0153ur de
+      l'\xEEle. Prot\xE9gez-le \xE0 tout prix !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620536676519936
+    m_Localized: "L'\xEEle est compos\xE9e de 90 parcelles avec diff\xE9rents biomes
+      o\xF9, individuellement, vous pouvez \xE0 la fois obtenir des ressources et
+      construire des tours de d\xE9fense."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620537850925056
+    m_Localized: "Chaque colis a un prix. Ce qui augmentera \xE0 mesure que le rayon
+      disponible augmentera. Maintenant, achetez la cellule."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620538924666880
+    m_Localized: "Vous n'avez trouv\xE9 aucune ressource cette fois-ci, nous pouvons
+      donc construire directement pour le prix indiqu\xE9. Allez, essayez de faire
+      du shopping."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620539528646656
+    m_Localized: "Wow, une tour d\xE9fensive ! Ces b\xE2timents attaqueront des vagues
+      d'ennemis."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540132626432
+    m_Localized: "En parlant de \xE7a... une vague arrive. Soyez tr\xE8s prudent!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540870823936
+    m_Localized: "Chaque vague aura un nombre diff\xE9rent de navires, \xE0 partir
+      desquels plus de pirates appara\xEEtront au fur et \xE0 mesure de votre progression."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620661599670272
+    m_Localized: "Parvenez \xE0 am\xE9liorer votre mairie \xE0 son niveau maximum
+      et r\xE9sistez jusqu'au bout. R\xE9conforter!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -150,6 +150,50 @@ MonoBehaviour:
     m_Localized: "Umzug/kauf/\r\nw\xE4hlen"
     m_Metadata:
       m_Items: []
+  - m_Id: 23620503197585408
+    m_Localized: "Hallo gut! Unser B\xFCrgermeister hei\xDFt Sie auf unserer Insel
+      willkommen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620534898135040
+    m_Localized: "Das ist unser Rathaus; das Hauptgeb\xE4ude und das Herz der Insel.
+      Sch\xFCtzen Sie es um jeden Preis!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620536676519936
+    m_Localized: "Die Insel besteht aus 90 Parzellen mit unterschiedlichen Biomen,
+      in denen Sie einzeln sowohl Ressourcen beschaffen als auch Verteidigungst\xFCrme
+      bauen k\xF6nnen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620537850925056
+    m_Localized: "Jedes Paket hat einen Preis. Dieser wird mit zunehmendem verf\xFCgbaren
+      Radius zunehmen. Kaufen Sie jetzt die Zelle."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620538924666880
+    m_Localized: "Da Sie dieses Mal keine Ressourcen gefunden haben, k\xF6nnen wir
+      direkt zum angegebenen Preis bauen. Komm, probier mal shoppen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620539528646656
+    m_Localized: "Wow, ein Wehrturm! Diese Geb\xE4ude werden Wellen von Feinden angreifen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540132626432
+    m_Localized: Apropos ... eine Welle kommt. Sei sehr vorsichtig!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540870823936
+    m_Localized: "Jede Welle verf\xFCgt \xFCber eine unterschiedliche Anzahl an Schiffen,
+      aus denen im Laufe Ihres Fortschritts immer mehr Piraten hervorgehen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620661599670272
+    m_Localized: Schaffen Sie es, Ihr Rathaus auf sein maximales Niveau zu bringen
+      und widerstehen Sie bis zum Ende. Aufheitern!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -152,6 +152,50 @@ MonoBehaviour:
       seleccionar'
     m_Metadata:
       m_Items: []
+  - m_Id: 23620503197585408
+    m_Localized: 'Buenas! Nuestro alcalde te da la bienvenida a nuestra isla. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620534898135040
+    m_Localized: "Este es nuestro ayuntamiento; el edificio principal y coraz\xF3n
+      de la isla. Prot\xE9gelo a toda costa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620536676519936
+    m_Localized: "La isla est\xE1 compuesta por 90 parcelas con diferentes biomas
+      en las que, individualmente, podr\xE1s tanto obtener recursos como construir
+      torres de defensa. Selecciona la indicada"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620537850925056
+    m_Localized: "Cada parcela tiene un precio. El cual ir\xE1 en aumento seg\xFAn
+      el radio disponible vaya aumentando. Ahora, compra la celda. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620538924666880
+    m_Localized: "Esta vez no has encontrado recursos, as\xED que podemos construir
+      directamente por el precio indicado. Vamos, prueba a comprar. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620539528646656
+    m_Localized: "Anda, una torre defensiva! Estos edificios atacar\xE1n a las oleadas
+      de enemigos. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540132626432
+    m_Localized: Hablando sobre eso... se acerca una oleada. Ten mucho cuidado!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620540870823936
+    m_Localized: "Cada oleada tendr\xE1 un n\xFAmero de barcos diferente, del cual
+      ir\xE1n apareciendo m\xE1s piratas seg\xFAn vayas progresando. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23620661599670272
+    m_Localized: "Consigue mejorar tu ayuntamiento a su m\xE1ximo nivel y resiste
+      hasta el final. \xC1nimo! "
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

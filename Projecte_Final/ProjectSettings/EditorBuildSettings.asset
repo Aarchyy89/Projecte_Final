@@ -5,12 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Preloader.unity
+  - enabled: 0
+    path: Assets/Scenes/UnityLabs01.unity
   - enabled: 1
-    path: Assets/Scenes/Aaron.unity
-    guid: 01a6cf2f9bb67a544bbf0f78cc2a7a08
-  - enabled: 1
-    path: Assets/Scenes/Level_Merge.unity
-    guid: 741d5f1b30f0aa444ba75c5605123473
-  m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: b6f65b6ac04b68c42993abcf5bc569d9, type: 2}
-    com.unity.localization.settings: {fileID: 11400000, guid: bcf8b3f2bef5a1440bcea3223dd6945a, type: 2}
+    path: Assets/Scenes/TheLabs.unity

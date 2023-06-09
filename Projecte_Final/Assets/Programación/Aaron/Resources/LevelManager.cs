@@ -16,6 +16,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] public GameObject th_2;
     [SerializeField] public GameObject th_3;
 
+    [Header("---Tutorial---")]
+    public GameObject pirate;
+    public GameObject Instantiate_point_pir;
+
     private int current_edif;
     public int edif_mejora_1;
     public int edif_mejora_2;
@@ -114,6 +118,6 @@ public class LevelManager : MonoBehaviour
 
     public void Instancia_tutorial()
     {
-        //Instantiate()
+        Instantiate(pirate, Instantiate_point_pir.transform);
     }
 }

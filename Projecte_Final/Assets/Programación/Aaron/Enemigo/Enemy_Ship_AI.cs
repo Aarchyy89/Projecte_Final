@@ -116,6 +116,8 @@ public class Enemy_Ship_AI : MonoBehaviour
         pirateLocal.GetComponent<Pirate>().Damage = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemyAttackStats;
         pirateLocal.GetComponent<Pirate>().NavMeshAgent.speed = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemySpeedStats;
         pirateLocal.gameObject.SetActive(true);
+
+        Manager.instance.D_8();
     }
 
     public void Checkear_Posicion_barco()

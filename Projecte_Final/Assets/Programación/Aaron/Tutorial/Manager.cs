@@ -19,12 +19,15 @@ public class Manager : MonoBehaviour
     [SerializeField] private GameObject _6;
     [SerializeField] private GameObject _7;
     [SerializeField] private GameObject _8;
+    [SerializeField] private GameObject _9;
+    [SerializeField] private GameObject panel_final;
 
     [Header("---pointer arrows---")]
     [SerializeField] private Image _A1;
     [SerializeField] private Image _A2;
 
     public bool puedo_falsear;
+    public bool puedo_falsear_2;
 
     private void Awake()
     {
@@ -70,9 +73,14 @@ public class Manager : MonoBehaviour
     public void D_4()
     {
         puedo_falsear = false;
-        Destroy(alcalde);
-        _3.SetActive(false);
-        _4.SetActive(true);
+        puedo_falsear_2 = true;
+
+        if(puedo_falsear_2)
+        {
+            Destroy(alcalde);
+            _3.SetActive(false);
+            _4.SetActive(true);
+        }
     }
 
     public void D_5()
@@ -91,12 +99,36 @@ public class Manager : MonoBehaviour
     {
         _6.SetActive(false);
         _7.SetActive(true);
+
+        LevelManager.instance.Instancia_tutorial();
     }
 
     public void D_8()
     {
         _7.SetActive(false);
         _8.SetActive(true);
+    }
+
+    public void D_9()
+    {
+        _8.SetActive(false);
+        _9.SetActive(true);
+    }
+
+    public void Tutorial_Finalizado()
+    {
+        _9.SetActive(false);
+        panel_final.SetActive(true);
+    }
+
+    public void Play()
+    {
+
+    }
+
+    public void Quit()
+    {
+        Application.Quit(); 
     }
 
 }

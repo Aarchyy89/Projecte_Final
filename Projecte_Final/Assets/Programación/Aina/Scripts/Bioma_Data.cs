@@ -255,6 +255,7 @@ public class Bioma_Data : Resources_Controller
     private void UnlockHexagon()
     {
         Manager.instance.D_4();
+        Manager.instance.puedo_falsear_2 = false;
 
         BackGround_Music.instance.AudioClip(BUYsound);
         GameManager.instance.WoodPlayer -= costWoodUnlock;

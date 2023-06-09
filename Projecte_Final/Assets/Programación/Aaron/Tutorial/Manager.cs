@@ -24,7 +24,7 @@ public class Manager : MonoBehaviour
     [SerializeField] private Image _A1;
     [SerializeField] private Image _A2;
 
-
+    public bool puedo_falsear;
 
     private void Awake()
     {
@@ -55,16 +55,21 @@ public class Manager : MonoBehaviour
 
         _A2.gameObject.SetActive(true);
         _A1.gameObject.SetActive(false);
+        puedo_falsear = true;
     }
 
     public void D_3()
     {
-        _A2.gameObject.SetActive(false);
-        anim.SetTrigger("Bye");
+        if(puedo_falsear)
+        {
+            _A2.gameObject.SetActive(false);
+            anim.SetTrigger("Bye");
+        }
     }
 
     public void D_4()
     {
+        puedo_falsear = false;
         Destroy(alcalde);
         _3.SetActive(false);
         _4.SetActive(true);
@@ -86,6 +91,12 @@ public class Manager : MonoBehaviour
     {
         _6.SetActive(false);
         _7.SetActive(true);
+    }
+
+    public void D_8()
+    {
+        _7.SetActive(false);
+        _8.SetActive(true);
     }
 
 }

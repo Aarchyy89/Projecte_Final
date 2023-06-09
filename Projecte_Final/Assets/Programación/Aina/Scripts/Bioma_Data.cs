@@ -276,7 +276,6 @@ public class Bioma_Data : Resources_Controller
     
     private void BuildHexagon()
     {
-        Manager.instance.D_6();
 
         BackGround_Music.instance.AudioClip(BUYsound);
 
@@ -300,6 +299,7 @@ public class Bioma_Data : Resources_Controller
     
     private void BuildTower()
     {
+        Manager.instance.D_6();
         BackGround_Music.instance.AudioClip(BUYsound);
         GameManager.instance.WoodPlayer -= costWoodTower;
         GameManager.instance.StonePlayer -= costStoneTower;

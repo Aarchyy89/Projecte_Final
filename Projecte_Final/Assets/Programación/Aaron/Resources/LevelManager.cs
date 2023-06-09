@@ -114,6 +114,6 @@ public class LevelManager : MonoBehaviour
 
     public void Instancia_tutorial()
     {
-        //nstantiate()
+        //Instantiate()
     }
 }

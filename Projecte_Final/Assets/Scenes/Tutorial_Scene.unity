@@ -825,6 +825,7 @@ MonoBehaviour:
   _8: {fileID: 1560726704}
   _A1: {fileID: 821694760}
   _A2: {fileID: 1884027749}
+  puedo_falsear: 0
 --- !u!1 &34625508
 GameObject:
   m_ObjectHideFlags: 0

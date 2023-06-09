@@ -7,9 +7,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Programación/Aina/Scripts/Trailer/Dolly.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -54,7 +51,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.13f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\a.nees\Documents\Github.projects\Projecte_Final\Projecte_Final -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\a.nees\Documents\Github.projects\Projecte_Final\Projecte_Final" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -138,6 +135,7 @@
       <workItem from="1686145496965" duration="3342000" />
       <workItem from="1686156944474" duration="2024000" />
       <workItem from="1686230143602" duration="3935000" />
+      <workItem from="1686298678782" duration="573000" />
     </task>
     <servers />
   </component>

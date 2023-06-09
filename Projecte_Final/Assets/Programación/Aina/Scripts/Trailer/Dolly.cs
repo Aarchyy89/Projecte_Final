@@ -5,6 +5,7 @@ using UnityEngine;
 public class Dolly : MonoBehaviour
 {
     [SerializeField] private GameObject Villager_1;
+    [SerializeField] private GameObject Resources;
     [SerializeField] private GameObject Dialogue;
 
     public void VillagerWave()
@@ -30,5 +31,10 @@ public class Dolly : MonoBehaviour
     public void DialogueTxt()
     {
         Dialogue.GetComponent<Animator>().SetTrigger("Next");
+    }
+    
+    public void ResourcesIn()
+    {
+        Resources.GetComponent<Animator>().SetTrigger("In");
     }
 }

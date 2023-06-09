@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] public GameObject th_3;
 
     [Header("---Tutorial---")]
-    public GameObject pirate;
+    public GameObject SHIP;
     public GameObject Instantiate_point_pir;
 
     private int current_edif;
@@ -32,7 +32,14 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
@@ -118,6 +125,9 @@ public class LevelManager : MonoBehaviour
 
     public void Instancia_tutorial()
     {
-        Instantiate(pirate, Instantiate_point_pir.transform);
+        Instantiate(SHIP, Instantiate_point_pir.transform.position, Instantiate_point_pir.transform.rotation);
+        Debug.Log("hOLA");
     }
+
+
 }

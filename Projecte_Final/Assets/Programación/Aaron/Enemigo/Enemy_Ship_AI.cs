@@ -11,7 +11,7 @@ public class Enemy_Ship_AI : MonoBehaviour
     
     [Header("---Fillable GO---")] 
     public PoolingItemsEnum pirate;
-    //public GameObject Invoked_Pirates;
+    public GameObject Invoked_Pirate;
     public GameObject Invoke_point;
     public GameObject[] Waypoints;
     private int Instantiated_Pirates;
@@ -27,6 +27,7 @@ public class Enemy_Ship_AI : MonoBehaviour
 
     private Transform WayOut;
     private IEnumerator currentCoroutine;
+
 
     void Start()
     {
@@ -194,5 +195,10 @@ public class Enemy_Ship_AI : MonoBehaviour
 
         }
         return closestEnemy;
+    }
+
+    public void Instanciar_pirata()
+    {
+        Instantiate(Invoked_Pirate, Invoke_point.transform.position, Invoke_point.transform.rotation);
     }
 }

@@ -202,6 +202,7 @@ MonoBehaviour:
   navMeshAgent: {fileID: 5518486108514024493}
   range: 2
   pirate: 19
+  Invoked_Pirate: {fileID: 5202552723173845151, guid: 588626e9293f0514783f5b0373890409, type: 3}
   Invoke_point: {fileID: 2025762730}
   Waypoints:
   - {fileID: 0}

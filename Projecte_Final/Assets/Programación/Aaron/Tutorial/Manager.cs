@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
@@ -48,6 +49,7 @@ public class Manager : MonoBehaviour
         _1.SetActive(false);
         _2.SetActive(true);
 
+        //LevelManager.instance.Instancia_tutorial();
         _A1.gameObject.SetActive(true);
     }
 
@@ -121,9 +123,9 @@ public class Manager : MonoBehaviour
         panel_final.SetActive(true);
     }
 
-    public void Play()
+    public void Main_Menu()
     {
-
+        SceneManager.LoadScene(1);
     }
 
     public void Quit()

@@ -136,9 +136,6 @@ GameObject:
   - component: {fileID: 1848332}
   - component: {fileID: 1848331}
   - component: {fileID: 1848330}
-  - component: {fileID: 1848329}
-  - component: {fileID: 1848328}
-  - component: {fileID: 1848327}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_28"
   m_TagString: Untagged
@@ -161,47 +158,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1848327
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848325}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1848328
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848325}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1848329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1848330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,8 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -432,8 +388,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 2
   build_local: {fileID: 0}
@@ -850,7 +806,7 @@ RectTransform:
   - {fileID: 1511312064}
   - {fileID: 1989563515}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -983,8 +939,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 0
   build_local: {fileID: 0}
@@ -1164,9 +1120,6 @@ GameObject:
   - component: {fileID: 51814770}
   - component: {fileID: 51814769}
   - component: {fileID: 51814768}
-  - component: {fileID: 51814767}
-  - component: {fileID: 51814766}
-  - component: {fileID: 51814765}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_12"
   m_TagString: Untagged
@@ -1189,47 +1142,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &51814765
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51814763}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &51814766
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51814763}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &51814767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51814763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &51814768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,8 +1155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -2015,6 +1927,81 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &128025152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128025154}
+  - component: {fileID: 128025153}
+  - component: {fileID: 128025156}
+  - component: {fileID: 128025155}
+  m_Layer: 0
+  m_Name: Border_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &128025153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128025152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.5944519}
+  m_Center: {x: 9.675975e-17, y: 0, z: 0.20277405}
+--- !u!4 &128025154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128025152}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000004470348}
+  m_LocalPosition: {x: -4.67, y: 0, z: 7.3500004}
+  m_LocalScale: {x: 6.4161, y: 0.4101, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1226470776}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &128025155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128025152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &128025156
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128025152}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &132826047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,8 +2362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -2476,7 +2463,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2583766185149759798, guid: 21774f07d2ddd59489312f484b7742d6, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2583766185149759798, guid: 21774f07d2ddd59489312f484b7742d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2717,9 +2704,6 @@ GameObject:
   - component: {fileID: 164745277}
   - component: {fileID: 164745276}
   - component: {fileID: 164745275}
-  - component: {fileID: 164745274}
-  - component: {fileID: 164745273}
-  - component: {fileID: 164745272}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_2"
   m_TagString: Untagged
@@ -2742,47 +2726,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &164745272
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164745270}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &164745273
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164745270}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &164745274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164745270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &164745275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2796,8 +2739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -2936,8 +2879,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 1
   build_local: {fileID: 0}
@@ -3076,8 +3019,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -3335,7 +3278,7 @@ Transform:
   - {fileID: 1176600352}
   - {fileID: 85972946}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &207423390
 GameObject:
@@ -3385,8 +3328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 8
-  resourcesRound: 4
+  resourcesMax: 20
+  resourcesRound: 10
   resourcesTime: 3.5
   biomaType: 2
   build_local: {fileID: 0}
@@ -3477,6 +3420,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207423390}
   m_Mesh: {fileID: 4300000, guid: ec55075d188c17f409c030e2fa6d4ebf, type: 3}
+--- !u!1 &215208921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215208923}
+  - component: {fileID: 215208922}
+  - component: {fileID: 215208925}
+  - component: {fileID: 215208924}
+  m_Layer: 0
+  m_Name: Border_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &215208922
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215208921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.51758605}
+  m_Center: {x: 0.0000000020451068, y: 0, z: 0.24120697}
+--- !u!4 &215208923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215208921}
+  m_LocalRotation: {x: -0, y: 0.8660259, z: -0, w: -0.49999914}
+  m_LocalPosition: {x: -0.23000002, y: 0, z: 5.04}
+  m_LocalScale: {x: 6.4160995, y: 0.4101, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1226470776}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 240, z: 0}
+--- !u!114 &215208924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215208921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &215208925
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215208921}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &240042462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3490,9 +3508,6 @@ GameObject:
   - component: {fileID: 240042469}
   - component: {fileID: 240042468}
   - component: {fileID: 240042467}
-  - component: {fileID: 240042466}
-  - component: {fileID: 240042465}
-  - component: {fileID: 240042464}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_1"
   m_TagString: Untagged
@@ -3515,47 +3530,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &240042464
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240042462}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &240042465
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240042462}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &240042466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240042462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &240042467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3569,8 +3543,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -4211,8 +4185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 1
   build_local: {fileID: 0}
@@ -4351,8 +4325,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -4491,8 +4465,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -5374,6 +5348,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300757339}
   m_CullTransparentMesh: 1
+--- !u!1 &307005509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 307005511}
+  - component: {fileID: 307005510}
+  - component: {fileID: 307005513}
+  - component: {fileID: 307005512}
+  m_Layer: 0
+  m_Name: Border_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &307005510
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307005509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.579528}
+  m_Center: {x: -4.6269855e-10, y: 0, z: 0.21023563}
+--- !u!4 &307005511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307005509}
+  m_LocalRotation: {x: -0, y: 0.8660257, z: -0, w: 0.49999964}
+  m_LocalPosition: {x: -8.88, y: 0, z: 4.8599997}
+  m_LocalScale: {x: 6.4161, y: 0.4101, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1226470776}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
+--- !u!114 &307005512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307005509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &307005513
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307005509}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &307512376
 GameObject:
   m_ObjectHideFlags: 0
@@ -5643,8 +5692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -5783,8 +5832,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 1
   build_local: {fileID: 0}
@@ -6139,8 +6188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 8
-  resourcesRound: 4
+  resourcesMax: 20
+  resourcesRound: 10
   resourcesTime: 3.5
   biomaType: 1
   build_local: {fileID: 0}
@@ -6447,9 +6496,6 @@ GameObject:
   - component: {fileID: 422425281}
   - component: {fileID: 422425280}
   - component: {fileID: 422425279}
-  - component: {fileID: 422425278}
-  - component: {fileID: 422425277}
-  - component: {fileID: 422425276}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_30"
   m_TagString: Untagged
@@ -6472,47 +6518,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &422425276
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422425274}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &422425277
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422425274}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &422425278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422425274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &422425279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6526,8 +6531,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -6742,8 +6747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 0
   build_local: {fileID: 0}
@@ -7171,8 +7176,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 2
   build_local: {fileID: 0}
@@ -7276,9 +7281,6 @@ GameObject:
   - component: {fileID: 474702632}
   - component: {fileID: 474702631}
   - component: {fileID: 474702630}
-  - component: {fileID: 474702629}
-  - component: {fileID: 474702628}
-  - component: {fileID: 474702627}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_18"
   m_TagString: Untagged
@@ -7301,47 +7303,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &474702627
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474702625}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &474702628
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474702625}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &474702629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474702625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &474702630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7355,8 +7316,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -7495,8 +7456,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -7884,8 +7845,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 1
   build_local: {fileID: 0}
@@ -8024,8 +7985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -8164,8 +8125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -8269,9 +8230,6 @@ GameObject:
   - component: {fileID: 570895111}
   - component: {fileID: 570895110}
   - component: {fileID: 570895109}
-  - component: {fileID: 570895108}
-  - component: {fileID: 570895107}
-  - component: {fileID: 570895106}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_20"
   m_TagString: Untagged
@@ -8294,47 +8252,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &570895106
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570895104}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &570895107
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570895104}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &570895108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570895104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &570895109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8348,8 +8265,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -9082,8 +8999,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -9222,8 +9139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -9356,7 +9273,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676004366
 GameObject:
@@ -9465,9 +9382,6 @@ GameObject:
   - component: {fileID: 684348185}
   - component: {fileID: 684348184}
   - component: {fileID: 684348183}
-  - component: {fileID: 684348182}
-  - component: {fileID: 684348181}
-  - component: {fileID: 684348180}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_26"
   m_TagString: Untagged
@@ -9490,47 +9404,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &684348180
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684348178}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &684348181
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684348178}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &684348182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684348178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &684348183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9544,8 +9417,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -9636,6 +9509,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684348178}
   m_Mesh: {fileID: 4300000, guid: 1341def1465b9ee42ab1a58327fc3676, type: 3}
+--- !u!1 &684363601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 684363603}
+  - component: {fileID: 684363602}
+  - component: {fileID: 684363605}
+  - component: {fileID: 684363604}
+  m_Layer: 0
+  m_Name: Border_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &684363602
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684363601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.44410482}
+  m_Center: {x: -8.033947e-10, y: 0, z: 0.27794746}
+--- !u!4 &684363603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684363601}
+  m_LocalRotation: {x: -0, y: 0.5000014, z: -0, w: -0.8660247}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.4160995, y: 0.4101, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1226470776}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 300, z: 0}
+--- !u!114 &684363604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684363601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &684363605
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684363601}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &686312214
 GameObject:
   m_ObjectHideFlags: 0
@@ -9684,8 +9632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -10059,7 +10007,7 @@ Transform:
   - {fileID: 307512377}
   - {fileID: 151313035}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &708973345
 GameObject:
@@ -10159,7 +10107,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &723794427
 GameObject:
@@ -10240,8 +10188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 1
   build_local: {fileID: 0}
@@ -10380,8 +10328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 2
   build_local: {fileID: 0}
@@ -10842,7 +10790,7 @@ Transform:
   - {fileID: 83027983}
   - {fileID: 1062948930}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &752348103
 GameObject:
@@ -10892,8 +10840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 2
   build_local: {fileID: 0}
@@ -11404,9 +11352,6 @@ GameObject:
   - component: {fileID: 772522442}
   - component: {fileID: 772522441}
   - component: {fileID: 772522440}
-  - component: {fileID: 772522439}
-  - component: {fileID: 772522438}
-  - component: {fileID: 772522437}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_22"
   m_TagString: Untagged
@@ -11429,47 +11374,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &772522437
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772522435}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &772522438
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772522435}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &772522439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772522435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &772522440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11483,8 +11387,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -11623,8 +11527,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -11763,8 +11667,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 1
   build_local: {fileID: 0}
@@ -11855,6 +11759,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776437526}
   m_Mesh: {fileID: 4300000, guid: ec55075d188c17f409c030e2fa6d4ebf, type: 3}
+--- !u!1 &790186103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 790186107}
+  - component: {fileID: 790186104}
+  - component: {fileID: 790186109}
+  - component: {fileID: 790186108}
+  m_Layer: 0
+  m_Name: Border_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &790186104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790186103}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.80343914}
+  m_Center: {x: 0, y: 0, z: 0.09828043}
+--- !u!4 &790186107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790186103}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.4300003, y: 0, z: -2.3999999}
+  m_LocalScale: {x: 6.4161, y: 0.4101, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1226470776}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &790186108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790186103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &790186109
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790186103}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &792690343
 GameObject:
   m_ObjectHideFlags: 0
@@ -11903,8 +11882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 2
   build_local: {fileID: 0}
@@ -12043,8 +12022,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -12338,8 +12317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 1
   build_local: {fileID: 0}
@@ -12690,7 +12669,7 @@ Transform:
   - {fileID: 2108916966}
   - {fileID: 1257709750}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &866667836
 GameObject:
@@ -13086,8 +13065,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -13226,8 +13205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -13921,8 +13900,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -14139,9 +14118,6 @@ GameObject:
   - component: {fileID: 1001771097}
   - component: {fileID: 1001771096}
   - component: {fileID: 1001771095}
-  - component: {fileID: 1001771094}
-  - component: {fileID: 1001771093}
-  - component: {fileID: 1001771092}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_14"
   m_TagString: Untagged
@@ -14164,47 +14140,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1001771092
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001771090}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1001771093
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001771090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1001771094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001771090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1001771095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14218,8 +14153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -14578,9 +14513,6 @@ GameObject:
   - component: {fileID: 1021254556}
   - component: {fileID: 1021254555}
   - component: {fileID: 1021254554}
-  - component: {fileID: 1021254553}
-  - component: {fileID: 1021254552}
-  - component: {fileID: 1021254551}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_24"
   m_TagString: Untagged
@@ -14603,47 +14535,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1021254551
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021254549}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1021254552
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021254549}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1021254553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021254549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1021254554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14657,8 +14548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -14797,8 +14688,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 8
-  resourcesRound: 4
+  resourcesMax: 20
+  resourcesRound: 10
   resourcesTime: 3.5
   biomaType: 2
   build_local: {fileID: 0}
@@ -15067,9 +14958,6 @@ GameObject:
   - component: {fileID: 1064769377}
   - component: {fileID: 1064769376}
   - component: {fileID: 1064769375}
-  - component: {fileID: 1064769374}
-  - component: {fileID: 1064769373}
-  - component: {fileID: 1064769372}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_4"
   m_TagString: Untagged
@@ -15092,47 +14980,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1064769372
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1064769370}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1064769373
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1064769370}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1064769374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1064769370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1064769375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15146,8 +14993,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -15286,8 +15133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 2
   build_local: {fileID: 0}
@@ -15530,8 +15377,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -16844,8 +16691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -17168,6 +17015,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219075791}
   m_CullTransparentMesh: 1
+--- !u!1 &1226470775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1226470776}
+  m_Layer: 0
+  m_Name: Border
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1226470776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226470775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.53, y: 0.02, z: -2.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 790186107}
+  - {fileID: 1853893980}
+  - {fileID: 307005511}
+  - {fileID: 128025154}
+  - {fileID: 215208923}
+  - {fileID: 684363603}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1231288793
 GameObject:
   m_ObjectHideFlags: 0
@@ -17341,7 +17225,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1257594234
 MonoBehaviour:
@@ -17457,8 +17341,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 0
   build_local: {fileID: 0}
@@ -17597,8 +17481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -18126,8 +18010,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -18231,9 +18115,6 @@ GameObject:
   - component: {fileID: 1351863972}
   - component: {fileID: 1351863971}
   - component: {fileID: 1351863970}
-  - component: {fileID: 1351863969}
-  - component: {fileID: 1351863968}
-  - component: {fileID: 1351863967}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_8"
   m_TagString: Untagged
@@ -18256,47 +18137,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1351863967
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351863965}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1351863968
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351863965}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1351863969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351863965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1351863970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18310,8 +18150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -18868,9 +18708,6 @@ GameObject:
   - component: {fileID: 1419987597}
   - component: {fileID: 1419987596}
   - component: {fileID: 1419987595}
-  - component: {fileID: 1419987594}
-  - component: {fileID: 1419987593}
-  - component: {fileID: 1419987592}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_23"
   m_TagString: Untagged
@@ -18893,47 +18730,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1419987592
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419987590}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1419987593
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419987590}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1419987594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419987590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1419987595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18947,8 +18743,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -19234,9 +19030,6 @@ GameObject:
   - component: {fileID: 1459038769}
   - component: {fileID: 1459038768}
   - component: {fileID: 1459038767}
-  - component: {fileID: 1459038766}
-  - component: {fileID: 1459038765}
-  - component: {fileID: 1459038764}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_6"
   m_TagString: Untagged
@@ -19259,47 +19052,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1459038764
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459038762}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1459038765
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459038762}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1459038766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459038762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1459038767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19313,8 +19065,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -19608,8 +19360,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -19852,8 +19604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -19992,8 +19744,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 8
-  resourcesRound: 4
+  resourcesMax: 20
+  resourcesRound: 10
   resourcesTime: 3.5
   biomaType: 1
   build_local: {fileID: 0}
@@ -20253,9 +20005,6 @@ GameObject:
   - component: {fileID: 1543934545}
   - component: {fileID: 1543934544}
   - component: {fileID: 1543934543}
-  - component: {fileID: 1543934542}
-  - component: {fileID: 1543934541}
-  - component: {fileID: 1543934540}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_27"
   m_TagString: Untagged
@@ -20278,47 +20027,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1543934540
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543934538}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1543934541
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543934538}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1543934542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543934538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1543934543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20332,8 +20040,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -20437,9 +20145,6 @@ GameObject:
   - component: {fileID: 1560457267}
   - component: {fileID: 1560457266}
   - component: {fileID: 1560457265}
-  - component: {fileID: 1560457264}
-  - component: {fileID: 1560457263}
-  - component: {fileID: 1560457262}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_25"
   m_TagString: Untagged
@@ -20462,47 +20167,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1560457262
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560457260}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1560457263
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560457260}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1560457264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560457260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1560457265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20516,8 +20180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -21297,8 +20961,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 2
   build_local: {fileID: 0}
@@ -21453,7 +21117,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1617079276
 GameObject:
@@ -21468,9 +21132,6 @@ GameObject:
   - component: {fileID: 1617079283}
   - component: {fileID: 1617079282}
   - component: {fileID: 1617079281}
-  - component: {fileID: 1617079280}
-  - component: {fileID: 1617079279}
-  - component: {fileID: 1617079278}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_29"
   m_TagString: Untagged
@@ -21493,47 +21154,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1617079278
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617079276}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1617079279
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617079276}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1617079280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617079276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1617079281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21547,8 +21167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -21687,8 +21307,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -21827,8 +21447,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 0
   build_local: {fileID: 0}
@@ -21980,7 +21600,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1658774379
 GameObject:
@@ -22206,8 +21826,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 2
   build_local: {fileID: 0}
@@ -22383,8 +22003,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -22599,8 +22219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 0
   build_local: {fileID: 0}
@@ -22704,9 +22324,6 @@ GameObject:
   - component: {fileID: 1699188286}
   - component: {fileID: 1699188285}
   - component: {fileID: 1699188284}
-  - component: {fileID: 1699188283}
-  - component: {fileID: 1699188282}
-  - component: {fileID: 1699188281}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_7"
   m_TagString: Untagged
@@ -22729,47 +22346,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1699188281
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699188279}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1699188282
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699188279}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1699188283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699188279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1699188284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22783,8 +22359,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -23023,9 +22599,6 @@ GameObject:
   - component: {fileID: 1704068055}
   - component: {fileID: 1704068054}
   - component: {fileID: 1704068053}
-  - component: {fileID: 1704068052}
-  - component: {fileID: 1704068051}
-  - component: {fileID: 1704068050}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_16"
   m_TagString: Untagged
@@ -23048,47 +22621,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1704068050
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704068048}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1704068051
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704068048}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1704068052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704068048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1704068053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23102,8 +22634,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -23319,8 +22851,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 8
-  resourcesRound: 4
+  resourcesMax: 20
+  resourcesRound: 10
   resourcesTime: 3.5
   biomaType: 0
   build_local: {fileID: 0}
@@ -23424,9 +22956,6 @@ GameObject:
   - component: {fileID: 1721241788}
   - component: {fileID: 1721241787}
   - component: {fileID: 1721241786}
-  - component: {fileID: 1721241785}
-  - component: {fileID: 1721241784}
-  - component: {fileID: 1721241783}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_3"
   m_TagString: Untagged
@@ -23449,47 +22978,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1721241783
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721241781}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1721241784
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721241781}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1721241785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721241781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1721241786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23503,8 +22991,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -23608,9 +23096,6 @@ GameObject:
   - component: {fileID: 1723348703}
   - component: {fileID: 1723348702}
   - component: {fileID: 1723348701}
-  - component: {fileID: 1723348700}
-  - component: {fileID: 1723348699}
-  - component: {fileID: 1723348698}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_9"
   m_TagString: Untagged
@@ -23633,47 +23118,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1723348698
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723348696}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1723348699
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723348696}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1723348700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723348696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1723348701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23687,8 +23131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -23792,9 +23236,6 @@ GameObject:
   - component: {fileID: 1723897861}
   - component: {fileID: 1723897860}
   - component: {fileID: 1723897859}
-  - component: {fileID: 1723897858}
-  - component: {fileID: 1723897857}
-  - component: {fileID: 1723897856}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_21"
   m_TagString: Untagged
@@ -23817,47 +23258,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1723897856
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723897854}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1723897857
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723897854}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1723897858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723897854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1723897859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23871,8 +23271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -24016,8 +23416,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 2
   build_local: {fileID: 0}
@@ -24489,8 +23889,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -24629,8 +24029,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -24769,8 +24169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 2
   build_local: {fileID: 0}
@@ -25180,9 +24580,6 @@ GameObject:
   - component: {fileID: 1816048323}
   - component: {fileID: 1816048322}
   - component: {fileID: 1816048321}
-  - component: {fileID: 1816048320}
-  - component: {fileID: 1816048319}
-  - component: {fileID: 1816048318}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_19"
   m_TagString: Untagged
@@ -25205,47 +24602,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1816048318
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816048316}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1816048319
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816048316}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1816048320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816048316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1816048321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25259,8 +24615,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -25399,8 +24755,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 8
-  resourcesRound: 4
+  resourcesMax: 20
+  resourcesRound: 10
   resourcesTime: 3.5
   biomaType: 0
   build_local: {fileID: 0}
@@ -25504,9 +24860,6 @@ GameObject:
   - component: {fileID: 1834732309}
   - component: {fileID: 1834732308}
   - component: {fileID: 1834732307}
-  - component: {fileID: 1834732306}
-  - component: {fileID: 1834732305}
-  - component: {fileID: 1834732304}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_10"
   m_TagString: Untagged
@@ -25529,47 +24882,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1834732304
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834732302}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1834732305
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834732302}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1834732306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834732302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1834732307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25583,8 +24895,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -25894,6 +25206,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840495067}
   m_CullTransparentMesh: 1
+--- !u!1 &1853893978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853893980}
+  - component: {fileID: 1853893979}
+  - component: {fileID: 1853893982}
+  - component: {fileID: 1853893981}
+  m_Layer: 0
+  m_Name: Border_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1853893979
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853893978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.6145707}
+  m_Center: {x: 0.0000000022893576, y: 0, z: 0.19271529}
+--- !u!4 &1853893980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853893978}
+  m_LocalRotation: {x: -0, y: 0.5000001, z: -0, w: 0.8660253}
+  m_LocalPosition: {x: -8.89, y: 0, z: 0.029999971}
+  m_LocalScale: {x: 6.4161005, y: 0.4101, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1226470776}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 60, z: 0}
+--- !u!114 &1853893981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853893978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1853893982
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853893978}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1859863487
 GameObject:
   m_ObjectHideFlags: 0
@@ -26097,8 +25484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -26237,8 +25624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 0
   build_local: {fileID: 0}
@@ -26954,9 +26341,6 @@ GameObject:
   - component: {fileID: 1910429921}
   - component: {fileID: 1910429920}
   - component: {fileID: 1910429919}
-  - component: {fileID: 1910429918}
-  - component: {fileID: 1910429917}
-  - component: {fileID: 1910429916}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_5"
   m_TagString: Untagged
@@ -26979,47 +26363,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1910429916
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910429914}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1910429917
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910429914}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1910429918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910429914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1910429919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27033,8 +26376,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -27301,8 +26644,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 12
-  resourcesRound: 6
+  resourcesMax: 28
+  resourcesRound: 14
   resourcesTime: 3.5
   biomaType: 2
   build_local: {fileID: 0}
@@ -27482,9 +26825,6 @@ GameObject:
   - component: {fileID: 1995419884}
   - component: {fileID: 1995419883}
   - component: {fileID: 1995419882}
-  - component: {fileID: 1995419881}
-  - component: {fileID: 1995419880}
-  - component: {fileID: 1995419879}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_13"
   m_TagString: Untagged
@@ -27507,47 +26847,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1995419879
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995419877}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &1995419880
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995419877}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &1995419881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995419877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1995419882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27561,8 +26860,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -27930,8 +27229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -28067,7 +27366,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2029626115
 GameObject:
@@ -28082,9 +27381,6 @@ GameObject:
   - component: {fileID: 2029626122}
   - component: {fileID: 2029626121}
   - component: {fileID: 2029626120}
-  - component: {fileID: 2029626119}
-  - component: {fileID: 2029626118}
-  - component: {fileID: 2029626117}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_11"
   m_TagString: Untagged
@@ -28107,47 +27403,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2029626117
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029626115}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &2029626118
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029626115}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &2029626119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029626115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2029626120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28161,8 +27416,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -28493,7 +27748,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2583766185149759798, guid: 21774f07d2ddd59489312f484b7742d6, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2583766185149759798, guid: 21774f07d2ddd59489312f484b7742d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28582,7 +27837,7 @@ PrefabInstance:
       objectReference: {fileID: 1725926146}
     - target: {fileID: 7886123453495197084, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7886123453495197084, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28670,9 +27925,6 @@ GameObject:
   - component: {fileID: 2090919571}
   - component: {fileID: 2090919570}
   - component: {fileID: 2090919569}
-  - component: {fileID: 2090919568}
-  - component: {fileID: 2090919567}
-  - component: {fileID: 2090919566}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_15"
   m_TagString: Untagged
@@ -28695,47 +27947,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2090919566
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090919564}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &2090919567
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090919564}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &2090919568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090919564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2090919569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28749,8 +27960,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -29220,9 +28431,6 @@ GameObject:
   - component: {fileID: 2119596088}
   - component: {fileID: 2119596087}
   - component: {fileID: 2119596086}
-  - component: {fileID: 2119596085}
-  - component: {fileID: 2119596084}
-  - component: {fileID: 2119596083}
   m_Layer: 0
   m_Name: "Hex\xE0gon_5_17"
   m_TagString: Untagged
@@ -29245,47 +28453,6 @@ Transform:
   m_Father: {fileID: 151313035}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2119596083
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119596081}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!135 &2119596084
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119596081}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.75
-  m_Center: {x: 0, y: 0.100168675, z: 0}
---- !u!114 &2119596085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119596081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1271de5da996842b68192db5fc7652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2119596086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29299,8 +28466,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 40
+  resourcesRound: 10
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -29680,8 +28847,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 15
-  resourcesRound: 5
+  resourcesMax: 24
+  resourcesRound: 6
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -29820,8 +28987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 20
-  resourcesRound: 5
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}

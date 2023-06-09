@@ -59,6 +59,9 @@ public class Resources_Controller : MonoBehaviour
 
     private void Harvest()
     {
+        localUI.transform.GetChild(1).GetChild(0).gameObject.SetActive(false);
+        localUI.transform.GetChild(1).GetChild(1).gameObject.SetActive(false);
+
         switch (biomaType)
         {
             case 1:

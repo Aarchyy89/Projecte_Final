@@ -21,13 +21,13 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 0.69803923, g: 0.28235295, b: 0.23529413, a: 1}
+    value: {r: 0.2352941, g: 0.42044252, b: 0.69803923, a: 1}
   center:
     overrideState: 1
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.214
+    value: 0.15
   smoothness:
     overrideState: 1
     value: 0.2
@@ -1444,7 +1444,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.92
+    value: 0.5
   threshold:
     overrideState: 1
     value: 1
@@ -1635,7 +1635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
   m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1

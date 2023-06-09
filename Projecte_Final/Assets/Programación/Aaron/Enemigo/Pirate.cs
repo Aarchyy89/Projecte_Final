@@ -106,7 +106,7 @@ public class Pirate : MonoBehaviour
         HP -= damage;
         //Health_bar.value = HP;
 
-        if (HP <= 0)
+        if (HP <= 0 && !player_dead)
         {
             player_dead = true;
             navMeshAgent.speed = 0;

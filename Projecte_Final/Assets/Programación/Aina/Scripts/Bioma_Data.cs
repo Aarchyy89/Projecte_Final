@@ -76,6 +76,10 @@ public class Bioma_Data : Resources_Controller
     [SerializeField] private AudioClip sound;
     [SerializeField] private AudioClip BUYsound;
 
+    [SerializeField] private Sprite exploreImage;
+    [SerializeField] private Sprite picarImage;
+    [SerializeField] private Sprite talarImage;
+    [SerializeField] private Sprite torreImage;
 
     private void Start()
     {
@@ -119,13 +123,38 @@ public class Bioma_Data : Resources_Controller
         }
     }
     
-    private void ActivateUI(int costWood, int costStone)
+    private void ActivateUI(int costWood, int costStone, int state)
     {
         ui_local = PoolingManager.Instance.GetPooledObject((int)UI);
         ui_local.transform.position = new Vector3(transform.position.x, 1f, transform.position.z);
         
         ui_local.transform.GetChild(1).GetComponent<TMP_Text>().text = $"{costWood}";
         ui_local.transform.GetChild(2).GetComponent<TMP_Text>().text = $"{costStone}";
+
+        switch (state)
+        {
+            case 0:
+            {
+                ui_local.transform.GetChild(3).transform.GetChild(1).GetComponent<Image>().sprite = exploreImage;
+                break;
+            }
+            case 1:
+            {
+                ui_local.transform.GetChild(3).transform.GetChild(1).GetComponent<Image>().sprite = talarImage;
+                break;
+            }
+            case 2:
+            {
+                ui_local.transform.GetChild(3).transform.GetChild(1).GetComponent<Image>().sprite = picarImage;
+                break;
+            }
+            case 3:
+            {
+                ui_local.transform.GetChild(3).transform.GetChild(1).GetComponent<Image>().sprite = torreImage;
+                break;
+            }
+        }
+        
         ui_local.gameObject.SetActive(true);
     }
     
@@ -195,7 +224,7 @@ public class Bioma_Data : Resources_Controller
         {
             if (!isUnlocked)
             {
-                ActivateUI(costWoodUnlock,costStoneUnlock);
+                ActivateUI(costWoodUnlock,costStoneUnlock, 0);
                 Manager.instance.D_3();
 
                 if (GameManager.instance.WoodPlayer >= costWoodUnlock && GameManager.instance.StonePlayer >= costStoneUnlock)
@@ -215,7 +244,14 @@ public class Bioma_Data : Resources_Controller
             }
             else if(isUnlocked && !isBuilt && canBuild)
             {
-                ActivateUI(costWoodBuilt,costStoneBuilt);
+                if (costStoneBuilt > costWoodBuilt)
+                {
+                    ActivateUI(costWoodBuilt,costStoneBuilt, 1);
+                }
+                else
+                {
+                    ActivateUI(costWoodBuilt,costStoneBuilt, 2);
+                }
 
                 if (GameManager.instance.WoodPlayer >= costWoodBuilt && GameManager.instance.StonePlayer >= costStoneBuilt)
                 {
@@ -233,7 +269,7 @@ public class Bioma_Data : Resources_Controller
             }
             else if(isUnlocked && !isBuilt && !canBuild && !isTower || isUnlocked && isBuilt && resourcesMax == 0 && !isTower)
             {
-                ActivateUI(costWoodTower,costStoneTower);
+                ActivateUI(costWoodTower,costStoneTower, 3);
 
                 if (GameManager.instance.WoodPlayer >= costWoodTower && GameManager.instance.StonePlayer >= costStoneTower)
                 {

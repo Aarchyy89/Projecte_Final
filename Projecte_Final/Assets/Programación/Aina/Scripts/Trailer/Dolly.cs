@@ -7,6 +7,7 @@ public class Dolly : MonoBehaviour
     [SerializeField] private GameObject Villager_1;
     [SerializeField] private GameObject Resources;
     [SerializeField] private GameObject Dialogue;
+    [SerializeField] private GameObject Exclamation;
 
     public void VillagerWave()
     {
@@ -36,5 +37,10 @@ public class Dolly : MonoBehaviour
     public void ResourcesIn()
     {
         Resources.GetComponent<Animator>().SetTrigger("In");
+    }
+    
+    public void ExclamationIn()
+    {
+        Exclamation.GetComponent<Animator>().SetTrigger("In");
     }
 }

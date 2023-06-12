@@ -185,6 +185,10 @@ MonoBehaviour:
     m_Key: _9
     m_Metadata:
       m_Items: []
+  - m_Id: 25142967729352704
+    m_Key: Buy
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

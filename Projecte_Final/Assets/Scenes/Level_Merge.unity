@@ -595,7 +595,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 662806194}
         m_TargetAssemblyTypeName: Language_Manager, Assembly-CSharp
         m_MethodName: SetLanguage
         m_Mode: 5
@@ -901,6 +901,7 @@ MonoBehaviour:
   Idioma_panel: {fileID: 1757704686}
   Mainpanel: {fileID: 389740891}
   Pausepanel: {fileID: 389740891}
+  cursor: {fileID: 2800000, guid: e53682c99e7bc7348a02042c91a65e59, type: 3}
 --- !u!1 &34625508
 GameObject:
   m_ObjectHideFlags: 0
@@ -6190,7 +6191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7034,7 +7035,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 662806194}
         m_TargetAssemblyTypeName: Language_Manager, Assembly-CSharp
         m_MethodName: SetLanguage
         m_Mode: 5
@@ -12706,7 +12707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12828,6 +12829,7 @@ MonoBehaviour:
   winMusic: {fileID: 1176600351}
   loseMusic: {fileID: 85972945}
   cantBuy: 0
+  cursor: {fileID: 2800000, guid: e53682c99e7bc7348a02042c91a65e59, type: 3}
 --- !u!1 &864558936
 GameObject:
   m_ObjectHideFlags: 0
@@ -14685,7 +14687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17205,7 +17207,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 662806194}
         m_TargetAssemblyTypeName: Language_Manager, Assembly-CSharp
         m_MethodName: SetLanguage
         m_Mode: 5
@@ -19532,7 +19534,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 662806194}
         m_TargetAssemblyTypeName: Language_Manager, Assembly-CSharp
         m_MethodName: SetLanguage
         m_Mode: 5
@@ -20175,7 +20177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24181,8 +24183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
-  m_RaycastTarget: 1
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -25781,7 +25783,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 662806194}
         m_TargetAssemblyTypeName: Language_Manager, Assembly-CSharp
         m_MethodName: SetLanguage
         m_Mode: 5
@@ -27500,7 +27502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -28043,7 +28045,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 662806194}
         m_TargetAssemblyTypeName: Language_Manager, Assembly-CSharp
         m_MethodName: SetLanguage
         m_Mode: 5

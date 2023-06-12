@@ -15,7 +15,13 @@ public class UIManager : MonoBehaviour
     public GameObject Pausepanel;
     private bool pauseBool;
     public static UIManager instance;
+    public Texture2D cursor;
 
+    void Start()
+    {
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.ForceSoftware);
+    }
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name == "Level_Merge")

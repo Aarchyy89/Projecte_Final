@@ -194,6 +194,10 @@ MonoBehaviour:
       und widerstehen Sie bis zum Ende. Aufheitern!
     m_Metadata:
       m_Items: []
+  - m_Id: 25142967729352704
+    m_Localized: Kauf
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

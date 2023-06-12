@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33000991547609112}
   - component: {fileID: 23475093091417382}
   - component: {fileID: 65029581028723634}
+  - component: {fileID: 1565050412200652035}
   m_Layer: 0
   m_Name: EvilCastle
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.96918535, y: 0.9029363, z: 1.1831926}
   m_Center: {x: 0.0000002682209, y: 0.6518055, z: -0.032064736}
+--- !u!208 &1565050412200652035
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970677826219172}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.47000003, y: 0.27400002, z: 0.44000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.439, z: -0.039}
+  m_TimeToStationary: 0.5

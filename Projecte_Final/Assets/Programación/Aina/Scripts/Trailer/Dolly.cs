@@ -9,6 +9,7 @@ public class Dolly : MonoBehaviour
     [SerializeField] private GameObject Dialogue;
     [SerializeField] private GameObject Exclamation;
     [SerializeField] private GameObject End;
+    [SerializeField] private GameObject End_UI;
 
     public void VillagerWave()
     {
@@ -48,5 +49,10 @@ public class Dolly : MonoBehaviour
     public void EndIn()
     {
         End.GetComponent<Animator>().SetTrigger("In");
+    }
+    
+    public void EndInUI()
+    {
+        End_UI.GetComponent<Animator>().SetTrigger("In");
     }
 }

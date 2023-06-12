@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33579341904978922}
   - component: {fileID: 23308788433229574}
   - component: {fileID: 65344043587904218}
+  - component: {fileID: -2919832083574086443}
   m_Layer: 0
   m_Name: Snowmen
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7310238, y: 0.36872238, z: 0.55021054}
   m_Center: {x: 0.008861199, y: 0.32418463, z: -0.05061558}
+--- !u!208 &-2919832083574086443
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125181244151460}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.47000003, y: 0.27400002, z: 0.44000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.439, z: -0.039}
+  m_TimeToStationary: 0.5

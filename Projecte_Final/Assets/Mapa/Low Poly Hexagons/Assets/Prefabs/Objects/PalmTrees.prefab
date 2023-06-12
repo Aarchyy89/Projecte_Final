@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33982821428013298}
   - component: {fileID: 23698615341403142}
   - component: {fileID: 65441849985356760}
+  - component: {fileID: 1193505349917270008}
   m_Layer: 0
   m_Name: PalmTrees
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.67772543, y: 0.56017125, z: 0.84837294}
   m_Center: {x: -0.0030481964, y: 0.4639209, z: -0.02374053}
+--- !u!208 &1193505349917270008
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138943641434864}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.47000003, y: 0.27400002, z: 0.44000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.439, z: -0.039}
+  m_TimeToStationary: 0.5

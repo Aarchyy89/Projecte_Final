@@ -39,6 +39,7 @@ public class UIManager : MonoBehaviour
     //PANEL MAIN MENU
     public void Jugar()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
     

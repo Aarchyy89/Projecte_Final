@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33994982199806404}
   - component: {fileID: 23663872360608352}
   - component: {fileID: 65548356769873912}
+  - component: {fileID: 6014987402987457083}
   m_Layer: 0
   m_Name: Candy
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.77966154, y: 0.49488056, z: 0.9171859}
   m_Center: {x: 0.013878539, y: 0.39411634, z: -0.05026436}
+--- !u!208 &6014987402987457083
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415973868248422}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.47000003, y: 0.27400002, z: 0.44000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.439, z: -0.039}
+  m_TimeToStationary: 0.5

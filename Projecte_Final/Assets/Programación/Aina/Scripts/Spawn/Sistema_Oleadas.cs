@@ -76,7 +76,12 @@ public class Sistema_Oleadas : MonoBehaviour
     
     private void Checker()
     {
-        if (CheckNextRound() && waveNumber != enemyDifficultyData_list.Count)
+        if (lastWave)
+        {
+            waveNumber = enemyDifficultyData_list.Count - 1;
+            GameManager.instance._LastRoundEnemies = waveData_list[waveNumber].TotalEnemies;
+        }
+        else if (CheckNextRound() && waveNumber != enemyDifficultyData_list.Count)
         {
             ++waveNumber;
         }

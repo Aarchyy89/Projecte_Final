@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33826343347859950}
   - component: {fileID: 23471629027263154}
   - component: {fileID: 65298043831719836}
+  - component: {fileID: -6611603115121379639}
   m_Layer: 0
   m_Name: SnowyForest
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9408066, y: 0.5474365, z: 0.8806052}
   m_Center: {x: 0.005452469, y: 0.43866473, z: -0.038591713}
+--- !u!208 &-6611603115121379639
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506893010272746}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.47000003, y: 0.27400002, z: 0.44000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.439, z: -0.039}
+  m_TimeToStationary: 0.5

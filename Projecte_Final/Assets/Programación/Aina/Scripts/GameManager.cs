@@ -102,7 +102,6 @@ public class GameManager : MonoBehaviour
     public void LastRound()
     {
         Sistema_Oleadas.Instance.lastWave = true;
-        LastRoundEnemies = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].TotalEnemies;
         Sistema_Oleadas.Instance.waveActive = false;
         Sistema_Oleadas.Instance.BuildTrigger();
     }
@@ -126,6 +125,7 @@ public class GameManager : MonoBehaviour
         {
             winPanel.SetActive(true);
             winMusic.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 
@@ -141,5 +141,6 @@ public class GameManager : MonoBehaviour
     {
         losePanel.SetActive(true);
         loseMusic.SetActive(true);
+        Time.timeScale = 0;
     }
 }

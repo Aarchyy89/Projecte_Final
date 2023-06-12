@@ -171,8 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -191,10 +191,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -392,8 +393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 2
   build_local: {fileID: 0}
@@ -412,10 +413,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 12
-  costStoneBuilt: 10
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -967,10 +969,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -1167,8 +1170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -1187,10 +1190,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -2378,15 +2382,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
-  biomaType: 0
+  biomaType: 1
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 9
-  biomaBuilt: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
   towerPrefab: 13
   selectedAble: 22
   selectedUnable: 23
@@ -2396,14 +2400,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
-  costWoodTower: 25
-  costStoneTower: 25
+  costWoodBuilt: 4
+  costStoneBuilt: 6
+  costWoodTower: 20
+  costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -2759,8 +2764,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -2779,10 +2784,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 35
   costStoneTower: 35
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -2923,10 +2929,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 6
-  costStoneBuilt: 8
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 12
   costStoneTower: 12
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -3047,8 +3054,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -3067,10 +3074,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
   costWoodBuilt: 15
-  costStoneBuilt: 17
+  costStoneBuilt: 4
   costWoodTower: 25
   costStoneTower: 25
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -3380,6 +3388,7 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 5
   costStoneUnlock: 5
   costWoodBuilt: 6
@@ -3579,15 +3588,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
-  biomaType: 0
+  biomaType: 1
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 5
-  biomaBuilt: 0
+  biomaUnlocked: 2
+  biomaBuilt: 16
   towerPrefab: 14
   selectedAble: 22
   selectedUnable: 23
@@ -3597,14 +3606,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
-  costWoodTower: 35
-  costStoneTower: 35
+  costWoodBuilt: 4
+  costStoneBuilt: 6
+  costWoodTower: 30
+  costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -4245,10 +4255,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 6
-  costStoneBuilt: 8
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 12
   costStoneTower: 12
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -4369,15 +4380,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
-  biomaType: 0
+  biomaType: 2
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 8
-  biomaBuilt: 0
+  biomaUnlocked: 3
+  biomaBuilt: 17
   towerPrefab: 13
   selectedAble: 22
   selectedUnable: 23
@@ -4387,14 +4398,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
-  costWoodTower: 25
-  costStoneTower: 25
+  costWoodBuilt: 6
+  costStoneBuilt: 4
+  costWoodTower: 20
+  costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -4513,8 +4525,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -4533,10 +4545,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -5744,8 +5757,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -5764,10 +5777,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -5888,8 +5902,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 1
   build_local: {fileID: 0}
@@ -5908,10 +5922,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -6268,6 +6283,7 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 5
   costStoneUnlock: 5
   costWoodBuilt: 4
@@ -6595,8 +6611,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -6615,10 +6631,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -6835,10 +6852,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -7248,8 +7266,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 2
   build_local: {fileID: 0}
@@ -7268,10 +7286,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 12
-  costStoneBuilt: 10
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -7392,8 +7411,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -7412,10 +7431,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 35
   costStoneTower: 35
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -7536,15 +7556,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
-  biomaType: 0
+  biomaType: 1
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 8
-  biomaBuilt: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
   towerPrefab: 13
   selectedAble: 22
   selectedUnable: 23
@@ -7554,14 +7574,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
-  costWoodTower: 20
-  costStoneTower: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
+  costWoodTower: 15
+  costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -7929,8 +7950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 1
   build_local: {fileID: 0}
@@ -7949,10 +7970,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -8073,8 +8095,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -8093,10 +8115,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
   costWoodBuilt: 15
-  costStoneBuilt: 17
+  costStoneBuilt: 4
   costWoodTower: 25
   costStoneTower: 25
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -8217,15 +8240,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
-  biomaType: 0
+  biomaType: 2
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 9
-  biomaBuilt: 0
+  biomaUnlocked: 3
+  biomaBuilt: 17
   towerPrefab: 13
   selectedAble: 22
   selectedUnable: 23
@@ -8235,14 +8258,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
-  costWoodTower: 25
-  costStoneTower: 25
+  costWoodBuilt: 6
+  costStoneBuilt: 4
+  costWoodTower: 20
+  costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -8361,8 +8385,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -8381,10 +8405,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 20
-  costStoneBuilt: 17
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -8856,8 +8881,8 @@ MonoBehaviour:
   th_3: {fileID: 2071558915}
   SHIP: {fileID: 0}
   Instantiate_point_pir: {fileID: 0}
-  edif_mejora_1: 10
-  edif_mejora_2: 20
+  edif_mejora_1: 4
+  edif_mejora_2: 8
   Puedo_Mejorar: 0
   Puedo_Mejorar_2: 0
 --- !u!4 &614439043
@@ -9099,8 +9124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -9119,10 +9144,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -9243,8 +9269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -9263,10 +9289,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -9525,8 +9552,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -9545,10 +9572,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 20
-  costStoneBuilt: 17
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -9744,8 +9772,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -9764,10 +9792,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
   costWoodBuilt: 15
-  costStoneBuilt: 17
+  costStoneBuilt: 4
   costWoodTower: 25
   costStoneTower: 25
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -10304,8 +10333,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 1
   build_local: {fileID: 0}
@@ -10324,10 +10353,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -10448,8 +10478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 2
   build_local: {fileID: 0}
@@ -10468,10 +10498,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -10964,8 +10995,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 2
   build_local: {fileID: 0}
@@ -10984,10 +11015,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 17
-  costStoneBuilt: 15
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -11515,8 +11547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -11535,10 +11567,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -11659,8 +11692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -11679,10 +11712,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -11823,10 +11857,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 6
-  costStoneBuilt: 8
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 12
   costStoneTower: 12
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -12022,8 +12057,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 2
   build_local: {fileID: 0}
@@ -12042,10 +12077,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 17
-  costStoneBuilt: 15
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -12166,15 +12202,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 9
-  biomaBuilt: 0
+  biomaUnlocked: 3
+  biomaBuilt: 15
   towerPrefab: 13
   selectedAble: 22
   selectedUnable: 23
@@ -12184,14 +12220,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
-  costWoodTower: 25
-  costStoneTower: 25
+  costWoodBuilt: 6
+  costStoneBuilt: 4
+  costWoodTower: 20
+  costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -12465,8 +12502,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 1
   build_local: {fileID: 0}
@@ -12485,10 +12522,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -13217,15 +13255,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
-  biomaType: 0
+  biomaType: 1
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 9
-  biomaBuilt: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
   towerPrefab: 13
   selectedAble: 22
   selectedUnable: 23
@@ -13235,14 +13273,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
-  costWoodTower: 25
-  costStoneTower: 25
+  costWoodBuilt: 4
+  costStoneBuilt: 6
+  costWoodTower: 20
+  costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -13361,8 +13400,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -13381,10 +13420,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 1
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -14060,8 +14100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -14080,10 +14120,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -14317,15 +14358,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 5
-  biomaBuilt: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
   towerPrefab: 14
   selectedAble: 22
   selectedUnable: 23
@@ -14335,14 +14376,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
-  costWoodTower: 35
-  costStoneTower: 35
+  costWoodBuilt: 4
+  costStoneBuilt: 6
+  costWoodTower: 30
+  costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -14716,8 +14758,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -14736,10 +14778,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 20
-  costStoneBuilt: 17
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -14880,6 +14923,7 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 5
   costStoneUnlock: 5
   costWoodBuilt: 6
@@ -15169,8 +15213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -15189,10 +15233,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 20
-  costStoneBuilt: 17
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -15313,8 +15358,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 2
   build_local: {fileID: 0}
@@ -15333,10 +15378,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 12
-  costStoneBuilt: 10
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -15561,8 +15607,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -15581,10 +15627,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 1
   costWoodUnlock: 15
   costStoneUnlock: 15
   costWoodBuilt: 15
-  costStoneBuilt: 17
+  costStoneBuilt: 4
   costWoodTower: 25
   costStoneTower: 25
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -16879,8 +16926,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -16899,10 +16946,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
   costWoodBuilt: 15
-  costStoneBuilt: 17
+  costStoneBuilt: 4
   costWoodTower: 25
   costStoneTower: 25
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -17553,10 +17601,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -17677,8 +17726,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -17697,10 +17746,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -18210,15 +18260,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 8
-  biomaBuilt: 0
+  biomaUnlocked: 1
+  biomaBuilt: 15
   towerPrefab: 13
   selectedAble: 22
   selectedUnable: 23
@@ -18228,14 +18278,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
-  costWoodTower: 25
-  costStoneTower: 25
+  costWoodBuilt: 4
+  costStoneBuilt: 6
+  costWoodTower: 20
+  costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -18354,8 +18405,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -18374,10 +18425,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -18951,8 +19003,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -18971,10 +19023,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 35
   costStoneTower: 35
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -19277,8 +19330,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -19297,10 +19350,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 1
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 35
   costStoneTower: 35
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -19576,8 +19630,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -19596,10 +19650,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -19824,8 +19879,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -19844,10 +19899,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 1
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -19988,6 +20044,7 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 5
   costStoneUnlock: 5
   costWoodBuilt: 4
@@ -20268,15 +20325,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 11
-  biomaBuilt: 0
+  biomaUnlocked: 3
+  biomaBuilt: 17
   towerPrefab: 14
   selectedAble: 22
   selectedUnable: 23
@@ -20286,14 +20343,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
-  costWoodTower: 35
-  costStoneTower: 35
+  costWoodBuilt: 6
+  costStoneBuilt: 4
+  costWoodTower: 30
+  costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -20412,8 +20470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -20432,10 +20490,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 1
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 35
   costStoneTower: 35
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -21217,10 +21276,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 8
-  costStoneBuilt: 6
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 12
   costStoneTower: 12
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -21407,15 +21467,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 11
-  biomaBuilt: 0
+  biomaUnlocked: 4
+  biomaBuilt: 18
   towerPrefab: 14
   selectedAble: 22
   selectedUnable: 23
@@ -21425,14 +21485,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
-  costWoodTower: 35
-  costStoneTower: 35
+  costWoodBuilt: 6
+  costStoneBuilt: 4
+  costWoodTower: 30
+  costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -21551,8 +21612,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -21571,10 +21632,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
   costWoodBuilt: 15
-  costStoneBuilt: 17
+  costStoneBuilt: 4
   costWoodTower: 25
   costStoneTower: 25
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -21702,7 +21764,7 @@ MonoBehaviour:
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 6
+  biomaUnlocked: 12
   biomaBuilt: 0
   towerPrefab: 12
   selectedAble: 22
@@ -21715,10 +21777,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 1
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -22078,8 +22141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 2
   build_local: {fileID: 0}
@@ -22098,10 +22161,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 12
-  costStoneBuilt: 10
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -22259,8 +22323,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -22279,10 +22343,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -22499,10 +22564,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -22623,8 +22689,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -22643,10 +22709,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 35
   costStoneTower: 35
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -22902,8 +22969,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -22922,10 +22989,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -23143,6 +23211,7 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 5
   costStoneUnlock: 5
   costWoodBuilt: 0
@@ -23267,8 +23336,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -23287,10 +23356,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 35
   costStoneTower: 35
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -23411,8 +23481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -23431,10 +23501,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 35
   costStoneTower: 35
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -23555,8 +23626,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -23575,10 +23646,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -23704,8 +23776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 2
   build_local: {fileID: 0}
@@ -23724,10 +23796,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 17
-  costStoneBuilt: 15
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -24181,8 +24254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -24201,10 +24274,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
   costWoodBuilt: 15
-  costStoneBuilt: 17
+  costStoneBuilt: 4
   costWoodTower: 25
   costStoneTower: 25
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -24325,8 +24399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -24345,10 +24419,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -24489,10 +24564,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 8
-  costStoneBuilt: 6
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 12
   costStoneTower: 12
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -24919,8 +24995,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -24939,10 +25015,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 20
-  costStoneBuilt: 17
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -25083,6 +25160,7 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 5
   costStoneUnlock: 5
   costWoodBuilt: 0
@@ -25207,8 +25285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -25227,10 +25305,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 20
-  costStoneBuilt: 17
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -25800,15 +25879,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
-  biomaType: 0
+  biomaType: 2
   build_local: {fileID: 0}
   UI_Resource: 25
   biomaClouds: 0
-  biomaUnlocked: 10
-  biomaBuilt: 0
+  biomaUnlocked: 3
+  biomaBuilt: 17
   towerPrefab: 13
   selectedAble: 22
   selectedUnable: 23
@@ -25818,14 +25897,15 @@ MonoBehaviour:
   isAvailable: 0
   isUnlocked: 0
   isBuilt: 0
-  canBuild: 0
+  canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
-  costWoodTower: 20
-  costStoneTower: 20
+  costWoodBuilt: 6
+  costStoneBuilt: 4
+  costWoodTower: 15
+  costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
   BUYsound: {fileID: 8300000, guid: 1eee25b56150c9d469d2c35181b3eef5, type: 3}
   exploreImage: {fileID: 21300000, guid: 9fa978730299ab5438001f716986b9b4, type: 3}
@@ -25964,10 +26044,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 10
-  costStoneBuilt: 10
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 15
   costStoneTower: 15
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -26700,8 +26781,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 1
   build_local: {fileID: 0}
@@ -26720,10 +26801,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -26992,10 +27074,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 8
   costStoneUnlock: 8
-  costWoodBuilt: 8
-  costStoneBuilt: 6
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 12
   costStoneTower: 12
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -27192,8 +27275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -27212,10 +27295,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 20
-  costStoneBuilt: 17
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -27565,8 +27649,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 0
   build_local: {fileID: 0}
@@ -27585,10 +27669,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 1
   costWoodUnlock: 15
   costStoneUnlock: 15
   costWoodBuilt: 15
-  costStoneBuilt: 17
+  costStoneBuilt: 4
   costWoodTower: 25
   costStoneTower: 25
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -27756,8 +27841,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -27776,10 +27861,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 35
   costStoneTower: 35
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -28179,6 +28265,10 @@ PrefabInstance:
       propertyPath: VFX_mEJORA
       value: 
       objectReference: {fileID: 1725926146}
+    - target: {fileID: 7036258712147208585, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.204
+      objectReference: {fileID: 0}
     - target: {fileID: 7886123453495197084, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -28304,8 +28394,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 2
   build_local: {fileID: 0}
@@ -28324,10 +28414,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 20
-  costStoneBuilt: 17
+  costWoodBuilt: 6
+  costStoneBuilt: 4
   costWoodTower: 30
   costStoneTower: 30
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -28814,8 +28905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 40
-  resourcesRound: 10
+  resourcesMax: 70
+  resourcesRound: 14
   resourcesTime: 7
   biomaType: 0
   build_local: {fileID: 0}
@@ -28834,10 +28925,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 1
   costWoodUnlock: 20
   costStoneUnlock: 20
-  costWoodBuilt: 17
-  costStoneBuilt: 20
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 35
   costStoneTower: 35
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -29199,8 +29291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 24
-  resourcesRound: 6
+  resourcesMax: 36
+  resourcesRound: 9
   resourcesTime: 5
   biomaType: 0
   build_local: {fileID: 0}
@@ -29219,10 +29311,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 0
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 10
   costStoneUnlock: 10
-  costWoodBuilt: 10
-  costStoneBuilt: 12
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}
@@ -29343,8 +29436,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Producing: 0
-  resourcesMax: 36
-  resourcesRound: 9
+  resourcesMax: 52
+  resourcesRound: 13
   resourcesTime: 6
   biomaType: 1
   build_local: {fileID: 0}
@@ -29363,10 +29456,11 @@ MonoBehaviour:
   isBuilt: 0
   canBuild: 1
   isTower: 0
+  isTowerBegining: 0
   costWoodUnlock: 15
   costStoneUnlock: 15
-  costWoodBuilt: 15
-  costStoneBuilt: 17
+  costWoodBuilt: 4
+  costStoneBuilt: 6
   costWoodTower: 20
   costStoneTower: 20
   sound: {fileID: 8300000, guid: 98c34a7c4f6ca8c40bfd58779749e62b, type: 3}

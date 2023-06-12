@@ -46,6 +46,9 @@ public class Bioma_Data : Resources_Controller
     
     [SerializeField, Tooltip("Bool to check if the biome has a tower")]
     private bool isTower;
+    
+    [SerializeField, Tooltip("Bool to check if the biome has a tower")]
+    private bool isTowerBegining;
 
     [SerializeField, Tooltip("Number of wood you need to unlock the parcel")]
     private int costWoodUnlock;
@@ -222,7 +225,7 @@ public class Bioma_Data : Resources_Controller
 
         if (isAvailable && !Producing)
         {
-            if (!isUnlocked)
+            if (!isUnlocked && !isTowerBegining)
             {
                 ActivateUI(costWoodUnlock,costStoneUnlock, 0);
                 Manager.instance.D_3();
@@ -242,7 +245,28 @@ public class Bioma_Data : Resources_Controller
                 }
 
             }
-            else if(isUnlocked && !isBuilt && canBuild)
+            if (!isUnlocked && isTowerBegining)
+            {
+                ActivateUI(costWoodUnlock,costStoneUnlock, 0);
+                Manager.instance.D_3();
+
+                if (GameManager.instance.WoodPlayer >= costWoodUnlock && GameManager.instance.StonePlayer >= costStoneUnlock)
+                {
+                    ui_local.gameObject.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(BuildTower);
+                    ui_local.gameObject.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(MakeAvailableNearBiomes);
+
+                    Instantiate_Able();
+                    GameManager.instance.cantBuy = 0;
+                }
+                else
+                {
+                    Instantiate_Unable();
+                    ++GameManager.instance.cantBuy;
+                    GameManager.instance.NonResources();
+                }
+
+            }
+            else if(isUnlocked && !isBuilt && canBuild && !isTowerBegining)
             {
                 if (costStoneBuilt > costWoodBuilt)
                 {
@@ -267,7 +291,7 @@ public class Bioma_Data : Resources_Controller
                     GameManager.instance.NonResources();
                 }
             }
-            else if(isUnlocked && !isBuilt && !canBuild && !isTower || isUnlocked && isBuilt && resourcesMax == 0 && !isTower)
+            else if(isUnlocked && !isBuilt && !canBuild && !isTower || isUnlocked && isBuilt && resourcesMax == 0 && !isTower && !isTowerBegining)
             {
                 ActivateUI(costWoodTower,costStoneTower, 3);
 
@@ -348,8 +372,9 @@ public class Bioma_Data : Resources_Controller
 
         ui_local.SetActive(false);
         able_local.SetActive(false);
-        unlocked_local.SetActive(false);
         
+        if (unlocked_local != null) unlocked_local.SetActive(false);
+
         if (build_local != null) build_local.SetActive(false);
         
         Instantiate_VFXBuild();

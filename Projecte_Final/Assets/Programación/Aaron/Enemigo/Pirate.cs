@@ -130,6 +130,10 @@ public class Pirate : MonoBehaviour
         
         yield return new WaitForSeconds(0.5f);
         
+        if (Sistema_Oleadas.Instance.lastWave)
+        {
+            --GameManager.instance._LastRoundEnemies;
+        }
         gameObject.SetActive(false);
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33205958724713000}
   - component: {fileID: 23107150715106736}
   - component: {fileID: 65824694830472264}
+  - component: {fileID: 5843186234202022341}
   m_Layer: 0
   m_Name: RoadCorner
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9152247, y: 0, z: 0.72078156}
   m_Center: {x: 0.04210162, y: 0.20241609, z: -0.16801445}
+--- !u!208 &5843186234202022341
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083713861876146}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.47000003, y: 0.27400002, z: 0.44000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.439, z: -0.039}
+  m_TimeToStationary: 0.5

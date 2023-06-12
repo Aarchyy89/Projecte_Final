@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33754111790473886}
   - component: {fileID: 23968752094700990}
   - component: {fileID: 65931366511592816}
+  - component: {fileID: -4341529859582980855}
   m_Layer: 0
   m_Name: ForestCutDown
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7348927, y: 0.10790101, z: 0.85993963}
   m_Center: {x: -0.03819956, y: 0.218897, z: -0.048924506}
+--- !u!208 &-4341529859582980855
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420964390830392}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.47000003, y: 0.27400002, z: 0.44000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.439, z: -0.039}
+  m_TimeToStationary: 0.5

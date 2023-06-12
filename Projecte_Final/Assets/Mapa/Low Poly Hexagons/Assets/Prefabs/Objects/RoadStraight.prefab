@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33014395822751978}
   - component: {fileID: 23910843272393756}
   - component: {fileID: 65556703298333352}
+  - component: {fileID: 794459245135859250}
   m_Layer: 0
   m_Name: RoadStraight
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9994279, y: 0, z: 0.38256097}
   m_Center: {x: 0, y: 0.20241609, z: 0}
+--- !u!208 &794459245135859250
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324876000603432}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.47000003, y: 0.27400002, z: 0.44000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.439, z: -0.039}
+  m_TimeToStationary: 0.5

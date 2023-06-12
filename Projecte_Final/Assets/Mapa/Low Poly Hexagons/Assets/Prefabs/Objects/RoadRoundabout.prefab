@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33226137143596222}
   - component: {fileID: 23345454224671092}
   - component: {fileID: 65145509091318892}
+  - component: {fileID: 2850176202538603364}
   m_Layer: 0
   m_Name: RoadRoundabout
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9994282, y: 0, z: 1.1540402}
   m_Center: {x: 0.000000029802322, y: 0.20241609, z: 0}
+--- !u!208 &2850176202538603364
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410689929301814}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.47000003, y: 0.27400002, z: 0.44000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.439, z: -0.039}
+  m_TimeToStationary: 0.5

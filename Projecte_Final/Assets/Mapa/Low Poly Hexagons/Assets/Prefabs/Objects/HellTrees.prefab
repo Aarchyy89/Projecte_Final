@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33194377270103978}
   - component: {fileID: 23590201305408762}
   - component: {fileID: 65557724877288176}
+  - component: {fileID: 6345108656048150112}
   m_Layer: 0
   m_Name: HellTrees
   m_TagString: Untagged
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8823786, y: 0.3906098, z: 0.82917196}
   m_Center: {x: 0.021765426, y: 0.3633404, z: -0.01641348}
+--- !u!208 &6345108656048150112
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644743401066358}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.47000003, y: 0.27400002, z: 0.44000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.439, z: -0.039}
+  m_TimeToStationary: 0.5

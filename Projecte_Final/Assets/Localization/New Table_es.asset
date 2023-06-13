@@ -200,6 +200,22 @@ MonoBehaviour:
     m_Localized: Comprar
     m_Metadata:
       m_Items: []
+  - m_Id: 25450738156433408
+    m_Localized: Torre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25451196501585920
+    m_Localized: Talar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25451499661684736
+    m_Localized: Picar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25451714036756480
+    m_Localized: Explorar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

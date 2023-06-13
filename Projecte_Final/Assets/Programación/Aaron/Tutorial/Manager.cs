@@ -120,7 +120,8 @@ public class Manager : MonoBehaviour
     public void Tutorial_Finalizado()
     {
         _9.SetActive(false);
-        panel_final.SetActive(true);
+        //panel_final.SetActive(true);
+        SceneManager.LoadScene(2);
     }
 
     public void Main_Menu()

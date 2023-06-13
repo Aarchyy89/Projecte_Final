@@ -46,6 +46,11 @@ public class UIManager : MonoBehaviour
     public void Jugar()
     {
         Time.timeScale = 1;
+        SceneManager.LoadScene(2);
+    }
+    public void Tutorial()
+    {
+        Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
     

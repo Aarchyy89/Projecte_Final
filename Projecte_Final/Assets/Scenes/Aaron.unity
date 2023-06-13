@@ -16645,7 +16645,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1480003092}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Jugar
+        m_MethodName: Tutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -16,6 +16,6 @@ MonoBehaviour:
   spawnTimer_max: 4
   totalEnemyBoats: 3
   totalEnemies: 5
-  enemyAttackStats: 20
-  enemySpeedStats: 2.5
-  enemyHealth: 90
+  enemyAttackStats: 6
+  enemySpeedStats: 1.5
+  enemyHealth: 62

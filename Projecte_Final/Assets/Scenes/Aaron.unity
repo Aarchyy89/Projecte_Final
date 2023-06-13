@@ -7495,7 +7495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SliderBrightness: {fileID: 1982865990}
-  brightness: {fileID: 11400000, guid: 3a359a5009068a8418e14c09695a44a8, type: 2}
+  brightness: {fileID: 11400000, guid: 3fa8bdced78f304449404b050595e3bb, type: 2}
   layer: {fileID: 1904963607}
   exposure: {fileID: 0}
 --- !u!114 &916881085
@@ -10480,7 +10480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206946380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.68038714, y: 0.32820654, z: 0.8253763}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11919,6 +11919,7 @@ MonoBehaviour:
   Mainpanel: {fileID: 738676810}
   Pausepanel: {fileID: 0}
   cursor: {fileID: 2800000, guid: e53682c99e7bc7348a02042c91a65e59, type: 3}
+  leyendaUI: {fileID: 0}
 --- !u!114 &1480003093
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,7 +12,8 @@ public class Volume_Manager : MonoBehaviour
     void Start()
     {
         AudioListener.volume = PlayerPrefs.GetFloat("volmenMusica");
-        
+        sliderMusica.value = PlayerPrefs.GetFloat("volmenMusica");
+
         //sliderMusica.value = PlayerPrefs.GetFloat("volmenMusica", 0.5f);
         //sourceMusica.volume = sliderMusica.value;
         //musicaMute();

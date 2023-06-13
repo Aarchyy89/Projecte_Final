@@ -45,6 +45,7 @@ public class Enemy_Ship_AI : MonoBehaviour
         {
             WayOut = WP().transform;
             Me_voy();
+            //gameObject.transform.position = Vector3.Lerp();
         }
         else
         {
@@ -116,6 +117,7 @@ public class Enemy_Ship_AI : MonoBehaviour
         pirateLocal.GetComponent<Pirate>().Vida = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemyHealth;
         pirateLocal.GetComponent<Pirate>().Damage = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemyAttackStats;
         pirateLocal.GetComponent<Pirate>().NavMeshAgent.speed = Sistema_Oleadas.Instance.waveData_list[Sistema_Oleadas.Instance.waveNumber].EnemySpeedStats;
+        pirateLocal.GetComponent<Pirate>().player_dead = false;
         pirateLocal.gameObject.SetActive(true);
 
         Manager.instance.D_8();
@@ -133,12 +135,12 @@ public class Enemy_Ship_AI : MonoBehaviour
             Instantiated_Pirates = Sistema_Oleadas.Instance.TotalEnemies;
             stopped_ship = false;
             pirate_spawn_timer = 0;
-            currentCoroutine = Coroutine_IncreaseResource();
+            currentCoroutine = Coroutine_InstantiatePirate();
             StartCoroutine(currentCoroutine);
         }
     }
 
-    private IEnumerator Coroutine_IncreaseResource()
+    private IEnumerator Coroutine_InstantiatePirate()
     {
         float timer_l = 0;
         
@@ -165,9 +167,9 @@ public class Enemy_Ship_AI : MonoBehaviour
         navMeshAgent.SetDestination(WayOut.position);
         if(transform.position == WayOut.position)
         {
+            Hora_de_irse = false;
             gameObject.SetActive(false);
         }
-        //Hora_de_irse = false;
     }
 
 

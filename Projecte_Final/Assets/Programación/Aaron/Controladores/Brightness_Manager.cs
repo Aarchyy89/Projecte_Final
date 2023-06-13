@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering.PostProcessing;
-using TMPro;
-
 
 public class Brightness_Manager : MonoBehaviour
 {
@@ -19,13 +17,14 @@ public class Brightness_Manager : MonoBehaviour
         if (PlayerPrefs.HasKey("brillo"))
         {
             SliderBrightness.value = PlayerPrefs.GetFloat("brillo");
+            AdjustBrightness();
         }
     }
 
     void Start()
     {
         brightness.TryGetSettings(out exposure);
-        AdjustBrightness();
+        //AdjustBrightness();
     }
 
     // Update is called once per frame

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4727162862512674}
   - component: {fileID: 33952999925845342}
   - component: {fileID: 23033108387175360}
-  - component: {fileID: 65047407191325670}
   - component: {fileID: -1597139615428329010}
   m_Layer: 0
   m_Name: Desert
@@ -85,19 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &65047407191325670
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882949367459502}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.77435666, y: 0.41407537, z: 0.67715394}
-  m_Center: {x: 0.033668995, y: 0.3659668, z: -0.00035056472}
 --- !u!208 &-1597139615428329010
 NavMeshObstacle:
   m_ObjectHideFlags: 0

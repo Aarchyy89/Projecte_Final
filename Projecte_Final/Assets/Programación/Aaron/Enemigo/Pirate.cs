@@ -20,8 +20,8 @@ public class Pirate : MonoBehaviour
 
     public bool inside;
     public bool player_dead;
-    private GameObject activeTownHall;
-
+    private GameObject[] activeTownHall;
+    
     [SerializeField] private AudioClip sound;
     [SerializeField] private AudioClip[] muertesound;
 
@@ -57,6 +57,7 @@ public class Pirate : MonoBehaviour
     void Start()
     {
         ayuntamiento = GameObject.FindGameObjectWithTag("TH").transform;
+        activeTownHall = GameObject.FindGameObjectsWithTag("Town");
         inside = false;
         player_dead = false;
     }
@@ -71,6 +72,7 @@ public class Pirate : MonoBehaviour
         if (navMeshAgent.speed >= 0.1f)
         {
             //anim.SetBool("Walk", true);
+
             navMeshAgent.SetDestination(ayuntamiento.position);
         }
     }
@@ -97,8 +99,14 @@ public class Pirate : MonoBehaviour
         attackVFX.transform.position = point.transform.position;
         attackVFX.transform.rotation = point.transform.rotation;
         attackVFX.gameObject.SetActive(true);
-        activeTownHall = GameObject.FindGameObjectWithTag("TH");
-        activeTownHall.GetComponent<Town_Hall_>().TakeDamage(Attack_damage);
+
+        foreach (var town in activeTownHall)
+        {
+            if (town.activeInHierarchy)
+            {
+                town.GetComponent<Town_Hall_>().TakeDamage(Attack_damage);
+            }
+        }
     }
 
     public void TAKE_damage(int damage)

@@ -28,7 +28,6 @@ public class Sistema_Oleadas : MonoBehaviour
     private IEnumerator currentCoroutine;
 
     private bool timerActive;
-    public bool waveActive;
     public bool lastWave;
 
     private void Awake()
@@ -79,7 +78,7 @@ public class Sistema_Oleadas : MonoBehaviour
         if (lastWave)
         {
             waveNumber = enemyDifficultyData_list.Count - 1;
-            GameManager.instance._LastRoundEnemies = waveData_list[waveNumber].TotalEnemies;
+            GameManager.instance._LastRoundEnemies = waveData_list[waveNumber].TotalEnemies * waveData_list[waveNumber].TotalEnemyBoats;
         }
         else if (CheckNextRound() && waveNumber != enemyDifficultyData_list.Count)
         {
@@ -91,24 +90,21 @@ public class Sistema_Oleadas : MonoBehaviour
     
     public void BuildTrigger()
     {
-        if (!waveActive)
+        if (!lastWave)
         {
             timerActive = false;
-
             Checker();
-            waveActive = true;
         }
     }
     
     public void TouchTrigger()
     {
-        if (!waveActive && GameManager.instance.TotalTowers >= 2)
+        if (GameManager.instance.TotalTowers >= 2)
         {
             timerActive = false;
             
             currentCoroutine = TimerTriggerEnemy();
             StartCoroutine(currentCoroutine);
-            waveActive = true;
             timerActive = true;
         }
     }

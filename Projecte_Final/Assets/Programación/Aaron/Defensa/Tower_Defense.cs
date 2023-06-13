@@ -50,7 +50,7 @@ public class Tower_Defense : MonoBehaviour
             }
         }
 
-        if (nearestEnemy != null && shortestDistance <= range)
+        if (nearestEnemy != null && shortestDistance <= range && !nearestEnemy.GetComponent<Pirate>().player_dead)
         {
             pirate_target = nearestEnemy.GetComponent<Pirate>();
         }

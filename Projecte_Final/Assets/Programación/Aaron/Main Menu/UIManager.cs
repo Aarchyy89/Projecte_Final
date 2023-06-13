@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -16,6 +12,8 @@ public class UIManager : MonoBehaviour
     private bool pauseBool;
     public static UIManager instance;
     public Texture2D cursor;
+
+    [SerializeField] private Animator leyendaUI;
 
     void Start()
     {
@@ -105,5 +103,10 @@ public class UIManager : MonoBehaviour
     {
         Idioma_panel.SetActive(false);
         panel_controles.SetActive(false);
+    }
+
+    public void LeyendaMenu()
+    {
+        leyendaUI.SetTrigger("Next");
     }
 }

@@ -79,8 +79,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        woodPlayer = 65;
-        stonePlayer = 65;
+        woodPlayer = 100;
+        stonePlayer = 100;
         RefreshUITxt();
     }
 
@@ -102,7 +102,6 @@ public class GameManager : MonoBehaviour
     public void LastRound()
     {
         Sistema_Oleadas.Instance.lastWave = true;
-        Sistema_Oleadas.Instance.waveActive = false;
         Sistema_Oleadas.Instance.BuildTrigger();
     }
 

@@ -164,12 +164,12 @@ MonoBehaviour:
   - m_Id: 23620536676519936
     m_Localized: "La isla est\xE1 compuesta por 90 parcelas con diferentes biomas
       en las que, individualmente, podr\xE1s tanto obtener recursos como construir
-      torres de defensa. Selecciona la indicada"
+      torres de defensa. Compra la celda indicada"
     m_Metadata:
       m_Items: []
   - m_Id: 23620537850925056
     m_Localized: "Cada parcela tiene un precio. El cual ir\xE1 en aumento seg\xFAn
-      el radio disponible vaya aumentando. Ahora, compra la celda. "
+      el radio disponible vaya aumentando. "
     m_Metadata:
       m_Items: []
   - m_Id: 23620538924666880

@@ -9,6 +9,7 @@ public class Cell_trigger : MonoBehaviour
         if(other.CompareTag("Ship"))
         {
             other.GetComponent<Enemy_Ship_AI>().Instanciar_pirata();
+            LevelManager.instance.Cell_Trigger();
         }
     }
 }

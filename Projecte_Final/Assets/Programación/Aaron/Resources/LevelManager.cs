@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
     [Header("Fillable")]
     public GameObject edif;
     public GameObject punto_instantiate_edif;
+    public GameObject cell_trigger;
 
     [Header("---TH MESHES----")]
     [SerializeField] private GameObject th_1;
@@ -127,6 +128,11 @@ public class LevelManager : MonoBehaviour
     {
         Instantiate(SHIP, Instantiate_point_pir.transform.position, Instantiate_point_pir.transform.rotation);
         Debug.Log("hOLA");
+    }
+
+    public void Cell_Trigger()
+    {
+        Destroy(cell_trigger, 1);
     }
 
 

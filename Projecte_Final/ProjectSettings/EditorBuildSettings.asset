@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Trailer_Scene.unity
+    guid: d53d2fbb56b0e1c4a882576f1b8c9bc9
+  - enabled: 1
     path: Assets/Scenes/Aaron.unity
     guid: 01a6cf2f9bb67a544bbf0f78cc2a7a08
   - enabled: 1

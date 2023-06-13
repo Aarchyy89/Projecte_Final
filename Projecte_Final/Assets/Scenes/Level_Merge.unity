@@ -12829,7 +12829,6 @@ MonoBehaviour:
   winMusic: {fileID: 1176600351}
   loseMusic: {fileID: 85972945}
   cantBuy: 0
-  cursor: {fileID: 2800000, guid: e53682c99e7bc7348a02042c91a65e59, type: 3}
 --- !u!1 &864558936
 GameObject:
   m_ObjectHideFlags: 0
@@ -13777,7 +13776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &942625172
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28249,10 +28248,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1281913664392143284, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1281913664392143284, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281913664392143284, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308846320547484410, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6158567460058531651, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
@@ -28270,6 +28277,10 @@ PrefabInstance:
     - target: {fileID: 7036258712147208585, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.204
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835774821681796724, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
+      propertyPath: m_Value
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 7886123453495197084, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: m_RootOrder
@@ -28331,6 +28342,14 @@ PrefabInstance:
       propertyPath: VFX_mEJORA
       value: 
       objectReference: {fileID: 1725926146}
+    - target: {fileID: 8018257402911447487, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8018257402911447487, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 8418400545085091567, guid: 7ce97f7aca72b1e4dae596765f9c2d6c, type: 3}
       propertyPath: m_Camera
       value: 
